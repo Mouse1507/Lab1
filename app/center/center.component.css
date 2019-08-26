@@ -1,0 +1,49 @@
+.left-column {
+    background-color: rgba(0,0,0,0.5);
+    color:white;
+    border-radius: 5px;
+}
+.logo{
+    width:100px;
+    height:100px;
+}
+.left-nav li a  {
+    color:white;
+    font-weight: 400;
+}
+.fas {
+    width:30px;
+}
+.pad-20 {
+    padding:20px;
+}
+#entry {
+    border-radius: 5px;
+    width:100px;
+    height:30px;
+    margin:0 20px;
+}
+.ex-but, .pdf-but, .add-but, .search-field {
+    height: 30px;
+    margin-left:5px;
+    line-height: 0px;
+}
+.search-box {
+    display: inline;
+    position: relative;
+    height:30px;
+}
+.search-field {
+    border:0.5px solid blue;
+    vertical-align: middle;
+    border-radius: 5px;
+    padding-left:30px;
+    font-size:12px;
+    color:gray;
+}
+.search-icon {
+    position: absolute;
+    top:0;
+    left:0;
+    transform:translateY(30%);
+}

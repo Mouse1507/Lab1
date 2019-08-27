@@ -1,70 +1,47 @@
 <div class="card">
-    <div class="card-header">List Product</div>
-    <div class="card-body">
-        <div class="container-fluid">
-            <div class="row">
-                <div class="col-md-2 no-padding">Filter By:</div>
-                <div class="col-md-10">
-                    <input type="text" name="filter" id="filter" placeholder="....."/>
-                </div>
-            </div>
-            <div class="row">
-                <h2>Filter By:</h2>
-                <table class="table">
-                    <thead>
-                      <tr>
-                          <td><button type="button" class="btn btn-primary">Hien Image</button></td>
-                          <td>Product</td>
-                          <td>Code</td>
-                          <td>Available</td>
-                          <td>Price</td>
-                          <td>5 Star Rating</td>
+  <div class="card-header">List Product</div>
+  <div class="card-body">
+      <div class="container-fluid">
+          <div class="row">
+              <div class="col-md-2 no-padding">Filter By:</div>
+              <div class="col-md-10">
+                  <input type="text" name="filter" id="filter" placeholder="....."/>
+              </div>
+          </div>
+          <div class="row">
+              <h2>Filter By:</h2>
+              <table class="table">
+                  <thead>
+                    <tr>
+                        <td><button type="button" class="btn btn-primary" (click)="AnHien()">Hien Image</button></td>
+                        <td>Product</td>
+                        <td>Code</td>
+                        <td>Available</td>
+                        <td>Price</td>
+                        <td>5 Star Rating</td>
+                    </tr>
+                  </thead>
+                  <tbody>
+                      <tr *ngFor = "let p of listPD">
+                          <td><img src="assets/{{p.image}}" alt="{{p.name}}" class="image-list" *ngIf = "isShow"/> </td>
+                          <td>{{p.name}}</td>
+                          <td>{{p.code}}</td>
+                          <td>{{p.available}}</td>
+                          <td>{{p.price}}</td>
+                          <td>
+                              <div class="star-rate" width="0px">
+                                  <i class="fas fa-star"></i>
+                                  <i class="fas fa-star"></i>
+                                  <i class="fas fa-star"></i>
+                                  <i class="fas fa-star"></i>
+                                  <i class="fas fa-star"></i>
+                              </div>
+                              {{p.star}}
+                          </td>
                       </tr>
-                    </thead>
-                    <tbody>
-                      <tr>
-                          <td><img src="assets/leaf-rake.jpg" alt="leaf-rake" class="pd-list-img"/></td>
-                          <td>Leaf Rake</td>
-                          <td>gdn-0011</td>
-                          <td>March 19, 2016</td>
-                          <td>$19.95</td>
-                          <td><img src="assets/star-rate.png" alt="star-rate" class="pd-star"></td>
-                      </tr>
-                      <tr>
-                        <td><img src="assets/garden.jpg" alt="leaf-rake" class="pd-list-img"/></td>
-                        <td>Garden Cart</td>
-                        <td>gdn-0011</td>
-                        <td>March 19, 2016</td>
-                        <td>$19.95</td>
-                        <td><img src="assets/star-rate.png" alt="star-rate" class="pd-star"></td>
-                      </tr>
-                      <tr>
-                        <td><img src="assets/hammer.jpg" alt="leaf-rake" class="pd-list-img"/></td>
-                        <td>Hammer</td>
-                        <td>gdn-0011</td>
-                        <td>March 19, 2016</td>
-                        <td>$19.95</td>
-                        <td><img src="assets/star-rate.png" alt="star-rate" class="pd-star"></td>
-                      </tr>
-                      <tr>
-                        <td><img src="assets/saw.jpg" alt="leaf-rake" class="pd-list-img"/></td>
-                        <td>Saw</td>
-                        <td>gdn-0011</td>
-                        <td>March 19, 2016</td>
-                        <td>$19.95</td>
-                        <td><img src="assets/star-rate.png" alt="star-rate" class="pd-star"></td>
-                      </tr>
-                      <tr>
-                        <td><img src="assets/controller.jpg" alt="leaf-rake" class="pd-list-img"/></td>
-                        <td>Controller</td>
-                        <td>gdn-0011</td>
-                        <td>March 19, 2016</td>
-                        <td>$19.95</td>
-                        <td><img src="assets/star-rate.png" alt="star-rate" class="pd-star"></td>
-                      </tr>
-                    </tbody>
-                  </table>
-            </div>
-        </div>
-    </div> 
-  </div>
+                  </tbody>
+                </table>
+          </div>
+      </div>
+  </div> 
+</div>

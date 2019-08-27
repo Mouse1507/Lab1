@@ -30,7 +30,18 @@ webpackEmptyAsyncContext.id = "./$$_lazy_route_resource lazy recursive";
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<app-product-dt></app-product-dt>\r\n<br>\r\n<app-product-list></app-product-list>\r\n<br>\r\n<app-center></app-center>"
+module.exports = "<app-product-cart></app-product-cart>\r\n<br>\r\n<app-product-dt></app-product-dt>\r\n<br>\r\n<app-product-list></app-product-list>\r\n<br>\r\n<app-center></app-center>\r\n<br>\r\n<app-sinhvien></app-sinhvien>\r\n<br>\r\n<app-card-info></app-card-info>"
+
+/***/ }),
+
+/***/ "./node_modules/raw-loader/index.js!./src/app/card-info/card-info.component.html":
+/*!******************************************************************************!*\
+  !*** ./node_modules/raw-loader!./src/app/card-info/card-info.component.html ***!
+  \******************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = "<div class=\"container\">\n  <div class=\"card\" style=\"width:300px\">\n    <img class=\"card-img-top\" src=\"assets/{{people.img}}\" alt=\"{{people.name}}\">\n    <div class=\"card-body\">\n      <h4 class=\"card-title\">{{people.name}}</h4>\n      <p class=\"card-text\">{{people.birth}}</p>\n      <p class=\"card-text\">{{people.gender}}</p>\n      <p class=\"card-text\">{{people.mark}}</p>\n\n    </div>\n  </div>\n</div>\n"
 
 /***/ }),
 
@@ -45,6 +56,17 @@ module.exports = "<div class=\"container-fluid\">\n  <div class=\"row pad-20\">\
 
 /***/ }),
 
+/***/ "./node_modules/raw-loader/index.js!./src/app/product-cart/product-cart.component.html":
+/*!************************************************************************************!*\
+  !*** ./node_modules/raw-loader!./src/app/product-cart/product-cart.component.html ***!
+  \************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = "<h2>Your Cart</h2>\n\n<table class=\"table\">\n    <thead class=\"thead-light\">\n      <tr>\n        <th>Id</th>\n        <th>Image</th>\n        <th>Name</th>\n        <th>Price</th>\n        <th>Quantity</th>\n        <th>Action</th>\n      </tr>\n    </thead>\n    <tbody>\n      <tr *ngFor = \"let c of cartPD\">\n          <td>{{c.id}}</td>\n          <td><img src=\"assets/{{c.name}}.jpg\" alt=\"{{c.name}}\" class=\"img-cart\"></td>\n          <td>{{c.name}}</td>\n          <td>{{c.price}}</td>\n          <td><b class=\"number\">{{c.quantity}}</b><button class=\"btn btn-success bonus\" (click) =\"bonus(c)\">+</button><button class=\"btn btn-danger minus\" (click)=\"minus(c)\">-</button></td>\n          <td><button class=\"btn btn-primary btn-view\">View</button> <button class=\"btn btn-danger btn-delete\">Delete</button></td>\n      </tr>\n      <tr>\n          <td colspan=\"5\">total price</td>\n          <td class=\"text-left\">{{tongTien()}}</td>\n      </tr>\n    </tbody>\n  </table>"
+
+/***/ }),
+
 /***/ "./node_modules/raw-loader/index.js!./src/app/product-dt/product-dt.component.html":
 /*!********************************************************************************!*\
   !*** ./node_modules/raw-loader!./src/app/product-dt/product-dt.component.html ***!
@@ -52,7 +74,7 @@ module.exports = "<div class=\"container-fluid\">\n  <div class=\"row pad-20\">\
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<div class=\"card\">\n    <div class=\"card-header\">Leaf Rake</div>\n    <div class=\"card-body\">\n        <div class=\"container-fluid\">\n            <div class=\"row\">\n                <div class=\"col-md-6 no-padding\">\n                    <div class=\"row\">\n                        <div class=\"col-md-4\">Name:</div>\n                        <div class=\"col-md-8\">Leaf Rake</div>\n                    </div>\n                    <div class=\"row\">\n                        <div class=\"col-md-4\">Code:</div>\n                        <div class=\"col-md-8\">GDN-0011</div>\n                    </div>\n                    <div class=\"row\">\n                        <div class=\"col-md-4\">Description:</div>\n                        <div class=\"col-md-8\">Leaf rake with 48-inch wooden handle.</div>\n                    </div>\n                    <div class=\"row\">\n                        <div class=\"col-md-4\">Availability:</div>\n                        <div class=\"col-md-8\">March 19, 2016</div>\n                    </div>\n                    <div class=\"row\">\n                        <div class=\"col-md-4\">Price:</div>\n                        <div class=\"col-md-8\">$19.95</div>\n                    </div>\n                    <div class=\"row\">\n                        <div class=\"col-md-4\">5 Star Rating:</div>\n                        <div class=\"col-md-8\">3.2</div>\n                    </div>\n                </div>\n                <div class=\"col-md-6\">\n                    <img src=\"assets/leaf-rake.jpg\" alt=\"leaf-rake\" class=\"pd-img\"/>\n                </div>\n            </div>\n        </div>\n    </div> \n    <div class=\"card-footer\">Back</div>\n  </div>"
+module.exports = "<div class=\"card\">\n    <div class=\"card-header\">{{listPD[0].name}}</div>\n    <div class=\"card-body\">\n        <div class=\"container-fluid\">\n            <div class=\"row\">\n                <div class=\"col-md-6 no-padding\">\n                    <div class=\"row\">\n                        <div class=\"col-md-4\">Name:</div>\n                        <div class=\"col-md-8\">{{listPD[0].name}}</div>\n                    </div>\n                    <div class=\"row\">\n                        <div class=\"col-md-4\">Code:</div>\n                        <div class=\"col-md-8\">{{listPD[0].code}}</div>\n                    </div>\n                    <div class=\"row\">\n                        <div class=\"col-md-4\">Description:</div>\n                        <div class=\"col-md-8\">Leaf rake with 48-inch wooden handle.</div>\n                    </div>\n                    <div class=\"row\">\n                        <div class=\"col-md-4\">Availability:</div>\n                        <div class=\"col-md-8\">{{listPD[0].available}}</div>\n                    </div>\n                    <div class=\"row\">\n                        <div class=\"col-md-4\">Price:</div>\n                        <div class=\"col-md-8\">${{listPD[0].price}}</div>\n                    </div>\n                    <div class=\"row\">\n                        <div class=\"col-md-4\">5 Star Rating:</div>\n                        <div class=\"col-md-8\">{{listPD[0].star}}</div>\n                    </div>\n                </div>\n                <div class=\"col-md-6\">\n                    <img src=\"assets/{{listPD[0].image}}\" alt=\"{{listPD[0].name}}\" class=\"pd-img\"/>\n                </div>\n            </div>\n        </div>\n    </div> \n    <div class=\"card-footer\">Back</div>\n  </div>"
 
 /***/ }),
 
@@ -63,7 +85,18 @@ module.exports = "<div class=\"card\">\n    <div class=\"card-header\">Leaf Rake
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<div class=\"card\">\n    <div class=\"card-header\">List Product</div>\n    <div class=\"card-body\">\n        <div class=\"container-fluid\">\n            <div class=\"row\">\n                <div class=\"col-md-2 no-padding\">Filter By:</div>\n                <div class=\"col-md-10\">\n                    <input type=\"text\" name=\"filter\" id=\"filter\" placeholder=\".....\"/>\n                </div>\n            </div>\n            <div class=\"row\">\n                <h2>Filter By:</h2>\n                <table class=\"table\">\n                    <thead>\n                      <tr>\n                          <td><button type=\"button\" class=\"btn btn-primary\">Hien Image</button></td>\n                          <td>Product</td>\n                          <td>Code</td>\n                          <td>Available</td>\n                          <td>Price</td>\n                          <td>5 Star Rating</td>\n                      </tr>\n                    </thead>\n                    <tbody>\n                      <tr>\n                          <td><img src=\"assets/leaf-rake.jpg\" alt=\"leaf-rake\" class=\"pd-list-img\"/></td>\n                          <td>Leaf Rake</td>\n                          <td>gdn-0011</td>\n                          <td>March 19, 2016</td>\n                          <td>$19.95</td>\n                          <td><img src=\"assets/star-rate.png\" alt=\"star-rate\" class=\"pd-star\"></td>\n                      </tr>\n                      <tr>\n                        <td><img src=\"assets/garden.jpg\" alt=\"leaf-rake\" class=\"pd-list-img\"/></td>\n                        <td>Garden Cart</td>\n                        <td>gdn-0011</td>\n                        <td>March 19, 2016</td>\n                        <td>$19.95</td>\n                        <td><img src=\"assets/star-rate.png\" alt=\"star-rate\" class=\"pd-star\"></td>\n                      </tr>\n                      <tr>\n                        <td><img src=\"assets/hammer.jpg\" alt=\"leaf-rake\" class=\"pd-list-img\"/></td>\n                        <td>Hammer</td>\n                        <td>gdn-0011</td>\n                        <td>March 19, 2016</td>\n                        <td>$19.95</td>\n                        <td><img src=\"assets/star-rate.png\" alt=\"star-rate\" class=\"pd-star\"></td>\n                      </tr>\n                      <tr>\n                        <td><img src=\"assets/saw.jpg\" alt=\"leaf-rake\" class=\"pd-list-img\"/></td>\n                        <td>Saw</td>\n                        <td>gdn-0011</td>\n                        <td>March 19, 2016</td>\n                        <td>$19.95</td>\n                        <td><img src=\"assets/star-rate.png\" alt=\"star-rate\" class=\"pd-star\"></td>\n                      </tr>\n                      <tr>\n                        <td><img src=\"assets/controller.jpg\" alt=\"leaf-rake\" class=\"pd-list-img\"/></td>\n                        <td>Controller</td>\n                        <td>gdn-0011</td>\n                        <td>March 19, 2016</td>\n                        <td>$19.95</td>\n                        <td><img src=\"assets/star-rate.png\" alt=\"star-rate\" class=\"pd-star\"></td>\n                      </tr>\n                    </tbody>\n                  </table>\n            </div>\n        </div>\n    </div> \n  </div>"
+module.exports = "<div class=\"card\">\n  <div class=\"card-header\">List Product</div>\n  <div class=\"card-body\">\n      <div class=\"container-fluid\">\n          <div class=\"row\">\n              <div class=\"col-md-2 no-padding\">Filter By:</div>\n              <div class=\"col-md-10\">\n                  <input type=\"text\" name=\"filter\" id=\"filter\" placeholder=\".....\"/>\n              </div>\n          </div>\n          <div class=\"row\">\n              <h2>Filter By:</h2>\n              <table class=\"table\">\n                  <thead>\n                    <tr>\n                        <td><button type=\"button\" class=\"btn btn-primary\" (click)=\"AnHien()\">Hien Image</button></td>\n                        <td>Product</td>\n                        <td>Code</td>\n                        <td>Available</td>\n                        <td>Price</td>\n                        <td>5 Star Rating</td>\n                    </tr>\n                  </thead>\n                  <tbody>\n                      <tr *ngFor = \"let p of listPD\">\n                          <td><img src=\"assets/{{p.image}}\" alt=\"{{p.name}}\" class=\"image-list\" *ngIf = \"isShow\"/> </td>\n                          <td>{{p.name}}</td>\n                          <td>{{p.code}}</td>\n                          <td>{{p.available}}</td>\n                          <td>{{p.price}}</td>\n                          <td>\n                              <div class=\"star-rate\" width=\"0px\">\n                                  <i class=\"fas fa-star\"></i>\n                                  <i class=\"fas fa-star\"></i>\n                                  <i class=\"fas fa-star\"></i>\n                                  <i class=\"fas fa-star\"></i>\n                                  <i class=\"fas fa-star\"></i>\n                              </div>\n                              {{p.star}}\n                          </td>\n                      </tr>\n                  </tbody>\n                </table>\n          </div>\n      </div>\n  </div> \n</div>\n"
+
+/***/ }),
+
+/***/ "./node_modules/raw-loader/index.js!./src/app/sinhvien/sinhvien.component.html":
+/*!****************************************************************************!*\
+  !*** ./node_modules/raw-loader!./src/app/sinhvien/sinhvien.component.html ***!
+  \****************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = "<div class=\"container\">\n  <table class=\"table table-bordered text-center sv-table\">\n    <thead>\n      <tr>\n        <th>Hình</th>\n        <th>Họ và tên</th>\n        <th>Ngày sinh</th>\n        <th>Giới tính</th>\n        <th>Điểm</th>\n      </tr>\n    </thead>\n    <tbody>\n      <tr *ngFor=\"let sv of svList\">\n        <td><img src=\"assets/{{sv.photo}}\" class=\"img-sv\" alt=\"sv.name\"></td>\n        <td>{{sv.name}}</td>\n        <td>{{sv.birthday}}</td>\n        <td>{{sv.gender}}</td>\n        <td>{{sv.mark}}</td>\n      </tr>\n    </tbody>\n  </table>\n</div>\n\n"
 
 /***/ }),
 
@@ -127,6 +160,12 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _product_dt_product_dt_component__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./product-dt/product-dt.component */ "./src/app/product-dt/product-dt.component.ts");
 /* harmony import */ var _product_list_product_list_component__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./product-list/product-list.component */ "./src/app/product-list/product-list.component.ts");
 /* harmony import */ var _center_center_component__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./center/center.component */ "./src/app/center/center.component.ts");
+/* harmony import */ var _product_cart_product_cart_component__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./product-cart/product-cart.component */ "./src/app/product-cart/product-cart.component.ts");
+/* harmony import */ var _sinhvien_sinhvien_component__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ./sinhvien/sinhvien.component */ "./src/app/sinhvien/sinhvien.component.ts");
+/* harmony import */ var _card_info_card_info_component__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ./card-info/card-info.component */ "./src/app/card-info/card-info.component.ts");
+
+
+
 
 
 
@@ -143,7 +182,10 @@ var AppModule = /** @class */ (function () {
                 _app_component__WEBPACK_IMPORTED_MODULE_3__["AppComponent"],
                 _product_dt_product_dt_component__WEBPACK_IMPORTED_MODULE_4__["ProductDTComponent"],
                 _product_list_product_list_component__WEBPACK_IMPORTED_MODULE_5__["ProductListComponent"],
-                _center_center_component__WEBPACK_IMPORTED_MODULE_6__["CenterComponent"]
+                _center_center_component__WEBPACK_IMPORTED_MODULE_6__["CenterComponent"],
+                _product_cart_product_cart_component__WEBPACK_IMPORTED_MODULE_7__["ProductCartComponent"],
+                _sinhvien_sinhvien_component__WEBPACK_IMPORTED_MODULE_8__["SinhvienComponent"],
+                _card_info_card_info_component__WEBPACK_IMPORTED_MODULE_9__["CardInfoComponent"]
             ],
             imports: [
                 _angular_platform_browser__WEBPACK_IMPORTED_MODULE_1__["BrowserModule"]
@@ -153,6 +195,57 @@ var AppModule = /** @class */ (function () {
         })
     ], AppModule);
     return AppModule;
+}());
+
+
+
+/***/ }),
+
+/***/ "./src/app/card-info/card-info.component.css":
+/*!***************************************************!*\
+  !*** ./src/app/card-info/card-info.component.css ***!
+  \***************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = ".card-img-top {\r\n    width:300px;\r\n}\r\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInNyYy9hcHAvY2FyZC1pbmZvL2NhcmQtaW5mby5jb21wb25lbnQuY3NzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQUFBO0lBQ0ksV0FBVztBQUNmIiwiZmlsZSI6InNyYy9hcHAvY2FyZC1pbmZvL2NhcmQtaW5mby5jb21wb25lbnQuY3NzIiwic291cmNlc0NvbnRlbnQiOlsiLmNhcmQtaW1nLXRvcCB7XHJcbiAgICB3aWR0aDozMDBweDtcclxufSJdfQ== */"
+
+/***/ }),
+
+/***/ "./src/app/card-info/card-info.component.ts":
+/*!**************************************************!*\
+  !*** ./src/app/card-info/card-info.component.ts ***!
+  \**************************************************/
+/*! exports provided: CardInfoComponent */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "CardInfoComponent", function() { return CardInfoComponent; });
+/* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! tslib */ "./node_modules/tslib/tslib.es6.js");
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
+
+
+var CardInfoComponent = /** @class */ (function () {
+    function CardInfoComponent() {
+        this.people = {
+            "name": "Nguyễn Văn Tèo",
+            "img": "avatar.png",
+            "birth": "20-01-1999",
+            "gender": "Nam",
+            "mark": 8.5
+        };
+    }
+    CardInfoComponent.prototype.ngOnInit = function () {
+    };
+    CardInfoComponent = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
+        Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Component"])({
+            selector: 'app-card-info',
+            template: __webpack_require__(/*! raw-loader!./card-info.component.html */ "./node_modules/raw-loader/index.js!./src/app/card-info/card-info.component.html"),
+            styles: [__webpack_require__(/*! ./card-info.component.css */ "./src/app/card-info/card-info.component.css")]
+        })
+    ], CardInfoComponent);
+    return CardInfoComponent;
 }());
 
 
@@ -203,6 +296,93 @@ var CenterComponent = /** @class */ (function () {
 
 /***/ }),
 
+/***/ "./src/app/product-cart/product-cart.component.css":
+/*!*********************************************************!*\
+  !*** ./src/app/product-cart/product-cart.component.css ***!
+  \*********************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = ".img-cart {\r\n    width:50px;\r\n    border:0.5px solid gray;\r\n    padding:2px;\r\n}\r\n.bonus, .minus{\r\n    width:30px;\r\n    height:30px;\r\n    font-size: 16px;\r\n    padding:0;\r\n    line-height:0;\r\n    margin:0 3px;\r\n}\r\n.number {\r\n    margin-right:10px;\r\n}\r\n.btn-delete, .btn-view {\r\n    margin-right:10px;\r\n    height:30px;\r\n    line-height: 0px;\r\n}\r\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInNyYy9hcHAvcHJvZHVjdC1jYXJ0L3Byb2R1Y3QtY2FydC5jb21wb25lbnQuY3NzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQUFBO0lBQ0ksVUFBVTtJQUNWLHVCQUF1QjtJQUN2QixXQUFXO0FBQ2Y7QUFDQTtJQUNJLFVBQVU7SUFDVixXQUFXO0lBQ1gsZUFBZTtJQUNmLFNBQVM7SUFDVCxhQUFhO0lBQ2IsWUFBWTtBQUNoQjtBQUNBO0lBQ0ksaUJBQWlCO0FBQ3JCO0FBQ0E7SUFDSSxpQkFBaUI7SUFDakIsV0FBVztJQUNYLGdCQUFnQjtBQUNwQiIsImZpbGUiOiJzcmMvYXBwL3Byb2R1Y3QtY2FydC9wcm9kdWN0LWNhcnQuY29tcG9uZW50LmNzcyIsInNvdXJjZXNDb250ZW50IjpbIi5pbWctY2FydCB7XHJcbiAgICB3aWR0aDo1MHB4O1xyXG4gICAgYm9yZGVyOjAuNXB4IHNvbGlkIGdyYXk7XHJcbiAgICBwYWRkaW5nOjJweDtcclxufVxyXG4uYm9udXMsIC5taW51c3tcclxuICAgIHdpZHRoOjMwcHg7XHJcbiAgICBoZWlnaHQ6MzBweDtcclxuICAgIGZvbnQtc2l6ZTogMTZweDtcclxuICAgIHBhZGRpbmc6MDtcclxuICAgIGxpbmUtaGVpZ2h0OjA7XHJcbiAgICBtYXJnaW46MCAzcHg7XHJcbn1cclxuLm51bWJlciB7XHJcbiAgICBtYXJnaW4tcmlnaHQ6MTBweDtcclxufVxyXG4uYnRuLWRlbGV0ZSwgLmJ0bi12aWV3IHtcclxuICAgIG1hcmdpbi1yaWdodDoxMHB4O1xyXG4gICAgaGVpZ2h0OjMwcHg7XHJcbiAgICBsaW5lLWhlaWdodDogMHB4O1xyXG59Il19 */"
+
+/***/ }),
+
+/***/ "./src/app/product-cart/product-cart.component.ts":
+/*!********************************************************!*\
+  !*** ./src/app/product-cart/product-cart.component.ts ***!
+  \********************************************************/
+/*! exports provided: ProductCartComponent */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "ProductCartComponent", function() { return ProductCartComponent; });
+/* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! tslib */ "./node_modules/tslib/tslib.es6.js");
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
+
+
+var ProductCartComponent = /** @class */ (function () {
+    function ProductCartComponent() {
+        this.cartPD = [
+            {
+                "id": "pd100",
+                "name": "laptop",
+                "price": 30000,
+                "quantity": 1,
+            },
+            {
+                "id": "pd101",
+                "name": "mobile",
+                "price": 54000,
+                "quantity": 1,
+            },
+            {
+                "id": "pd102",
+                "name": "television",
+                "price": 22000,
+                "quantity": 2,
+            },
+            {
+                "id": "pd103",
+                "name": "headphone",
+                "price": 1300,
+                "quantity": 2,
+            },
+        ];
+    }
+    ProductCartComponent.prototype.ngOnInit = function () {
+    };
+    ProductCartComponent.prototype.tongTien = function () {
+        var sum = 0;
+        this.cartPD.forEach(function (c) {
+            sum += c.price * c.quantity;
+        });
+        return sum;
+    };
+    ProductCartComponent.prototype.bonus = function (item) {
+        item.quantity++;
+    };
+    ProductCartComponent.prototype.minus = function (item) {
+        if (item.quantity <= 0)
+            item.quantity = 0;
+        else {
+            item.quantity--;
+        }
+    };
+    ProductCartComponent = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
+        Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Component"])({
+            selector: 'app-product-cart',
+            template: __webpack_require__(/*! raw-loader!./product-cart.component.html */ "./node_modules/raw-loader/index.js!./src/app/product-cart/product-cart.component.html"),
+            styles: [__webpack_require__(/*! ./product-cart.component.css */ "./src/app/product-cart/product-cart.component.css")]
+        })
+    ], ProductCartComponent);
+    return ProductCartComponent;
+}());
+
+
+
+/***/ }),
+
 /***/ "./src/app/product-dt/product-dt.component.css":
 /*!*****************************************************!*\
   !*** ./src/app/product-dt/product-dt.component.css ***!
@@ -230,6 +410,52 @@ __webpack_require__.r(__webpack_exports__);
 
 var ProductDTComponent = /** @class */ (function () {
     function ProductDTComponent() {
+        this.listPD = [{
+                "id": 1,
+                "image": "leaf-rake.jpg",
+                "name": "Leaf Rake",
+                "code": "gdn-0011",
+                "available": "March 19, 2016",
+                "price": 19.95,
+                "star": 3.2
+            },
+            {
+                "id": 2,
+                "image": "garden.jpg",
+                "name": "Garden Cart",
+                "code": "gdn-0023",
+                "available": "March 18, 2016",
+                "price": 32.99,
+                "star": 4.1
+            },
+            {
+                "id": 3,
+                "image": "hammer.jpg",
+                "name": "Hammer",
+                "code": "tbx-0048",
+                "available": "May 21, 2016",
+                "price": 8.9,
+                "star": 4.9
+            },
+            {
+                "id": 4,
+                "image": "saw.jpg",
+                "name": "Saw",
+                "code": "tbx-0022",
+                "available": "May 15, 2016",
+                "price": 11.55,
+                "star": 3.9
+            },
+            {
+                "id": 5,
+                "image": "controller.jpg",
+                "name": "Video Game Controller",
+                "code": "gmg-0042",
+                "available": "October 15, 2015",
+                "price": 35.95,
+                "star": 4.5
+            }
+        ];
     }
     ProductDTComponent.prototype.ngOnInit = function () {
     };
@@ -254,7 +480,7 @@ var ProductDTComponent = /** @class */ (function () {
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = ".pd-list-img {\r\n    width:50px;\r\n    height:50px;\r\n}\r\n.pd-star{\r\n    height:50px;\r\n}\r\n.table tr td {\r\n    vertical-align: middle;\r\n}\r\n.leaf {}\r\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInNyYy9hcHAvcHJvZHVjdC1saXN0L3Byb2R1Y3QtbGlzdC5jb21wb25lbnQuY3NzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQUFBO0lBQ0ksVUFBVTtJQUNWLFdBQVc7QUFDZjtBQUNBO0lBQ0ksV0FBVztBQUNmO0FBQ0E7SUFDSSxzQkFBc0I7QUFDMUI7QUFDQSxPQUFPIiwiZmlsZSI6InNyYy9hcHAvcHJvZHVjdC1saXN0L3Byb2R1Y3QtbGlzdC5jb21wb25lbnQuY3NzIiwic291cmNlc0NvbnRlbnQiOlsiLnBkLWxpc3QtaW1nIHtcclxuICAgIHdpZHRoOjUwcHg7XHJcbiAgICBoZWlnaHQ6NTBweDtcclxufVxyXG4ucGQtc3RhcntcclxuICAgIGhlaWdodDo1MHB4O1xyXG59XHJcbi50YWJsZSB0ciB0ZCB7XHJcbiAgICB2ZXJ0aWNhbC1hbGlnbjogbWlkZGxlO1xyXG59XHJcbi5sZWFmIHt9Il19 */"
+module.exports = ".image-list {\r\n    width:50px;\r\n}\r\n.star-rate{\r\n    overflow: hidden;   \r\n}\r\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInNyYy9hcHAvcHJvZHVjdC1saXN0L3Byb2R1Y3QtbGlzdC5jb21wb25lbnQuY3NzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQUFBO0lBQ0ksVUFBVTtBQUNkO0FBQ0E7SUFDSSxnQkFBZ0I7QUFDcEIiLCJmaWxlIjoic3JjL2FwcC9wcm9kdWN0LWxpc3QvcHJvZHVjdC1saXN0LmNvbXBvbmVudC5jc3MiLCJzb3VyY2VzQ29udGVudCI6WyIuaW1hZ2UtbGlzdCB7XHJcbiAgICB3aWR0aDo1MHB4O1xyXG59XHJcbi5zdGFyLXJhdGV7XHJcbiAgICBvdmVyZmxvdzogaGlkZGVuOyAgIFxyXG59Il19 */"
 
 /***/ }),
 
@@ -274,8 +500,57 @@ __webpack_require__.r(__webpack_exports__);
 
 var ProductListComponent = /** @class */ (function () {
     function ProductListComponent() {
+        this.listPD = [{
+                "id": 1,
+                "image": "leaf-rake.jpg",
+                "name": "Leaf Rake",
+                "code": "gdn-0011",
+                "available": "March 19, 2016",
+                "price": 19.95,
+                "star": 3.2
+            },
+            {
+                "id": 2,
+                "image": "garden.jpg",
+                "name": "Garden Cart",
+                "code": "gdn-0023",
+                "available": "March 18, 2016",
+                "price": 32.99,
+                "star": 4.1
+            },
+            {
+                "id": 3,
+                "image": "hammer.jpg",
+                "name": "Hammer",
+                "code": "tbx-0048",
+                "available": "May 21, 2016",
+                "price": 8.9,
+                "star": 4.9
+            },
+            {
+                "id": 4,
+                "image": "saw.jpg",
+                "name": "Saw",
+                "code": "tbx-0022",
+                "available": "May 15, 2016",
+                "price": 11.55,
+                "star": 3.9
+            },
+            {
+                "id": 5,
+                "image": "controller.jpg",
+                "name": "Video Game Controller",
+                "code": "gmg-0042",
+                "available": "October 15, 2015",
+                "price": 35.95,
+                "star": 4.5
+            }
+        ];
+        this.isShow = true;
     }
-    ProductListComponent.prototype.ngOnInit = function () {
+    ProductListComponent.prototype.ngOnInit = function () { };
+    ProductListComponent.prototype.AnHien = function () {
+        this.isShow = !this.isShow;
     };
     ProductListComponent = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
         Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Component"])({
@@ -285,6 +560,71 @@ var ProductListComponent = /** @class */ (function () {
         })
     ], ProductListComponent);
     return ProductListComponent;
+}());
+
+
+
+/***/ }),
+
+/***/ "./src/app/sinhvien/sinhvien.component.css":
+/*!*************************************************!*\
+  !*** ./src/app/sinhvien/sinhvien.component.css ***!
+  \*************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = ".img-sv {\r\n    width:80px;\r\n}\r\n.sv-table td, .sv-table th {\r\n    vertical-align: middle;\r\n}\r\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInNyYy9hcHAvc2luaHZpZW4vc2luaHZpZW4uY29tcG9uZW50LmNzcyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUFBQTtJQUNJLFVBQVU7QUFDZDtBQUNBO0lBQ0ksc0JBQXNCO0FBQzFCIiwiZmlsZSI6InNyYy9hcHAvc2luaHZpZW4vc2luaHZpZW4uY29tcG9uZW50LmNzcyIsInNvdXJjZXNDb250ZW50IjpbIi5pbWctc3Yge1xyXG4gICAgd2lkdGg6ODBweDtcclxufVxyXG4uc3YtdGFibGUgdGQsIC5zdi10YWJsZSB0aCB7XHJcbiAgICB2ZXJ0aWNhbC1hbGlnbjogbWlkZGxlO1xyXG59Il19 */"
+
+/***/ }),
+
+/***/ "./src/app/sinhvien/sinhvien.component.ts":
+/*!************************************************!*\
+  !*** ./src/app/sinhvien/sinhvien.component.ts ***!
+  \************************************************/
+/*! exports provided: SinhvienComponent */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "SinhvienComponent", function() { return SinhvienComponent; });
+/* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! tslib */ "./node_modules/tslib/tslib.es6.js");
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
+
+
+var SinhvienComponent = /** @class */ (function () {
+    function SinhvienComponent() {
+        this.svList = [{
+                name: 'Nguyễn Văn Tèo',
+                birthday: '20-01-1999',
+                gender: 'Nam',
+                photo: 'teo.jpg',
+                mark: 8.5
+            },
+            {
+                name: 'Phan thị nở',
+                birthday: '20-12-1999',
+                gender: 'Nữ',
+                photo: 'no.jpg',
+                mark: 8.5
+            },
+            {
+                name: 'Nguyễn khá Bảnh',
+                birthday: '20-01-2000',
+                gender: 'Nam',
+                photo: 'banh.jpg',
+                mark: 8.5
+            },
+        ];
+    }
+    SinhvienComponent.prototype.ngOnInit = function () { };
+    SinhvienComponent = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
+        Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Component"])({
+            selector: 'app-sinhvien',
+            template: __webpack_require__(/*! raw-loader!./sinhvien.component.html */ "./node_modules/raw-loader/index.js!./src/app/sinhvien/sinhvien.component.html"),
+            styles: [__webpack_require__(/*! ./sinhvien.component.css */ "./src/app/sinhvien/sinhvien.component.css")]
+        })
+    ], SinhvienComponent);
+    return SinhvienComponent;
 }());
 
 

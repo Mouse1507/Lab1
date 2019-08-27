@@ -1,0 +1,23 @@
+<div class="container">
+  <table class="table table-bordered text-center sv-table">
+    <thead>
+      <tr>
+        <th>Hình</th>
+        <th>Họ và tên</th>
+        <th>Ngày sinh</th>
+        <th>Giới tính</th>
+        <th>Điểm</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let sv of svList">
+        <td><img src="assets/{{sv.photo}}" class="img-sv" alt="sv.name"></td>
+        <td>{{sv.name}}</td>
+        <td>{{sv.birthday}}</td>
+        <td>{{sv.gender}}</td>
+        <td>{{sv.mark}}</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+

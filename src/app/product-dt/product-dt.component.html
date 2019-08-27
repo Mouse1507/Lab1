@@ -1,16 +1,16 @@
 <div class="card">
-    <div class="card-header">Leaf Rake</div>
+    <div class="card-header">{{listPD[0].name}}</div>
     <div class="card-body">
         <div class="container-fluid">
             <div class="row">
                 <div class="col-md-6 no-padding">
                     <div class="row">
                         <div class="col-md-4">Name:</div>
-                        <div class="col-md-8">Leaf Rake</div>
+                        <div class="col-md-8">{{listPD[0].name}}</div>
                     </div>
                     <div class="row">
                         <div class="col-md-4">Code:</div>
-                        <div class="col-md-8">GDN-0011</div>
+                        <div class="col-md-8">{{listPD[0].code}}</div>
                     </div>
                     <div class="row">
                         <div class="col-md-4">Description:</div>
@@ -18,19 +18,19 @@
                     </div>
                     <div class="row">
                         <div class="col-md-4">Availability:</div>
-                        <div class="col-md-8">March 19, 2016</div>
+                        <div class="col-md-8">{{listPD[0].available}}</div>
                     </div>
                     <div class="row">
                         <div class="col-md-4">Price:</div>
-                        <div class="col-md-8">$19.95</div>
+                        <div class="col-md-8">${{listPD[0].price}}</div>
                     </div>
                     <div class="row">
                         <div class="col-md-4">5 Star Rating:</div>
-                        <div class="col-md-8">3.2</div>
+                        <div class="col-md-8">{{listPD[0].star}}</div>
                     </div>
                 </div>
                 <div class="col-md-6">
-                    <img src="assets/leaf-rake.jpg" alt="leaf-rake" class="pd-img"/>
+                    <img src="assets/{{listPD[0].image}}" alt="{{listPD[0].name}}" class="pd-img"/>
                 </div>
             </div>
         </div>

@@ -29,14 +29,15 @@
                           <td>{{p.available}}</td>
                           <td>{{p.price}}</td>
                           <td>
-                              <div class="star-rate" width="0px">
+                              <div class="star-rate">
                                   <i class="fas fa-star"></i>
                                   <i class="fas fa-star"></i>
                                   <i class="fas fa-star"></i>
                                   <i class="fas fa-star"></i>
                                   <i class="fas fa-star"></i>
+                                  <div class="hidden" [ngStyle] = "{'left':p.width}"></div>
                               </div>
-                              {{p.star}}
+                              {{TinhSao(p)}}
                           </td>
                       </tr>
                   </tbody>

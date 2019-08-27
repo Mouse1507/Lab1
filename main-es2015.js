@@ -85,7 +85,7 @@ module.exports = "<div class=\"card\">\n    <div class=\"card-header\">{{listPD[
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<div class=\"card\">\n  <div class=\"card-header\">List Product</div>\n  <div class=\"card-body\">\n      <div class=\"container-fluid\">\n          <div class=\"row\">\n              <div class=\"col-md-2 no-padding\">Filter By:</div>\n              <div class=\"col-md-10\">\n                  <input type=\"text\" name=\"filter\" id=\"filter\" placeholder=\".....\"/>\n              </div>\n          </div>\n          <div class=\"row\">\n              <h2>Filter By:</h2>\n              <table class=\"table\">\n                  <thead>\n                    <tr>\n                        <td><button type=\"button\" class=\"btn btn-primary\" (click)=\"AnHien()\">Hien Image</button></td>\n                        <td>Product</td>\n                        <td>Code</td>\n                        <td>Available</td>\n                        <td>Price</td>\n                        <td>5 Star Rating</td>\n                    </tr>\n                  </thead>\n                  <tbody>\n                      <tr *ngFor = \"let p of listPD\">\n                          <td><img src=\"assets/{{p.image}}\" alt=\"{{p.name}}\" class=\"image-list\" *ngIf = \"isShow\"/> </td>\n                          <td>{{p.name}}</td>\n                          <td>{{p.code}}</td>\n                          <td>{{p.available}}</td>\n                          <td>{{p.price}}</td>\n                          <td>\n                              <div class=\"star-rate\" width=\"0px\">\n                                  <i class=\"fas fa-star\"></i>\n                                  <i class=\"fas fa-star\"></i>\n                                  <i class=\"fas fa-star\"></i>\n                                  <i class=\"fas fa-star\"></i>\n                                  <i class=\"fas fa-star\"></i>\n                              </div>\n                              {{p.star}}\n                          </td>\n                      </tr>\n                  </tbody>\n                </table>\n          </div>\n      </div>\n  </div> \n</div>\n"
+module.exports = "<div class=\"card\">\n  <div class=\"card-header\">List Product</div>\n  <div class=\"card-body\">\n      <div class=\"container-fluid\">\n          <div class=\"row\">\n              <div class=\"col-md-2 no-padding\">Filter By:</div>\n              <div class=\"col-md-10\">\n                  <input type=\"text\" name=\"filter\" id=\"filter\" placeholder=\".....\"/>\n              </div>\n          </div>\n          <div class=\"row\">\n              <h2>Filter By:</h2>\n              <table class=\"table\">\n                  <thead>\n                    <tr>\n                        <td><button type=\"button\" class=\"btn btn-primary\" (click)=\"AnHien()\">Hien Image</button></td>\n                        <td>Product</td>\n                        <td>Code</td>\n                        <td>Available</td>\n                        <td>Price</td>\n                        <td>5 Star Rating</td>\n                    </tr>\n                  </thead>\n                  <tbody>\n                      <tr *ngFor = \"let p of listPD\">\n                          <td><img src=\"assets/{{p.image}}\" alt=\"{{p.name}}\" class=\"image-list\" *ngIf = \"isShow\"/> </td>\n                          <td>{{p.name}}</td>\n                          <td>{{p.code}}</td>\n                          <td>{{p.available}}</td>\n                          <td>{{p.price}}</td>\n                          <td>\n                              <div class=\"star-rate\">\n                                  <i class=\"fas fa-star\"></i>\n                                  <i class=\"fas fa-star\"></i>\n                                  <i class=\"fas fa-star\"></i>\n                                  <i class=\"fas fa-star\"></i>\n                                  <i class=\"fas fa-star\"></i>\n                                  <div class=\"hidden\" [ngStyle] = \"{'left':p.width}\"></div>\n                              </div>\n                              {{TinhSao(p)}}\n                          </td>\n                      </tr>\n                  </tbody>\n                </table>\n          </div>\n      </div>\n  </div> \n</div>\n"
 
 /***/ }),
 
@@ -471,7 +471,7 @@ ProductDTComponent = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = ".image-list {\r\n    width:50px;\r\n}\r\n.star-rate{\r\n    overflow: hidden;   \r\n}\r\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInNyYy9hcHAvcHJvZHVjdC1saXN0L3Byb2R1Y3QtbGlzdC5jb21wb25lbnQuY3NzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQUFBO0lBQ0ksVUFBVTtBQUNkO0FBQ0E7SUFDSSxnQkFBZ0I7QUFDcEIiLCJmaWxlIjoic3JjL2FwcC9wcm9kdWN0LWxpc3QvcHJvZHVjdC1saXN0LmNvbXBvbmVudC5jc3MiLCJzb3VyY2VzQ29udGVudCI6WyIuaW1hZ2UtbGlzdCB7XHJcbiAgICB3aWR0aDo1MHB4O1xyXG59XHJcbi5zdGFyLXJhdGV7XHJcbiAgICBvdmVyZmxvdzogaGlkZGVuOyAgIFxyXG59Il19 */"
+module.exports = ".image-list {\r\n    width:50px;\r\n}\r\n.star-rate{\r\n    overflow: hidden;   \r\n    position: relative;\r\n}\r\n.hidden {\r\n    position: absolute;\r\n    background-color:white;\r\n    height:20px;\r\n    top:50%;\r\n    width:90px;\r\n    transform: translateY(-50%);\r\n    z-index: 10;\r\n}\r\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInNyYy9hcHAvcHJvZHVjdC1saXN0L3Byb2R1Y3QtbGlzdC5jb21wb25lbnQuY3NzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQUFBO0lBQ0ksVUFBVTtBQUNkO0FBQ0E7SUFDSSxnQkFBZ0I7SUFDaEIsa0JBQWtCO0FBQ3RCO0FBQ0E7SUFDSSxrQkFBa0I7SUFDbEIsc0JBQXNCO0lBQ3RCLFdBQVc7SUFDWCxPQUFPO0lBQ1AsVUFBVTtJQUNWLDJCQUEyQjtJQUMzQixXQUFXO0FBQ2YiLCJmaWxlIjoic3JjL2FwcC9wcm9kdWN0LWxpc3QvcHJvZHVjdC1saXN0LmNvbXBvbmVudC5jc3MiLCJzb3VyY2VzQ29udGVudCI6WyIuaW1hZ2UtbGlzdCB7XHJcbiAgICB3aWR0aDo1MHB4O1xyXG59XHJcbi5zdGFyLXJhdGV7XHJcbiAgICBvdmVyZmxvdzogaGlkZGVuOyAgIFxyXG4gICAgcG9zaXRpb246IHJlbGF0aXZlO1xyXG59XHJcbi5oaWRkZW4ge1xyXG4gICAgcG9zaXRpb246IGFic29sdXRlO1xyXG4gICAgYmFja2dyb3VuZC1jb2xvcjp3aGl0ZTtcclxuICAgIGhlaWdodDoyMHB4O1xyXG4gICAgdG9wOjUwJTtcclxuICAgIHdpZHRoOjkwcHg7XHJcbiAgICB0cmFuc2Zvcm06IHRyYW5zbGF0ZVkoLTUwJSk7XHJcbiAgICB6LWluZGV4OiAxMDtcclxufSJdfQ== */"
 
 /***/ }),
 
@@ -498,7 +498,8 @@ let ProductListComponent = class ProductListComponent {
                 "code": "gdn-0011",
                 "available": "March 19, 2016",
                 "price": 19.95,
-                "star": 3.2
+                "star": 3.2,
+                "width": ""
             },
             {
                 "id": 2,
@@ -507,7 +508,8 @@ let ProductListComponent = class ProductListComponent {
                 "code": "gdn-0023",
                 "available": "March 18, 2016",
                 "price": 32.99,
-                "star": 4.1
+                "star": 4.1,
+                "width": ""
             },
             {
                 "id": 3,
@@ -516,7 +518,8 @@ let ProductListComponent = class ProductListComponent {
                 "code": "tbx-0048",
                 "available": "May 21, 2016",
                 "price": 8.9,
-                "star": 4.9
+                "star": 4.9,
+                "width": ""
             },
             {
                 "id": 4,
@@ -525,7 +528,8 @@ let ProductListComponent = class ProductListComponent {
                 "code": "tbx-0022",
                 "available": "May 15, 2016",
                 "price": 11.55,
-                "star": 3.9
+                "star": 3.9,
+                "width": ""
             },
             {
                 "id": 5,
@@ -534,14 +538,24 @@ let ProductListComponent = class ProductListComponent {
                 "code": "gmg-0042",
                 "available": "October 15, 2015",
                 "price": 35.95,
-                "star": 4.5
+                "star": 4.5,
+                "width": ""
             }
         ];
         this.isShow = true;
     }
-    ngOnInit() { }
+    ngOnInit() {
+        this.TinhSao();
+    }
     AnHien() {
         this.isShow = !this.isShow;
+    }
+    TinhSao() {
+        this.listPD.forEach(function (p) {
+            let width = 0;
+            width = (p.star * 17 / 18) * 20;
+            p.width = width.toString() + "px";
+        });
     }
 };
 ProductListComponent = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([

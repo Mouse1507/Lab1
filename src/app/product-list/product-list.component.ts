@@ -16,7 +16,8 @@ export class ProductListComponent implements OnInit {
       "code": "gdn-0011",
       "available": "March 19, 2016",
       "price": 19.95,
-      "star": 3.2
+      "star": 3.2,
+      "width" : ""
     },
     {
       "id": 2,
@@ -25,7 +26,8 @@ export class ProductListComponent implements OnInit {
       "code": "gdn-0023",
       "available": "March 18, 2016",
       "price": 32.99,
-      "star": 4.1
+      "star": 4.1,
+      "width" : ""
     },
     {
       "id": 3,
@@ -34,7 +36,8 @@ export class ProductListComponent implements OnInit {
       "code": "tbx-0048",
       "available": "May 21, 2016",
       "price": 8.9,
-      "star": 4.9
+      "star": 4.9,
+      "width" : ""
     },
     {
       "id": 4,
@@ -43,7 +46,8 @@ export class ProductListComponent implements OnInit {
       "code": "tbx-0022",
       "available": "May 15, 2016",
       "price": 11.55,
-      "star": 3.9
+      "star": 3.9,
+      "width" : ""
     },
     {
       "id": 5,
@@ -52,14 +56,25 @@ export class ProductListComponent implements OnInit {
       "code": "gmg-0042",
       "available": "October 15, 2015",
       "price": 35.95,
-      "star": 4.5
+      "star": 4.5,
+      "width" : ""
     }
   ]
   isShow = true;
   constructor() {}
 
-  ngOnInit() {}
+  ngOnInit() {
+    this.TinhSao();
+  }
   AnHien() {
     this.isShow = !this.isShow;
   }
+  TinhSao(){
+    this.listPD.forEach(function(p){
+      let width = 0;
+      width = (p.star*17/18)*20;
+      p.width = width.toString()+"px";
+    })
+  }
+
 }

@@ -3,4 +3,14 @@
 }
 .star-rate{
     overflow: hidden;   
+    position: relative;
+}
+.hidden {
+    position: absolute;
+    background-color:white;
+    height:20px;
+    top:50%;
+    width:90px;
+    transform: translateY(-50%);
+    z-index: 10;
 }

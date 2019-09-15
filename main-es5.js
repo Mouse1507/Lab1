@@ -118,7 +118,18 @@ module.exports = "<div class=\"col-md-12 col-sm-12 col-lg-12\">\n  <nav class=\"
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<br>\n<div class=\"container-fluid\">\n  <table class=\"table table-bordered text-left sv-table\">\n    <thead>\n      <tr>\n        <th>LastName</th>\n        <th>FirstName</th>\n        <th>EnrollDate</th>\n        <th>Action</th>\n      </tr>\n    </thead>\n    <tbody>\n      <tr *ngFor=\"let sv of students\">\n        <td>{{sv.LastName}}</td>\n        <td>{{sv.FirstMidName}}</td>\n        <td>{{sv.EnrollmentDate}}</td>\n        <td></td>\n      </tr>\n    </tbody>\n  </table>\n</div>\n\n"
+module.exports = "<div class=container>\n  <ul class=\"breadcrumb\">\n    <li class=\"breadcrumb-item\"><a href=\"#\">Home</a></li>\n    <li class=\"breadcrumb-item\"><a href=\"#\">Sinh vien</a></li>\n  </ul>\n  <br>\n  <div class=\"card\">\n    <div class=\"card-header\"><i class=\"fas fa-table\"></i> Danh sach sinh vien</div>\n    <div class=\"card-body\">\n      <div class=\"row\">\n        <div class=\"input-group col-md-4\">\n          <input type=\"text\" class=\"form-control\" placeholder=\"search....\">\n          <div class=\"input-group-prepend\">\n            <span class=\"input-group-text bg-primary\"><i class=\"fas fa-search\"></i></span>\n          </div>\n        </div>\n      </div>\n      <div class=\"row\">\n        <div class=\"col-md-12\">\n          <table class=\"table table-bordered text-left sv-table\">\n            <thead>\n              <tr>\n                <th>LastName</th>\n                <th>FirstName</th>\n                <th>EnrollDate</th>\n                <th>Action</th>\n              </tr>\n            </thead>\n            <tbody>\n              <tr *ngFor=\"let sv of students\">\n                <td>{{sv.LastName}}</td>\n                <td>{{sv.FirstMidName}}</td>\n                <td>{{sv.EnrollmentDate}}</td>\n                <td>\n                  <i class=\"fas fa-info info-ico\"></i> <i class=\"fas fa-trash del-ico\"></i> \n                </td>\n              </tr>\n            </tbody>\n          </table>\n        </div>\n      </div>\n    </div>\n    <div class=\"card-footer\">\n      <div class=\"row\">\n        <div class=\"col-md-6\">Showing 1 of 3</div>\n        <div class=\"col-md-6 foot-card\">\n          <ul class=\"pagination\">\n            <li class=\"page-item\"><a class=\"page-link\" href=\"#\">1</a></li>\n            <li class=\"page-item active\"><a class=\"page-link\" href=\"#\">2</a></li>\n            <li class=\"page-item\"><a class=\"page-link\" href=\"#\">3</a></li>\n            <li class=\"page-item\"><a class=\"page-link\" href=\"#\"><i class=\"fas fa-forward\"></i></a></li>\n          </ul>\n        </div>\n      </div>\n    </div>\n  </div>\n\n</div>\n"
+
+/***/ }),
+
+/***/ "./node_modules/raw-loader/index.js!./src/app/sv-detail/sv-detail.component.html":
+/*!******************************************************************************!*\
+  !*** ./node_modules/raw-loader!./src/app/sv-detail/sv-detail.component.html ***!
+  \******************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = "<div class=container>\n  <ul class=\"breadcrumb\">\n    <li class=\"breadcrumb-item\"><a href=\"#\">Home</a></li>\n    <li class=\"breadcrumb-item\"><a href=\"#\">Sinhvien</a></li>\n    <li class=\"breadcrumb-item\"><a href=\"#\">Italy</a></li>\n  </ul>\n  <br>\n  <div class=\"card\">\n    <div class=\"card-header\"><i class=\"fas fa-table\"></i> Details</div>\n    <div class=\"card-body\">\n      <div class=\"row\">\n        <div class=\"input-group col-md-4\">\n          <input type=\"text\" class=\"form-control\" placeholder=\"Search....\">\n          <div class=\"input-group-prepend\">\n            <span class=\"input-group-text bg-primary\"><i class=\"fas fa-search\"></i></span>\n          </div>\n        </div>\n      </div>\n      <div class=\"row\">\n        <div class=\"col-md-12\">\n          <br>\n            <div class=row>\n            <div class=\"col-md-4\">\n              Last Name : {{sinhvien.LastName}}\n            </div>\n            <div class=\"col-md-4\">\n              First Name : {{sinhvien.FirstMidName}}\n            </div>\n            <div class=\"col-md-4\">\n              Enroll Date : {{sinhvien.EnrollmentDate}} 12:00:00 AM\n            </div>\n          </div>\n          <br>\n        </div>\n        <div class=\"col-md-12\">\n          <table class=\"table table-bordered text-left sv-table\">\n            <thead>\n              <tr>\n                <th>Course Title</th>\n                <th>Grade</th>\n                <th>Credits</th>\n              </tr>\n            </thead>\n            <tbody>\n              <tr *ngFor=\"let sv of students\">\n                <td>{{sv.LastName}}</td>\n                <td>{{sv.FirstMidName}}</td>\n                <td></td>\n              </tr>\n            </tbody>\n          </table>\n        </div>\n      </div>\n    </div>\n  </div>\n</div>\n"
 
 /***/ }),
 
@@ -188,6 +199,8 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _angular_router__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! @angular/router */ "./node_modules/@angular/router/fesm5/router.js");
 /* harmony import */ var _menu_menu_component__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! ./menu/menu.component */ "./src/app/menu/menu.component.ts");
 /* harmony import */ var _main_menu_main_menu_component__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! ./main-menu/main-menu.component */ "./src/app/main-menu/main-menu.component.ts");
+/* harmony import */ var _sv_detail_sv_detail_component__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(/*! ./sv-detail/sv-detail.component */ "./src/app/sv-detail/sv-detail.component.ts");
+
 
 
 
@@ -215,7 +228,8 @@ var AppModule = /** @class */ (function () {
                 _sinhvien_sinhvien_component__WEBPACK_IMPORTED_MODULE_8__["SinhvienComponent"],
                 _card_info_card_info_component__WEBPACK_IMPORTED_MODULE_9__["CardInfoComponent"],
                 _menu_menu_component__WEBPACK_IMPORTED_MODULE_11__["MenuComponent"],
-                _main_menu_main_menu_component__WEBPACK_IMPORTED_MODULE_12__["MainMenuComponent"]
+                _main_menu_main_menu_component__WEBPACK_IMPORTED_MODULE_12__["MainMenuComponent"],
+                _sv_detail_sv_detail_component__WEBPACK_IMPORTED_MODULE_13__["SvDetailComponent"]
             ],
             imports: [
                 _angular_platform_browser__WEBPACK_IMPORTED_MODULE_1__["BrowserModule"],
@@ -225,7 +239,8 @@ var AppModule = /** @class */ (function () {
                     { path: 'product-list', component: _product_list_product_list_component__WEBPACK_IMPORTED_MODULE_5__["ProductListComponent"] },
                     { path: 'product-cart', component: _product_cart_product_cart_component__WEBPACK_IMPORTED_MODULE_7__["ProductCartComponent"] },
                     { path: 'sinhvien', component: _sinhvien_sinhvien_component__WEBPACK_IMPORTED_MODULE_8__["SinhvienComponent"] },
-                    { path: 'main-menu', component: _main_menu_main_menu_component__WEBPACK_IMPORTED_MODULE_12__["MainMenuComponent"] }
+                    { path: 'main-menu', component: _main_menu_main_menu_component__WEBPACK_IMPORTED_MODULE_12__["MainMenuComponent"] },
+                    { path: 'sv-detail/:svId', component: _sv_detail_sv_detail_component__WEBPACK_IMPORTED_MODULE_13__["SvDetailComponent"] }
                 ])
             ],
             providers: [],
@@ -727,7 +742,7 @@ var ProductListComponent = /** @class */ (function () {
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = ".img-sv {\r\n    width:80px;\r\n}\r\n.sv-table td, .sv-table th {\r\n    vertical-align: middle;\r\n}\r\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbImFwcC9zaW5odmllbi9zaW5odmllbi5jb21wb25lbnQuY3NzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQUFBO0lBQ0ksVUFBVTtBQUNkO0FBQ0E7SUFDSSxzQkFBc0I7QUFDMUIiLCJmaWxlIjoiYXBwL3Npbmh2aWVuL3Npbmh2aWVuLmNvbXBvbmVudC5jc3MiLCJzb3VyY2VzQ29udGVudCI6WyIuaW1nLXN2IHtcclxuICAgIHdpZHRoOjgwcHg7XHJcbn1cclxuLnN2LXRhYmxlIHRkLCAuc3YtdGFibGUgdGgge1xyXG4gICAgdmVydGljYWwtYWxpZ246IG1pZGRsZTtcclxufSJdfQ== */"
+module.exports = ".img-sv {\r\n    width:80px;\r\n}\r\n.sv-table td, .sv-table th {\r\n    vertical-align: middle;\r\n}\r\n.info-ico {\r\n    color: lightcoral;\r\n    margin-right:20px;\r\n}\r\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbImFwcC9zaW5odmllbi9zaW5odmllbi5jb21wb25lbnQuY3NzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQUFBO0lBQ0ksVUFBVTtBQUNkO0FBQ0E7SUFDSSxzQkFBc0I7QUFDMUI7QUFDQTtJQUNJLGlCQUFpQjtJQUNqQixpQkFBaUI7QUFDckIiLCJmaWxlIjoiYXBwL3Npbmh2aWVuL3Npbmh2aWVuLmNvbXBvbmVudC5jc3MiLCJzb3VyY2VzQ29udGVudCI6WyIuaW1nLXN2IHtcclxuICAgIHdpZHRoOjgwcHg7XHJcbn1cclxuLnN2LXRhYmxlIHRkLCAuc3YtdGFibGUgdGgge1xyXG4gICAgdmVydGljYWwtYWxpZ246IG1pZGRsZTtcclxufVxyXG4uaW5mby1pY28ge1xyXG4gICAgY29sb3I6IGxpZ2h0Y29yYWw7XHJcbiAgICBtYXJnaW4tcmlnaHQ6MjBweDtcclxufSJdfQ== */"
 
 /***/ }),
 
@@ -801,6 +816,203 @@ var SinhvienComponent = /** @class */ (function () {
         })
     ], SinhvienComponent);
     return SinhvienComponent;
+}());
+
+
+
+/***/ }),
+
+/***/ "./src/app/sv-detail/sv-detail.component.css":
+/*!***************************************************!*\
+  !*** ./src/app/sv-detail/sv-detail.component.css ***!
+  \***************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = ".sv-table td, .sv-table th {\r\n    vertical-align: middle;\r\n}\r\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbImFwcC9zdi1kZXRhaWwvc3YtZGV0YWlsLmNvbXBvbmVudC5jc3MiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBQUE7SUFDSSxzQkFBc0I7QUFDMUIiLCJmaWxlIjoiYXBwL3N2LWRldGFpbC9zdi1kZXRhaWwuY29tcG9uZW50LmNzcyIsInNvdXJjZXNDb250ZW50IjpbIi5zdi10YWJsZSB0ZCwgLnN2LXRhYmxlIHRoIHtcclxuICAgIHZlcnRpY2FsLWFsaWduOiBtaWRkbGU7XHJcbn0iXX0= */"
+
+/***/ }),
+
+/***/ "./src/app/sv-detail/sv-detail.component.ts":
+/*!**************************************************!*\
+  !*** ./src/app/sv-detail/sv-detail.component.ts ***!
+  \**************************************************/
+/*! exports provided: SvDetailComponent */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "SvDetailComponent", function() { return SvDetailComponent; });
+/* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! tslib */ "./node_modules/tslib/tslib.es6.js");
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
+/* harmony import */ var _angular_router__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @angular/router */ "./node_modules/@angular/router/fesm5/router.js");
+
+
+
+var SvDetailComponent = /** @class */ (function () {
+    function SvDetailComponent(route) {
+        this.route = route;
+        this.students = [{
+                ID: 1,
+                FirstMidName: "Carson",
+                LastName: "Alexander",
+                EnrollmentDate: "2005-09-01"
+            }, {
+                ID: 2,
+                FirstMidName: "Meredith",
+                LastName: "Alonso",
+                EnrollmentDate: "2002-09-01"
+            }, {
+                ID: 3,
+                FirstMidName: "Arturo",
+                LastName: "Anand",
+                EnrollmentDate: "2003-09-01"
+            }, {
+                ID: 4,
+                FirstMidName: "Gytis",
+                LastName: "Barzdukas",
+                EnrollmentDate: "2002-09-01"
+            }, {
+                ID: 5,
+                FirstMidName: "Yan",
+                LastName: "Li",
+                EnrollmentDate: "2002-09-01"
+            }, {
+                ID: 6,
+                FirstMidName: "Peggy",
+                LastName: "Justice",
+                EnrollmentDate: "2001-09-01"
+            },
+            {
+                ID: 7,
+                FirstMidName: "Laura",
+                LastName: "Norman",
+                EnrollmentDate: "2003-09-01"
+            }, {
+                ID: 8,
+                FirstMidName: "Nino",
+                LastName: "Olivetto",
+                EnrollmentDate: "2005-09-01"
+            }
+        ];
+        this.courses = [
+            {
+                CourseID: 1050,
+                Title: "Chemistry",
+                Credits: 3,
+            },
+            {
+                CourseID: 4022,
+                Title: "Python",
+                Credits: 3,
+            },
+            {
+                CourseID: 4041,
+                Title: "Macroeconomics",
+                Credits: 3,
+            },
+            {
+                CourseID: 1045,
+                Title: "Calculus",
+                Credits: 4,
+            },
+            {
+                CourseID: 3141,
+                Title: "DjAngo",
+                Credits: 4,
+            },
+            {
+                CourseID: 2021,
+                Title: "Composition",
+                Credits: 3,
+            },
+            {
+                CourseID: 2042,
+                Title: "Literature",
+                Credits: 4,
+            }
+        ];
+        this.enrollments = [
+            {
+                StudentID: 1,
+                CourseID: 1050,
+                Grade: 'A'
+            },
+            {
+                StudentID: 1,
+                CourseID: 4022,
+                Grade: 'C'
+            },
+            {
+                StudentID: 1,
+                CourseID: 4041,
+                Grade: 'B'
+            },
+            {
+                StudentID: 2,
+                CourseID: 1045,
+                Grade: 'B'
+            },
+            {
+                StudentID: 2,
+                CourseID: 3141,
+                Grade: 'F'
+            },
+            {
+                StudentID: 2,
+                CourseID: 2021,
+                Grade: 'F'
+            },
+            {
+                StudentID: 3,
+                CourseID: 1050,
+                Grade: 'B'
+            },
+            {
+                StudentID: 4,
+                CourseID: 1050,
+                Grade: 'B'
+            },
+            {
+                StudentID: 4,
+                CourseID: 4022,
+                Grade: 'F'
+            },
+            {
+                StudentID: 5,
+                CourseID: 4041,
+                Grade: 'C'
+            },
+            {
+                StudentID: 6,
+                CourseID: 1045,
+                Grade: 'B'
+            },
+            {
+                StudentID: 6,
+                CourseID: 3141,
+                Grade: 'A'
+            },
+        ];
+    }
+    SvDetailComponent.prototype.ngOnInit = function () {
+        var _this = this;
+        this.route.paramMap.subscribe(function (param) {
+            _this.svId = +param.get("svId");
+        });
+        this.sinhvien = this.students.find(function (sv) { return sv.ID === _this.svId; });
+    };
+    SvDetailComponent.ctorParameters = function () { return [
+        { type: _angular_router__WEBPACK_IMPORTED_MODULE_2__["ActivatedRoute"] }
+    ]; };
+    SvDetailComponent = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
+        Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Component"])({
+            selector: 'app-sv-detail',
+            template: __webpack_require__(/*! raw-loader!./sv-detail.component.html */ "./node_modules/raw-loader/index.js!./src/app/sv-detail/sv-detail.component.html"),
+            styles: [__webpack_require__(/*! ./sv-detail.component.css */ "./src/app/sv-detail/sv-detail.component.css")]
+        })
+    ], SvDetailComponent);
+    return SvDetailComponent;
 }());
 
 

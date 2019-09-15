@@ -4,3 +4,7 @@
 .sv-table td, .sv-table th {
     vertical-align: middle;
 }
+.info-ico {
+    color: lightcoral;
+    margin-right:20px;
+}

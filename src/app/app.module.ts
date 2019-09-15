@@ -11,6 +11,7 @@ import { CardInfoComponent } from './card-info/card-info.component';
 import { RouterModule } from '@angular/router';
 import { MenuComponent } from './menu/menu.component';
 import { MainMenuComponent } from './main-menu/main-menu.component';
+import { SvDetailComponent } from './sv-detail/sv-detail.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -21,7 +22,8 @@ import { MainMenuComponent } from './main-menu/main-menu.component';
     SinhvienComponent,
     CardInfoComponent,
     MenuComponent,
-    MainMenuComponent
+    MainMenuComponent,
+    SvDetailComponent
   ],
   imports: [
     BrowserModule,
@@ -31,7 +33,8 @@ import { MainMenuComponent } from './main-menu/main-menu.component';
       {path: 'product-list', component : ProductListComponent},
       {path : 'product-cart', component : ProductCartComponent},
       {path : 'sinhvien', component : SinhvienComponent},
-      {path : 'main-menu', component : MainMenuComponent}
+      {path : 'main-menu', component : MainMenuComponent},
+      {path : 'sv-detail/:svId', component : SvDetailComponent}
     ])
   ],
   providers: [],

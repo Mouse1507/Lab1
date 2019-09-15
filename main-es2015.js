@@ -30,7 +30,7 @@ webpackEmptyAsyncContext.id = "./$$_lazy_route_resource lazy recursive";
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<app-product-cart></app-product-cart>\r\n<br>\r\n<app-product-dt></app-product-dt>\r\n<br>\r\n<app-product-list></app-product-list>\r\n<br>\r\n<app-center></app-center>\r\n<br>\r\n<app-sinhvien></app-sinhvien>\r\n<br>\r\n<app-card-info></app-card-info>"
+module.exports = "<router-outlet></router-outlet>"
 
 /***/ }),
 
@@ -56,6 +56,28 @@ module.exports = "<div class=\"container-fluid\">\n  <div class=\"row pad-20\">\
 
 /***/ }),
 
+/***/ "./node_modules/raw-loader/index.js!./src/app/main-menu/main-menu.component.html":
+/*!******************************************************************************!*\
+  !*** ./node_modules/raw-loader!./src/app/main-menu/main-menu.component.html ***!
+  \******************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = "<div class=\"col-md-12 col-sm-12 col-lg-12\">\n        <nav class=\"navbar navbar-expand-sm bg-dark navbar-dark\">\n            <ul class=\"navbar-nav\">\n              <li class=\"nav-item\">\n                <a class=\"nav-link\" routerLink=\"/product-list\">Lab1</a>\n              </li>\n              <li class=\"nav-item\">\n                  <a class=\"nav-link\" routerLink=\"/sinhvien\">Lab2</a>\n              </li>\n            </ul>\n          </nav>\n    </div>\n    "
+
+/***/ }),
+
+/***/ "./node_modules/raw-loader/index.js!./src/app/menu/menu.component.html":
+/*!********************************************************************!*\
+  !*** ./node_modules/raw-loader!./src/app/menu/menu.component.html ***!
+  \********************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = "<div class=\"col-md-12 col-sm-12 col-lg-12\">\n    <nav class=\"navbar navbar-expand-sm bg-dark navbar-dark\">\n        <ul class=\"navbar-nav\">\n          <li class=\"nav-item\">\n            <a class=\"nav-link\" routerLink=\"/product-list\" >Home</a>\n          </li>\n          <li class=\"nav-item\">\n            <a class=\"nav-link\" routerLink=\"/product-list\">Product List</a>\n          </li>\n          <li class=\"nav-item\">\n            <a class=\"nav-link\" routerLink=\"/product-cart\">Product Cart</a>\n          </li>\n          <li class=\"nav-item\">\n              <a class=\"nav-link\" routerLink=\"/sinhvien\">Lab2</a>\n          </li>\n        </ul>\n      </nav>\n</div>\n"
+
+/***/ }),
+
 /***/ "./node_modules/raw-loader/index.js!./src/app/product-cart/product-cart.component.html":
 /*!************************************************************************************!*\
   !*** ./node_modules/raw-loader!./src/app/product-cart/product-cart.component.html ***!
@@ -63,7 +85,7 @@ module.exports = "<div class=\"container-fluid\">\n  <div class=\"row pad-20\">\
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<h2>Your Cart</h2>\n\n<table class=\"table\">\n    <thead class=\"thead-light\">\n      <tr>\n        <th>Id</th>\n        <th>Image</th>\n        <th>Name</th>\n        <th>Price</th>\n        <th>Quantity</th>\n        <th>Action</th>\n      </tr>\n    </thead>\n    <tbody>\n      <tr *ngFor = \"let c of cartPD\">\n          <td>{{c.id}}</td>\n          <td><img src=\"assets/{{c.name}}.jpg\" alt=\"{{c.name}}\" class=\"img-cart\"></td>\n          <td>{{c.name}}</td>\n          <td>{{c.price}}</td>\n          <td><b class=\"number\">{{c.quantity}}</b><button class=\"btn btn-success bonus\" (click) =\"bonus(c)\">+</button><button class=\"btn btn-danger minus\" (click)=\"minus(c)\">-</button></td>\n          <td><button class=\"btn btn-primary btn-view\">View</button> <button class=\"btn btn-danger btn-delete\">Delete</button></td>\n      </tr>\n      <tr>\n          <td colspan=\"5\">total price</td>\n          <td class=\"text-left\">{{tongTien()}}</td>\n      </tr>\n    </tbody>\n  </table>"
+module.exports = "<div class=\"col-md-12 col-sm-12 col-lg-12\">\n  <nav class=\"navbar navbar-expand-sm bg-dark navbar-dark\">\n    <ul class=\"navbar-nav\">\n      <li class=\"nav-item\">\n        <a class=\"nav-link\" routerLink=\"/main-menu\">Home</a>\n      </li>\n      <li class=\"nav-item\">\n        <a class=\"nav-link\" routerLink=\"/product-list\">Product List</a>\n      </li>\n      <li class=\"nav-item\">\n        <a class=\"nav-link\" routerLink=\"/product-cart\">Product Cart</a>\n      </li>\n    </ul>\n  </nav>\n</div>\n\n\n<h2>Your Cart</h2>\n\n<table class=\"table\">\n  <thead class=\"thead-light\">\n    <tr>\n      <th>Id</th>\n      <th>Image</th>\n      <th>Name</th>\n      <th>Price</th>\n      <th>Quantity</th>\n      <th>Action</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr *ngFor=\"let c of cartPD\">\n      <td>{{c.id}}</td>\n      <td><img src=\"assets/{{c.name}}.jpg\" alt=\"{{c.name}}\" class=\"img-cart\"></td>\n      <td>{{c.name}}</td>\n      <td>{{c.price}}</td>\n      <td><b class=\"number\">{{c.quantity}}</b><button class=\"btn btn-success bonus\" (click)=\"bonus(c)\">+</button><button\n          class=\"btn btn-danger minus\" (click)=\"minus(c)\">-</button></td>\n      <td><button class=\"btn btn-primary btn-view\">View</button> <button\n          class=\"btn btn-danger btn-delete\">Delete</button></td>\n    </tr>\n    <tr>\n      <td colspan=\"5\">total price</td>\n      <td class=\"text-left\">{{tongTien()}}</td>\n    </tr>\n  </tbody>\n</table>\n"
 
 /***/ }),
 
@@ -74,7 +96,7 @@ module.exports = "<h2>Your Cart</h2>\n\n<table class=\"table\">\n    <thead clas
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<div class=\"card\">\n    <div class=\"card-header\">{{listPD[0].name}}</div>\n    <div class=\"card-body\">\n        <div class=\"container-fluid\">\n            <div class=\"row\">\n                <div class=\"col-md-6 no-padding\">\n                    <div class=\"row\">\n                        <div class=\"col-md-4\">Name:</div>\n                        <div class=\"col-md-8\">{{listPD[0].name}}</div>\n                    </div>\n                    <div class=\"row\">\n                        <div class=\"col-md-4\">Code:</div>\n                        <div class=\"col-md-8\">{{listPD[0].code}}</div>\n                    </div>\n                    <div class=\"row\">\n                        <div class=\"col-md-4\">Description:</div>\n                        <div class=\"col-md-8\">Leaf rake with 48-inch wooden handle.</div>\n                    </div>\n                    <div class=\"row\">\n                        <div class=\"col-md-4\">Availability:</div>\n                        <div class=\"col-md-8\">{{listPD[0].available}}</div>\n                    </div>\n                    <div class=\"row\">\n                        <div class=\"col-md-4\">Price:</div>\n                        <div class=\"col-md-8\">${{listPD[0].price}}</div>\n                    </div>\n                    <div class=\"row\">\n                        <div class=\"col-md-4\">5 Star Rating:</div>\n                        <div class=\"col-md-8\">{{listPD[0].star}}</div>\n                    </div>\n                </div>\n                <div class=\"col-md-6\">\n                    <img src=\"assets/{{listPD[0].image}}\" alt=\"{{listPD[0].name}}\" class=\"pd-img\"/>\n                </div>\n            </div>\n        </div>\n    </div> \n    <div class=\"card-footer\">Back</div>\n  </div>"
+module.exports = "<div class=\"col-md-12 col-sm-12 col-lg-12\">\n  <nav class=\"navbar navbar-expand-sm bg-dark navbar-dark\">\n    <ul class=\"navbar-nav\">\n      <li class=\"nav-item\">\n        <a class=\"nav-link\" routerLink=\"/main-menu\">Home</a>\n      </li>\n      <li class=\"nav-item\">\n        <a class=\"nav-link\" routerLink=\"/product-list\">Product List</a>\n      </li>\n      <li class=\"nav-item\">\n        <a class=\"nav-link\" routerLink=\"/product-cart\">Product Cart</a>\n      </li>\n    </ul>\n  </nav>\n</div>\n<div class=\"card\">\n  <div class=\"card-header\">{{prod.name}}</div>\n  <div class=\"card-body\">\n    <div class=\"container-fluid\">\n      <div class=\"row\">\n        <div class=\"col-md-6 no-padding\">\n          <div class=\"row\">\n            <div class=\"col-md-4\">Name:</div>\n            <div class=\"col-md-8\">{{prod.name}}</div>\n          </div>\n          <div class=\"row\">\n            <div class=\"col-md-4\">Code:</div>\n            <div class=\"col-md-8\">{{prod.code}}</div>\n          </div>\n          <div class=\"row\">\n            <div class=\"col-md-4\">Description:</div>\n            <div class=\"col-md-8\">Leaf rake with 48-inch wooden handle.</div>\n          </div>\n          <div class=\"row\">\n            <div class=\"col-md-4\">Availability:</div>\n            <div class=\"col-md-8\">{{prod.available}}</div>\n          </div>\n          <div class=\"row\">\n            <div class=\"col-md-4\">Price:</div>\n            <div class=\"col-md-8\">${{prod.price}}</div>\n          </div>\n          <div class=\"row\">\n            <div class=\"col-md-4\">5 Star Rating:</div>\n            <div class=\"col-md-8\">{{prod.star}}</div>\n          </div>\n        </div>\n        <div class=\"col-md-6\">\n          <img src=\"assets/{{prod.image}}\" alt=\"{{prod.name}}\" class=\"pd-img\" />\n        </div>\n      </div>\n    </div>\n  </div>\n  <div class=\"card-footer\">Back</div>\n</div>\n"
 
 /***/ }),
 
@@ -85,7 +107,7 @@ module.exports = "<div class=\"card\">\n    <div class=\"card-header\">{{listPD[
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<div class=\"card\">\n  <div class=\"card-header\">List Product</div>\n  <div class=\"card-body\">\n      <div class=\"container-fluid\">\n          <div class=\"row\">\n              <div class=\"col-md-2 no-padding\">Filter By:</div>\n              <div class=\"col-md-10\">\n                  <input type=\"text\" name=\"filter\" id=\"filter\" placeholder=\".....\"/>\n              </div>\n          </div>\n          <div class=\"row\">\n              <h2>Filter By:</h2>\n              <table class=\"table\">\n                  <thead>\n                    <tr>\n                        <td><button type=\"button\" class=\"btn btn-primary\" (click)=\"AnHien()\">Hien Image</button></td>\n                        <td>Product</td>\n                        <td>Code</td>\n                        <td>Available</td>\n                        <td>Price</td>\n                        <td>5 Star Rating</td>\n                    </tr>\n                  </thead>\n                  <tbody>\n                      <tr *ngFor = \"let p of listPD\">\n                          <td><img src=\"assets/{{p.image}}\" alt=\"{{p.name}}\" class=\"image-list\" *ngIf = \"isShow\"/> </td>\n                          <td>{{p.name}}</td>\n                          <td>{{p.code}}</td>\n                          <td>{{p.available}}</td>\n                          <td>{{p.price}}</td>\n                          <td>\n                              <div class=\"star-rate\">\n                                  <i class=\"fas fa-star\"></i>\n                                  <i class=\"fas fa-star\"></i>\n                                  <i class=\"fas fa-star\"></i>\n                                  <i class=\"fas fa-star\"></i>\n                                  <i class=\"fas fa-star\"></i>\n                                  <div class=\"hidden\" [ngStyle] = \"{'left':p.width}\"></div>\n                              </div>\n                              {{TinhSao(p)}}\n                          </td>\n                      </tr>\n                  </tbody>\n                </table>\n          </div>\n      </div>\n  </div> \n</div>\n"
+module.exports = "<div class=\"col-md-12 col-sm-12 col-lg-12\">\n  <nav class=\"navbar navbar-expand-sm bg-dark navbar-dark\">\n    <ul class=\"navbar-nav\">\n      <li class=\"nav-item\">\n        <a class=\"nav-link\" routerLink=\"/main-menu\">Home</a>\n      </li>\n      <li class=\"nav-item\">\n        <a class=\"nav-link\" routerLink=\"/product-list\">Product List</a>\n      </li>\n      <li class=\"nav-item\">\n        <a class=\"nav-link\" routerLink=\"/product-cart\">Product Cart</a>\n      </li>\n    </ul>\n  </nav>\n</div>\n\n<div class=\"card\">\n  <div class=\"card-header\">List Product</div>\n  <div class=\"card-body\">\n    <div class=\"container-fluid\">\n      <div class=\"row\">\n        <div class=\"col-md-2 no-padding\">Filter By:</div>\n        <div class=\"col-md-10\">\n          <input type=\"text\" name=\"filter\" id=\"filter\" placeholder=\".....\" />\n        </div>\n      </div>\n      <div class=\"row\">\n        <h2>Filter By:</h2>\n        <table class=\"table\">\n          <thead>\n            <tr>\n              <td><button type=\"button\" class=\"btn btn-primary\" (click)=\"AnHien()\">Hien Image</button></td>\n              <td>Product</td>\n              <td>Code</td>\n              <td>Available</td>\n              <td>Price</td>\n              <td>5 Star Rating</td>\n            </tr>\n          </thead>\n          <tbody>\n            <tr *ngFor=\"let p of listPD\">\n              <td><a routerLink=\"/product-detail/{{p.id}}\" target=\"_blank\"><img src=\"assets/{{p.image}}\"\n                    alt=\"{{p.name}}\" class=\"image-list\" *ngIf=\"isShow\" /></a> </td>\n              <td>{{p.name}}</td>\n              <td>{{p.code}}</td>\n              <td>{{p.available}}</td>\n              <td>{{p.price}}</td>\n              <td>\n                <div class=\"star-rate\">\n                  <i class=\"fas fa-star\"></i>\n                  <i class=\"fas fa-star\"></i>\n                  <i class=\"fas fa-star\"></i>\n                  <i class=\"fas fa-star\"></i>\n                  <i class=\"fas fa-star\"></i>\n                  <div class=\"hidden\" [ngStyle]=\"{'left':p.width}\"></div>\n                </div>\n                {{TinhSao(p)}}\n              </td>\n            </tr>\n          </tbody>\n        </table>\n      </div>\n    </div>\n  </div>\n</div>\n"
 
 /***/ }),
 
@@ -96,7 +118,7 @@ module.exports = "<div class=\"card\">\n  <div class=\"card-header\">List Produc
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<div class=\"container\">\n  <table class=\"table table-bordered text-center sv-table\">\n    <thead>\n      <tr>\n        <th>Hình</th>\n        <th>Họ và tên</th>\n        <th>Ngày sinh</th>\n        <th>Giới tính</th>\n        <th>Điểm</th>\n      </tr>\n    </thead>\n    <tbody>\n      <tr *ngFor=\"let sv of svList\">\n        <td><img src=\"assets/{{sv.photo}}\" class=\"img-sv\" alt=\"sv.name\"></td>\n        <td>{{sv.name}}</td>\n        <td>{{sv.birthday}}</td>\n        <td>{{sv.gender}}</td>\n        <td>{{sv.mark}}</td>\n      </tr>\n    </tbody>\n  </table>\n</div>\n\n"
+module.exports = "<br>\n<div class=\"container-fluid\">\n  <table class=\"table table-bordered text-left sv-table\">\n    <thead>\n      <tr>\n        <th>LastName</th>\n        <th>FirstName</th>\n        <th>EnrollDate</th>\n        <th>Action</th>\n      </tr>\n    </thead>\n    <tbody>\n      <tr *ngFor=\"let sv of students\">\n        <td>{{sv.LastName}}</td>\n        <td>{{sv.FirstMidName}}</td>\n        <td>{{sv.EnrollmentDate}}</td>\n        <td></td>\n      </tr>\n    </tbody>\n  </table>\n</div>\n\n"
 
 /***/ }),
 
@@ -107,7 +129,7 @@ module.exports = "<div class=\"container\">\n  <table class=\"table table-border
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IiIsImZpbGUiOiJzcmMvYXBwL2FwcC5jb21wb25lbnQuY3NzIn0= */"
+module.exports = "\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IiIsImZpbGUiOiJhcHAvYXBwLmNvbXBvbmVudC5jc3MifQ== */"
 
 /***/ }),
 
@@ -162,6 +184,12 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _product_cart_product_cart_component__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./product-cart/product-cart.component */ "./src/app/product-cart/product-cart.component.ts");
 /* harmony import */ var _sinhvien_sinhvien_component__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ./sinhvien/sinhvien.component */ "./src/app/sinhvien/sinhvien.component.ts");
 /* harmony import */ var _card_info_card_info_component__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ./card-info/card-info.component */ "./src/app/card-info/card-info.component.ts");
+/* harmony import */ var _angular_router__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! @angular/router */ "./node_modules/@angular/router/fesm2015/router.js");
+/* harmony import */ var _menu_menu_component__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! ./menu/menu.component */ "./src/app/menu/menu.component.ts");
+/* harmony import */ var _main_menu_main_menu_component__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! ./main-menu/main-menu.component */ "./src/app/main-menu/main-menu.component.ts");
+
+
+
 
 
 
@@ -183,10 +211,20 @@ AppModule = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
             _center_center_component__WEBPACK_IMPORTED_MODULE_6__["CenterComponent"],
             _product_cart_product_cart_component__WEBPACK_IMPORTED_MODULE_7__["ProductCartComponent"],
             _sinhvien_sinhvien_component__WEBPACK_IMPORTED_MODULE_8__["SinhvienComponent"],
-            _card_info_card_info_component__WEBPACK_IMPORTED_MODULE_9__["CardInfoComponent"]
+            _card_info_card_info_component__WEBPACK_IMPORTED_MODULE_9__["CardInfoComponent"],
+            _menu_menu_component__WEBPACK_IMPORTED_MODULE_11__["MenuComponent"],
+            _main_menu_main_menu_component__WEBPACK_IMPORTED_MODULE_12__["MainMenuComponent"]
         ],
         imports: [
-            _angular_platform_browser__WEBPACK_IMPORTED_MODULE_1__["BrowserModule"]
+            _angular_platform_browser__WEBPACK_IMPORTED_MODULE_1__["BrowserModule"],
+            _angular_router__WEBPACK_IMPORTED_MODULE_10__["RouterModule"].forRoot([
+                { path: '', component: _main_menu_main_menu_component__WEBPACK_IMPORTED_MODULE_12__["MainMenuComponent"] },
+                { path: 'product-detail/:id', component: _product_dt_product_dt_component__WEBPACK_IMPORTED_MODULE_4__["ProductDTComponent"] },
+                { path: 'product-list', component: _product_list_product_list_component__WEBPACK_IMPORTED_MODULE_5__["ProductListComponent"] },
+                { path: 'product-cart', component: _product_cart_product_cart_component__WEBPACK_IMPORTED_MODULE_7__["ProductCartComponent"] },
+                { path: 'sinhvien', component: _sinhvien_sinhvien_component__WEBPACK_IMPORTED_MODULE_8__["SinhvienComponent"] },
+                { path: 'main-menu', component: _main_menu_main_menu_component__WEBPACK_IMPORTED_MODULE_12__["MainMenuComponent"] }
+            ])
         ],
         providers: [],
         bootstrap: [_app_component__WEBPACK_IMPORTED_MODULE_3__["AppComponent"]]
@@ -204,7 +242,7 @@ AppModule = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = ".card-img-top {\r\n    width:300px;\r\n}\r\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInNyYy9hcHAvY2FyZC1pbmZvL2NhcmQtaW5mby5jb21wb25lbnQuY3NzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQUFBO0lBQ0ksV0FBVztBQUNmIiwiZmlsZSI6InNyYy9hcHAvY2FyZC1pbmZvL2NhcmQtaW5mby5jb21wb25lbnQuY3NzIiwic291cmNlc0NvbnRlbnQiOlsiLmNhcmQtaW1nLXRvcCB7XHJcbiAgICB3aWR0aDozMDBweDtcclxufSJdfQ== */"
+module.exports = ".card-img-top {\r\n    width:300px;\r\n}\r\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbImFwcC9jYXJkLWluZm8vY2FyZC1pbmZvLmNvbXBvbmVudC5jc3MiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBQUE7SUFDSSxXQUFXO0FBQ2YiLCJmaWxlIjoiYXBwL2NhcmQtaW5mby9jYXJkLWluZm8uY29tcG9uZW50LmNzcyIsInNvdXJjZXNDb250ZW50IjpbIi5jYXJkLWltZy10b3Age1xyXG4gICAgd2lkdGg6MzAwcHg7XHJcbn0iXX0= */"
 
 /***/ }),
 
@@ -254,7 +292,7 @@ CardInfoComponent = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = ".left-column {\r\n    background-color: rgba(0,0,0,0.5);\r\n    color:white;\r\n    border-radius: 5px;\r\n}\r\n.logo{\r\n    width:100px;\r\n    height:100px;\r\n}\r\n.left-nav li a  {\r\n    color:white;\r\n    font-weight: 400;\r\n}\r\n.fas {\r\n    width:30px;\r\n}\r\n.pad-20 {\r\n    padding:20px;\r\n}\r\n#entry {\r\n    border-radius: 5px;\r\n    width:100px;\r\n    height:30px;\r\n    margin:0 20px;\r\n}\r\n.ex-but, .pdf-but, .add-but, .search-field {\r\n    height: 30px;\r\n    margin-left:5px;\r\n    line-height: 0px;\r\n}\r\n.search-box {\r\n    display: inline;\r\n    position: relative;\r\n    height:30px;\r\n}\r\n.search-field {\r\n    border:0.5px solid blue;\r\n    vertical-align: middle;\r\n    border-radius: 5px;\r\n    padding-left:30px;\r\n    font-size:12px;\r\n    color:gray;\r\n}\r\n.search-icon {\r\n    position: absolute;\r\n    top:0;\r\n    left:0;\r\n    transform:translateY(30%);\r\n}\r\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInNyYy9hcHAvY2VudGVyL2NlbnRlci5jb21wb25lbnQuY3NzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQUFBO0lBQ0ksaUNBQWlDO0lBQ2pDLFdBQVc7SUFDWCxrQkFBa0I7QUFDdEI7QUFDQTtJQUNJLFdBQVc7SUFDWCxZQUFZO0FBQ2hCO0FBQ0E7SUFDSSxXQUFXO0lBQ1gsZ0JBQWdCO0FBQ3BCO0FBQ0E7SUFDSSxVQUFVO0FBQ2Q7QUFDQTtJQUNJLFlBQVk7QUFDaEI7QUFDQTtJQUNJLGtCQUFrQjtJQUNsQixXQUFXO0lBQ1gsV0FBVztJQUNYLGFBQWE7QUFDakI7QUFDQTtJQUNJLFlBQVk7SUFDWixlQUFlO0lBQ2YsZ0JBQWdCO0FBQ3BCO0FBQ0E7SUFDSSxlQUFlO0lBQ2Ysa0JBQWtCO0lBQ2xCLFdBQVc7QUFDZjtBQUNBO0lBQ0ksdUJBQXVCO0lBQ3ZCLHNCQUFzQjtJQUN0QixrQkFBa0I7SUFDbEIsaUJBQWlCO0lBQ2pCLGNBQWM7SUFDZCxVQUFVO0FBQ2Q7QUFDQTtJQUNJLGtCQUFrQjtJQUNsQixLQUFLO0lBQ0wsTUFBTTtJQUNOLHlCQUF5QjtBQUM3QiIsImZpbGUiOiJzcmMvYXBwL2NlbnRlci9jZW50ZXIuY29tcG9uZW50LmNzcyIsInNvdXJjZXNDb250ZW50IjpbIi5sZWZ0LWNvbHVtbiB7XHJcbiAgICBiYWNrZ3JvdW5kLWNvbG9yOiByZ2JhKDAsMCwwLDAuNSk7XHJcbiAgICBjb2xvcjp3aGl0ZTtcclxuICAgIGJvcmRlci1yYWRpdXM6IDVweDtcclxufVxyXG4ubG9nb3tcclxuICAgIHdpZHRoOjEwMHB4O1xyXG4gICAgaGVpZ2h0OjEwMHB4O1xyXG59XHJcbi5sZWZ0LW5hdiBsaSBhICB7XHJcbiAgICBjb2xvcjp3aGl0ZTtcclxuICAgIGZvbnQtd2VpZ2h0OiA0MDA7XHJcbn1cclxuLmZhcyB7XHJcbiAgICB3aWR0aDozMHB4O1xyXG59XHJcbi5wYWQtMjAge1xyXG4gICAgcGFkZGluZzoyMHB4O1xyXG59XHJcbiNlbnRyeSB7XHJcbiAgICBib3JkZXItcmFkaXVzOiA1cHg7XHJcbiAgICB3aWR0aDoxMDBweDtcclxuICAgIGhlaWdodDozMHB4O1xyXG4gICAgbWFyZ2luOjAgMjBweDtcclxufVxyXG4uZXgtYnV0LCAucGRmLWJ1dCwgLmFkZC1idXQsIC5zZWFyY2gtZmllbGQge1xyXG4gICAgaGVpZ2h0OiAzMHB4O1xyXG4gICAgbWFyZ2luLWxlZnQ6NXB4O1xyXG4gICAgbGluZS1oZWlnaHQ6IDBweDtcclxufVxyXG4uc2VhcmNoLWJveCB7XHJcbiAgICBkaXNwbGF5OiBpbmxpbmU7XHJcbiAgICBwb3NpdGlvbjogcmVsYXRpdmU7XHJcbiAgICBoZWlnaHQ6MzBweDtcclxufVxyXG4uc2VhcmNoLWZpZWxkIHtcclxuICAgIGJvcmRlcjowLjVweCBzb2xpZCBibHVlO1xyXG4gICAgdmVydGljYWwtYWxpZ246IG1pZGRsZTtcclxuICAgIGJvcmRlci1yYWRpdXM6IDVweDtcclxuICAgIHBhZGRpbmctbGVmdDozMHB4O1xyXG4gICAgZm9udC1zaXplOjEycHg7XHJcbiAgICBjb2xvcjpncmF5O1xyXG59XHJcbi5zZWFyY2gtaWNvbiB7XHJcbiAgICBwb3NpdGlvbjogYWJzb2x1dGU7XHJcbiAgICB0b3A6MDtcclxuICAgIGxlZnQ6MDtcclxuICAgIHRyYW5zZm9ybTp0cmFuc2xhdGVZKDMwJSk7XHJcbn0iXX0= */"
+module.exports = ".left-column {\r\n    background-color: rgba(0,0,0,0.5);\r\n    color:white;\r\n    border-radius: 5px;\r\n}\r\n.logo{\r\n    width:100px;\r\n    height:100px;\r\n}\r\n.left-nav li a  {\r\n    color:white;\r\n    font-weight: 400;\r\n}\r\n.fas {\r\n    width:30px;\r\n}\r\n.pad-20 {\r\n    padding:20px;\r\n}\r\n#entry {\r\n    border-radius: 5px;\r\n    width:100px;\r\n    height:30px;\r\n    margin:0 20px;\r\n}\r\n.ex-but, .pdf-but, .add-but, .search-field {\r\n    height: 30px;\r\n    margin-left:5px;\r\n    line-height: 0px;\r\n}\r\n.search-box {\r\n    display: inline;\r\n    position: relative;\r\n    height:30px;\r\n}\r\n.search-field {\r\n    border:0.5px solid blue;\r\n    vertical-align: middle;\r\n    border-radius: 5px;\r\n    padding-left:30px;\r\n    font-size:12px;\r\n    color:gray;\r\n}\r\n.search-icon {\r\n    position: absolute;\r\n    top:0;\r\n    left:0;\r\n    transform:translateY(30%);\r\n}\r\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbImFwcC9jZW50ZXIvY2VudGVyLmNvbXBvbmVudC5jc3MiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBQUE7SUFDSSxpQ0FBaUM7SUFDakMsV0FBVztJQUNYLGtCQUFrQjtBQUN0QjtBQUNBO0lBQ0ksV0FBVztJQUNYLFlBQVk7QUFDaEI7QUFDQTtJQUNJLFdBQVc7SUFDWCxnQkFBZ0I7QUFDcEI7QUFDQTtJQUNJLFVBQVU7QUFDZDtBQUNBO0lBQ0ksWUFBWTtBQUNoQjtBQUNBO0lBQ0ksa0JBQWtCO0lBQ2xCLFdBQVc7SUFDWCxXQUFXO0lBQ1gsYUFBYTtBQUNqQjtBQUNBO0lBQ0ksWUFBWTtJQUNaLGVBQWU7SUFDZixnQkFBZ0I7QUFDcEI7QUFDQTtJQUNJLGVBQWU7SUFDZixrQkFBa0I7SUFDbEIsV0FBVztBQUNmO0FBQ0E7SUFDSSx1QkFBdUI7SUFDdkIsc0JBQXNCO0lBQ3RCLGtCQUFrQjtJQUNsQixpQkFBaUI7SUFDakIsY0FBYztJQUNkLFVBQVU7QUFDZDtBQUNBO0lBQ0ksa0JBQWtCO0lBQ2xCLEtBQUs7SUFDTCxNQUFNO0lBQ04seUJBQXlCO0FBQzdCIiwiZmlsZSI6ImFwcC9jZW50ZXIvY2VudGVyLmNvbXBvbmVudC5jc3MiLCJzb3VyY2VzQ29udGVudCI6WyIubGVmdC1jb2x1bW4ge1xyXG4gICAgYmFja2dyb3VuZC1jb2xvcjogcmdiYSgwLDAsMCwwLjUpO1xyXG4gICAgY29sb3I6d2hpdGU7XHJcbiAgICBib3JkZXItcmFkaXVzOiA1cHg7XHJcbn1cclxuLmxvZ297XHJcbiAgICB3aWR0aDoxMDBweDtcclxuICAgIGhlaWdodDoxMDBweDtcclxufVxyXG4ubGVmdC1uYXYgbGkgYSAge1xyXG4gICAgY29sb3I6d2hpdGU7XHJcbiAgICBmb250LXdlaWdodDogNDAwO1xyXG59XHJcbi5mYXMge1xyXG4gICAgd2lkdGg6MzBweDtcclxufVxyXG4ucGFkLTIwIHtcclxuICAgIHBhZGRpbmc6MjBweDtcclxufVxyXG4jZW50cnkge1xyXG4gICAgYm9yZGVyLXJhZGl1czogNXB4O1xyXG4gICAgd2lkdGg6MTAwcHg7XHJcbiAgICBoZWlnaHQ6MzBweDtcclxuICAgIG1hcmdpbjowIDIwcHg7XHJcbn1cclxuLmV4LWJ1dCwgLnBkZi1idXQsIC5hZGQtYnV0LCAuc2VhcmNoLWZpZWxkIHtcclxuICAgIGhlaWdodDogMzBweDtcclxuICAgIG1hcmdpbi1sZWZ0OjVweDtcclxuICAgIGxpbmUtaGVpZ2h0OiAwcHg7XHJcbn1cclxuLnNlYXJjaC1ib3gge1xyXG4gICAgZGlzcGxheTogaW5saW5lO1xyXG4gICAgcG9zaXRpb246IHJlbGF0aXZlO1xyXG4gICAgaGVpZ2h0OjMwcHg7XHJcbn1cclxuLnNlYXJjaC1maWVsZCB7XHJcbiAgICBib3JkZXI6MC41cHggc29saWQgYmx1ZTtcclxuICAgIHZlcnRpY2FsLWFsaWduOiBtaWRkbGU7XHJcbiAgICBib3JkZXItcmFkaXVzOiA1cHg7XHJcbiAgICBwYWRkaW5nLWxlZnQ6MzBweDtcclxuICAgIGZvbnQtc2l6ZToxMnB4O1xyXG4gICAgY29sb3I6Z3JheTtcclxufVxyXG4uc2VhcmNoLWljb24ge1xyXG4gICAgcG9zaXRpb246IGFic29sdXRlO1xyXG4gICAgdG9wOjA7XHJcbiAgICBsZWZ0OjA7XHJcbiAgICB0cmFuc2Zvcm06dHJhbnNsYXRlWSgzMCUpO1xyXG59Il19 */"
 
 /***/ }),
 
@@ -289,6 +327,90 @@ CenterComponent = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
 
 /***/ }),
 
+/***/ "./src/app/main-menu/main-menu.component.css":
+/*!***************************************************!*\
+  !*** ./src/app/main-menu/main-menu.component.css ***!
+  \***************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = "\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IiIsImZpbGUiOiJhcHAvbWFpbi1tZW51L21haW4tbWVudS5jb21wb25lbnQuY3NzIn0= */"
+
+/***/ }),
+
+/***/ "./src/app/main-menu/main-menu.component.ts":
+/*!**************************************************!*\
+  !*** ./src/app/main-menu/main-menu.component.ts ***!
+  \**************************************************/
+/*! exports provided: MainMenuComponent */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "MainMenuComponent", function() { return MainMenuComponent; });
+/* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! tslib */ "./node_modules/tslib/tslib.es6.js");
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm2015/core.js");
+
+
+let MainMenuComponent = class MainMenuComponent {
+    constructor() { }
+    ngOnInit() {
+    }
+};
+MainMenuComponent = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
+    Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Component"])({
+        selector: 'app-main-menu',
+        template: __webpack_require__(/*! raw-loader!./main-menu.component.html */ "./node_modules/raw-loader/index.js!./src/app/main-menu/main-menu.component.html"),
+        styles: [__webpack_require__(/*! ./main-menu.component.css */ "./src/app/main-menu/main-menu.component.css")]
+    })
+], MainMenuComponent);
+
+
+
+/***/ }),
+
+/***/ "./src/app/menu/menu.component.css":
+/*!*****************************************!*\
+  !*** ./src/app/menu/menu.component.css ***!
+  \*****************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = "\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IiIsImZpbGUiOiJhcHAvbWVudS9tZW51LmNvbXBvbmVudC5jc3MifQ== */"
+
+/***/ }),
+
+/***/ "./src/app/menu/menu.component.ts":
+/*!****************************************!*\
+  !*** ./src/app/menu/menu.component.ts ***!
+  \****************************************/
+/*! exports provided: MenuComponent */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "MenuComponent", function() { return MenuComponent; });
+/* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! tslib */ "./node_modules/tslib/tslib.es6.js");
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm2015/core.js");
+
+
+let MenuComponent = class MenuComponent {
+    constructor() { }
+    ngOnInit() {
+    }
+};
+MenuComponent = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
+    Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Component"])({
+        selector: 'app-menu',
+        template: __webpack_require__(/*! raw-loader!./menu.component.html */ "./node_modules/raw-loader/index.js!./src/app/menu/menu.component.html"),
+        styles: [__webpack_require__(/*! ./menu.component.css */ "./src/app/menu/menu.component.css")]
+    })
+], MenuComponent);
+
+
+
+/***/ }),
+
 /***/ "./src/app/product-cart/product-cart.component.css":
 /*!*********************************************************!*\
   !*** ./src/app/product-cart/product-cart.component.css ***!
@@ -296,7 +418,7 @@ CenterComponent = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = ".img-cart {\r\n    width:50px;\r\n    border:0.5px solid gray;\r\n    padding:2px;\r\n}\r\n.bonus, .minus{\r\n    width:30px;\r\n    height:30px;\r\n    font-size: 16px;\r\n    padding:0;\r\n    line-height:0;\r\n    margin:0 3px;\r\n}\r\n.number {\r\n    margin-right:10px;\r\n}\r\n.btn-delete, .btn-view {\r\n    margin-right:10px;\r\n    height:30px;\r\n    line-height: 0px;\r\n}\r\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInNyYy9hcHAvcHJvZHVjdC1jYXJ0L3Byb2R1Y3QtY2FydC5jb21wb25lbnQuY3NzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQUFBO0lBQ0ksVUFBVTtJQUNWLHVCQUF1QjtJQUN2QixXQUFXO0FBQ2Y7QUFDQTtJQUNJLFVBQVU7SUFDVixXQUFXO0lBQ1gsZUFBZTtJQUNmLFNBQVM7SUFDVCxhQUFhO0lBQ2IsWUFBWTtBQUNoQjtBQUNBO0lBQ0ksaUJBQWlCO0FBQ3JCO0FBQ0E7SUFDSSxpQkFBaUI7SUFDakIsV0FBVztJQUNYLGdCQUFnQjtBQUNwQiIsImZpbGUiOiJzcmMvYXBwL3Byb2R1Y3QtY2FydC9wcm9kdWN0LWNhcnQuY29tcG9uZW50LmNzcyIsInNvdXJjZXNDb250ZW50IjpbIi5pbWctY2FydCB7XHJcbiAgICB3aWR0aDo1MHB4O1xyXG4gICAgYm9yZGVyOjAuNXB4IHNvbGlkIGdyYXk7XHJcbiAgICBwYWRkaW5nOjJweDtcclxufVxyXG4uYm9udXMsIC5taW51c3tcclxuICAgIHdpZHRoOjMwcHg7XHJcbiAgICBoZWlnaHQ6MzBweDtcclxuICAgIGZvbnQtc2l6ZTogMTZweDtcclxuICAgIHBhZGRpbmc6MDtcclxuICAgIGxpbmUtaGVpZ2h0OjA7XHJcbiAgICBtYXJnaW46MCAzcHg7XHJcbn1cclxuLm51bWJlciB7XHJcbiAgICBtYXJnaW4tcmlnaHQ6MTBweDtcclxufVxyXG4uYnRuLWRlbGV0ZSwgLmJ0bi12aWV3IHtcclxuICAgIG1hcmdpbi1yaWdodDoxMHB4O1xyXG4gICAgaGVpZ2h0OjMwcHg7XHJcbiAgICBsaW5lLWhlaWdodDogMHB4O1xyXG59Il19 */"
+module.exports = ".img-cart {\r\n    width:50px;\r\n    border:0.5px solid gray;\r\n    padding:2px;\r\n}\r\n.bonus, .minus{\r\n    width:30px;\r\n    height:30px;\r\n    font-size: 16px;\r\n    padding:0;\r\n    line-height:0;\r\n    margin:0 3px;\r\n}\r\n.number {\r\n    margin-right:10px;\r\n}\r\n.btn-delete, .btn-view {\r\n    margin-right:10px;\r\n    height:30px;\r\n    line-height: 0px;\r\n}\r\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbImFwcC9wcm9kdWN0LWNhcnQvcHJvZHVjdC1jYXJ0LmNvbXBvbmVudC5jc3MiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBQUE7SUFDSSxVQUFVO0lBQ1YsdUJBQXVCO0lBQ3ZCLFdBQVc7QUFDZjtBQUNBO0lBQ0ksVUFBVTtJQUNWLFdBQVc7SUFDWCxlQUFlO0lBQ2YsU0FBUztJQUNULGFBQWE7SUFDYixZQUFZO0FBQ2hCO0FBQ0E7SUFDSSxpQkFBaUI7QUFDckI7QUFDQTtJQUNJLGlCQUFpQjtJQUNqQixXQUFXO0lBQ1gsZ0JBQWdCO0FBQ3BCIiwiZmlsZSI6ImFwcC9wcm9kdWN0LWNhcnQvcHJvZHVjdC1jYXJ0LmNvbXBvbmVudC5jc3MiLCJzb3VyY2VzQ29udGVudCI6WyIuaW1nLWNhcnQge1xyXG4gICAgd2lkdGg6NTBweDtcclxuICAgIGJvcmRlcjowLjVweCBzb2xpZCBncmF5O1xyXG4gICAgcGFkZGluZzoycHg7XHJcbn1cclxuLmJvbnVzLCAubWludXN7XHJcbiAgICB3aWR0aDozMHB4O1xyXG4gICAgaGVpZ2h0OjMwcHg7XHJcbiAgICBmb250LXNpemU6IDE2cHg7XHJcbiAgICBwYWRkaW5nOjA7XHJcbiAgICBsaW5lLWhlaWdodDowO1xyXG4gICAgbWFyZ2luOjAgM3B4O1xyXG59XHJcbi5udW1iZXIge1xyXG4gICAgbWFyZ2luLXJpZ2h0OjEwcHg7XHJcbn1cclxuLmJ0bi1kZWxldGUsIC5idG4tdmlldyB7XHJcbiAgICBtYXJnaW4tcmlnaHQ6MTBweDtcclxuICAgIGhlaWdodDozMHB4O1xyXG4gICAgbGluZS1oZWlnaHQ6IDBweDtcclxufSJdfQ== */"
 
 /***/ }),
 
@@ -382,7 +504,7 @@ ProductCartComponent = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IiIsImZpbGUiOiJzcmMvYXBwL3Byb2R1Y3QtZHQvcHJvZHVjdC1kdC5jb21wb25lbnQuY3NzIn0= */"
+module.exports = "\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IiIsImZpbGUiOiJhcHAvcHJvZHVjdC1kdC9wcm9kdWN0LWR0LmNvbXBvbmVudC5jc3MifQ== */"
 
 /***/ }),
 
@@ -398,10 +520,13 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "ProductDTComponent", function() { return ProductDTComponent; });
 /* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! tslib */ "./node_modules/tslib/tslib.es6.js");
 /* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm2015/core.js");
+/* harmony import */ var _angular_router__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @angular/router */ "./node_modules/@angular/router/fesm2015/router.js");
+
 
 
 let ProductDTComponent = class ProductDTComponent {
-    constructor() {
+    constructor(route) {
+        this.route = route;
         this.listPD = [{
                 "id": 1,
                 "image": "leaf-rake.jpg",
@@ -450,8 +575,18 @@ let ProductDTComponent = class ProductDTComponent {
         ];
     }
     ngOnInit() {
+        this.route.paramMap.subscribe(param => {
+            this.prodId = +param.get("id");
+        });
+        this.prod = this.listPD.find(prod => prod.id === this.prodId);
+    }
+    addToCart(product) {
+        window.alert('Your product has been added to the cart!');
     }
 };
+ProductDTComponent.ctorParameters = () => [
+    { type: _angular_router__WEBPACK_IMPORTED_MODULE_2__["ActivatedRoute"] }
+];
 ProductDTComponent = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
     Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Component"])({
         selector: 'app-product-dt',
@@ -471,7 +606,7 @@ ProductDTComponent = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = ".image-list {\r\n    width:50px;\r\n}\r\n.star-rate{\r\n    overflow: hidden;   \r\n    position: relative;\r\n}\r\n.hidden {\r\n    position: absolute;\r\n    background-color:white;\r\n    height:20px;\r\n    top:50%;\r\n    width:90px;\r\n    transform: translateY(-50%);\r\n    z-index: 10;\r\n}\r\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInNyYy9hcHAvcHJvZHVjdC1saXN0L3Byb2R1Y3QtbGlzdC5jb21wb25lbnQuY3NzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQUFBO0lBQ0ksVUFBVTtBQUNkO0FBQ0E7SUFDSSxnQkFBZ0I7SUFDaEIsa0JBQWtCO0FBQ3RCO0FBQ0E7SUFDSSxrQkFBa0I7SUFDbEIsc0JBQXNCO0lBQ3RCLFdBQVc7SUFDWCxPQUFPO0lBQ1AsVUFBVTtJQUNWLDJCQUEyQjtJQUMzQixXQUFXO0FBQ2YiLCJmaWxlIjoic3JjL2FwcC9wcm9kdWN0LWxpc3QvcHJvZHVjdC1saXN0LmNvbXBvbmVudC5jc3MiLCJzb3VyY2VzQ29udGVudCI6WyIuaW1hZ2UtbGlzdCB7XHJcbiAgICB3aWR0aDo1MHB4O1xyXG59XHJcbi5zdGFyLXJhdGV7XHJcbiAgICBvdmVyZmxvdzogaGlkZGVuOyAgIFxyXG4gICAgcG9zaXRpb246IHJlbGF0aXZlO1xyXG59XHJcbi5oaWRkZW4ge1xyXG4gICAgcG9zaXRpb246IGFic29sdXRlO1xyXG4gICAgYmFja2dyb3VuZC1jb2xvcjp3aGl0ZTtcclxuICAgIGhlaWdodDoyMHB4O1xyXG4gICAgdG9wOjUwJTtcclxuICAgIHdpZHRoOjkwcHg7XHJcbiAgICB0cmFuc2Zvcm06IHRyYW5zbGF0ZVkoLTUwJSk7XHJcbiAgICB6LWluZGV4OiAxMDtcclxufSJdfQ== */"
+module.exports = ".image-list {\r\n    width:50px;\r\n}\r\n.star-rate{\r\n    overflow: hidden;   \r\n    position: relative;\r\n}\r\n.hidden {\r\n    position: absolute;\r\n    background-color:white;\r\n    height:20px;\r\n    top:50%;\r\n    width:90px;\r\n    transform: translateY(-50%);\r\n    z-index: 10;\r\n}\r\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbImFwcC9wcm9kdWN0LWxpc3QvcHJvZHVjdC1saXN0LmNvbXBvbmVudC5jc3MiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBQUE7SUFDSSxVQUFVO0FBQ2Q7QUFDQTtJQUNJLGdCQUFnQjtJQUNoQixrQkFBa0I7QUFDdEI7QUFDQTtJQUNJLGtCQUFrQjtJQUNsQixzQkFBc0I7SUFDdEIsV0FBVztJQUNYLE9BQU87SUFDUCxVQUFVO0lBQ1YsMkJBQTJCO0lBQzNCLFdBQVc7QUFDZiIsImZpbGUiOiJhcHAvcHJvZHVjdC1saXN0L3Byb2R1Y3QtbGlzdC5jb21wb25lbnQuY3NzIiwic291cmNlc0NvbnRlbnQiOlsiLmltYWdlLWxpc3Qge1xyXG4gICAgd2lkdGg6NTBweDtcclxufVxyXG4uc3Rhci1yYXRle1xyXG4gICAgb3ZlcmZsb3c6IGhpZGRlbjsgICBcclxuICAgIHBvc2l0aW9uOiByZWxhdGl2ZTtcclxufVxyXG4uaGlkZGVuIHtcclxuICAgIHBvc2l0aW9uOiBhYnNvbHV0ZTtcclxuICAgIGJhY2tncm91bmQtY29sb3I6d2hpdGU7XHJcbiAgICBoZWlnaHQ6MjBweDtcclxuICAgIHRvcDo1MCU7XHJcbiAgICB3aWR0aDo5MHB4O1xyXG4gICAgdHJhbnNmb3JtOiB0cmFuc2xhdGVZKC01MCUpO1xyXG4gICAgei1pbmRleDogMTA7XHJcbn0iXX0= */"
 
 /***/ }),
 
@@ -577,7 +712,7 @@ ProductListComponent = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = ".img-sv {\r\n    width:80px;\r\n}\r\n.sv-table td, .sv-table th {\r\n    vertical-align: middle;\r\n}\r\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInNyYy9hcHAvc2luaHZpZW4vc2luaHZpZW4uY29tcG9uZW50LmNzcyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUFBQTtJQUNJLFVBQVU7QUFDZDtBQUNBO0lBQ0ksc0JBQXNCO0FBQzFCIiwiZmlsZSI6InNyYy9hcHAvc2luaHZpZW4vc2luaHZpZW4uY29tcG9uZW50LmNzcyIsInNvdXJjZXNDb250ZW50IjpbIi5pbWctc3Yge1xyXG4gICAgd2lkdGg6ODBweDtcclxufVxyXG4uc3YtdGFibGUgdGQsIC5zdi10YWJsZSB0aCB7XHJcbiAgICB2ZXJ0aWNhbC1hbGlnbjogbWlkZGxlO1xyXG59Il19 */"
+module.exports = ".img-sv {\r\n    width:80px;\r\n}\r\n.sv-table td, .sv-table th {\r\n    vertical-align: middle;\r\n}\r\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbImFwcC9zaW5odmllbi9zaW5odmllbi5jb21wb25lbnQuY3NzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQUFBO0lBQ0ksVUFBVTtBQUNkO0FBQ0E7SUFDSSxzQkFBc0I7QUFDMUIiLCJmaWxlIjoiYXBwL3Npbmh2aWVuL3Npbmh2aWVuLmNvbXBvbmVudC5jc3MiLCJzb3VyY2VzQ29udGVudCI6WyIuaW1nLXN2IHtcclxuICAgIHdpZHRoOjgwcHg7XHJcbn1cclxuLnN2LXRhYmxlIHRkLCAuc3YtdGFibGUgdGgge1xyXG4gICAgdmVydGljYWwtYWxpZ246IG1pZGRsZTtcclxufSJdfQ== */"
 
 /***/ }),
 
@@ -597,27 +732,49 @@ __webpack_require__.r(__webpack_exports__);
 
 let SinhvienComponent = class SinhvienComponent {
     constructor() {
-        this.svList = [{
-                name: 'Nguyễn Văn Tèo',
-                birthday: '20-01-1999',
-                gender: 'Nam',
-                photo: 'teo.jpg',
-                mark: 8.5
+        this.students = [
+            {
+                ID: 1,
+                FirstMidName: "Carson",
+                LastName: "Alexander",
+                EnrollmentDate: "2005-09-01"
+            }, {
+                ID: 2,
+                FirstMidName: "Meredith",
+                LastName: "Alonso",
+                EnrollmentDate: "2002-09-01"
+            }, {
+                ID: 3,
+                FirstMidName: "Arturo",
+                LastName: "Anand",
+                EnrollmentDate: "2003-09-01"
+            }, {
+                ID: 4,
+                FirstMidName: "Gytis",
+                LastName: "Barzdukas",
+                EnrollmentDate: "2002-09-01"
+            }, {
+                ID: 5,
+                FirstMidName: "Yan",
+                LastName: "Li",
+                EnrollmentDate: "2002-09-01"
+            }, {
+                ID: 6,
+                FirstMidName: "Peggy",
+                LastName: "Justice",
+                EnrollmentDate: "2001-09-01"
             },
             {
-                name: 'Phan thị nở',
-                birthday: '20-12-1999',
-                gender: 'Nữ',
-                photo: 'no.jpg',
-                mark: 8.5
-            },
-            {
-                name: 'Nguyễn khá Bảnh',
-                birthday: '20-01-2000',
-                gender: 'Nam',
-                photo: 'banh.jpg',
-                mark: 8.5
-            },
+                ID: 7,
+                FirstMidName: "Laura",
+                LastName: "Norman",
+                EnrollmentDate: "2003-09-01"
+            }, {
+                ID: 8,
+                FirstMidName: "Nino",
+                LastName: "Olivetto",
+                EnrollmentDate: "2005-09-01"
+            }
         ];
     }
     ngOnInit() { }
@@ -695,7 +852,7 @@ Object(_angular_platform_browser_dynamic__WEBPACK_IMPORTED_MODULE_1__["platformB
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__(/*! C:\Users\ASUS\Desktop\angular\lab1\src\main.ts */"./src/main.ts");
+module.exports = __webpack_require__(/*! C:\Users\vluon\OneDrive\Desktop\angular\lab1\src\main.ts */"./src/main.ts");
 
 
 /***/ })

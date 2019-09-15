@@ -8,7 +8,9 @@ import { CenterComponent } from './center/center.component';
 import { ProductCartComponent } from './product-cart/product-cart.component';
 import { SinhvienComponent } from './sinhvien/sinhvien.component';
 import { CardInfoComponent } from './card-info/card-info.component';
-
+import { RouterModule } from '@angular/router';
+import { MenuComponent } from './menu/menu.component';
+import { MainMenuComponent } from './main-menu/main-menu.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -17,10 +19,20 @@ import { CardInfoComponent } from './card-info/card-info.component';
     CenterComponent,
     ProductCartComponent,
     SinhvienComponent,
-    CardInfoComponent
+    CardInfoComponent,
+    MenuComponent,
+    MainMenuComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    RouterModule.forRoot([
+      {path : '', component : MainMenuComponent},
+      {path : 'product-detail/:id', component :  ProductDTComponent},
+      {path: 'product-list', component : ProductListComponent},
+      {path : 'product-cart', component : ProductCartComponent},
+      {path : 'sinhvien', component : SinhvienComponent},
+      {path : 'main-menu', component : MainMenuComponent}
+    ])
   ],
   providers: [],
   bootstrap: [AppComponent]

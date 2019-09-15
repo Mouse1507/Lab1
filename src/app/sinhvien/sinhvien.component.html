@@ -1,21 +1,20 @@
-<div class="container">
-  <table class="table table-bordered text-center sv-table">
+<br>
+<div class="container-fluid">
+  <table class="table table-bordered text-left sv-table">
     <thead>
       <tr>
-        <th>Hình</th>
-        <th>Họ và tên</th>
-        <th>Ngày sinh</th>
-        <th>Giới tính</th>
-        <th>Điểm</th>
+        <th>LastName</th>
+        <th>FirstName</th>
+        <th>EnrollDate</th>
+        <th>Action</th>
       </tr>
     </thead>
     <tbody>
-      <tr *ngFor="let sv of svList">
-        <td><img src="assets/{{sv.photo}}" class="img-sv" alt="sv.name"></td>
-        <td>{{sv.name}}</td>
-        <td>{{sv.birthday}}</td>
-        <td>{{sv.gender}}</td>
-        <td>{{sv.mark}}</td>
+      <tr *ngFor="let sv of students">
+        <td>{{sv.LastName}}</td>
+        <td>{{sv.FirstMidName}}</td>
+        <td>{{sv.EnrollmentDate}}</td>
+        <td></td>
       </tr>
     </tbody>
   </table>

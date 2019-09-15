@@ -9,28 +9,53 @@ import {
   styleUrls: ['./sinhvien.component.css']
 })
 export class SinhvienComponent implements OnInit {
-  svList = [{
-      name: 'Nguyễn Văn Tèo',
-      birthday: '20-01-1999',
-      gender: 'Nam',
-      photo: 'teo.jpg',
-      mark: 8.5
-    },
+
+  students = [
     {
-      name: 'Phan thị nở',
-      birthday: '20-12-1999',
-      gender: 'Nữ',
-      photo: 'no.jpg',
-      mark: 8.5
+      ID : 1,
+      FirstMidName : "Carson",
+      LastName : "Alexander",
+      EnrollmentDate : "2005-09-01"
+    }, {
+      ID : 2,
+      FirstMidName : "Meredith",
+      LastName : "Alonso",
+      EnrollmentDate : "2002-09-01"
+    }, {
+      ID : 3,
+      FirstMidName : "Arturo",
+      LastName : "Anand",
+      EnrollmentDate : "2003-09-01"
+    }, {
+      ID : 4,
+      FirstMidName : "Gytis",
+      LastName : "Barzdukas",
+      EnrollmentDate : "2002-09-01"
+    }, {
+      ID : 5,
+      FirstMidName : "Yan",
+      LastName : "Li",
+      EnrollmentDate : "2002-09-01"
+    }, {
+      ID : 6,
+      FirstMidName : "Peggy",
+      LastName : "Justice",
+      EnrollmentDate : "2001-09-01"
     },
+
     {
-      name: 'Nguyễn khá Bảnh',
-      birthday: '20-01-2000',
-      gender: 'Nam',
-      photo: 'banh.jpg',
-      mark: 8.5
-    },
-  ]
+      ID : 7,
+      FirstMidName : "Laura",
+      LastName : "Norman",
+      EnrollmentDate : "2003-09-01"
+    }, {
+      ID : 8,
+      FirstMidName : "Nino",
+      LastName : "Olivetto",
+      EnrollmentDate : "2005-09-01"
+    }
+
+  ];
   constructor() {}
 
   ngOnInit() {}

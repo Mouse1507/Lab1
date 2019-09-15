@@ -1,12 +1,14 @@
 import { Component, OnInit } from '@angular/core';
-
+import { ActivatedRoute } from '@angular/router';
 @Component({
   selector: 'app-product-dt',
   templateUrl: './product-dt.component.html',
   styleUrls: ['./product-dt.component.css']
 })
 export class ProductDTComponent implements OnInit {
-  constructor() { }
+  constructor(
+    private route:ActivatedRoute
+    ) { }
   listPD = [{
     "id": 1,
     "image": "leaf-rake.jpg",
@@ -53,7 +55,15 @@ export class ProductDTComponent implements OnInit {
     "star": 4.5
   }
 ]
+  prod:any;
+  prodId;
   ngOnInit() {
+    this.route.paramMap.subscribe(param => {
+      this.prodId = +param.get("id");
+    })
+    this.prod = this.listPD.find(prod => prod.id === this.prodId);
   }
-
+  addToCart(product) {
+    window.alert('Your product has been added to the cart!');
+  }
 }

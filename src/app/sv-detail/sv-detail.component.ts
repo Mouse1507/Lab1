@@ -180,13 +180,16 @@ export class SvDetailComponent implements OnInit {
   ];
   sinhvien:any;
   svId;
+  
   constructor(private route: ActivatedRoute) {}
-
+  
   ngOnInit() {
     this.route.paramMap.subscribe(param => {
       this.svId = +param.get("svId");
     })
     this.sinhvien = this.students.find(sv => sv.ID === this.svId);
+    //get student course
+    
   }
 
 }

@@ -2,7 +2,7 @@
   <ul class="breadcrumb">
     <li class="breadcrumb-item"><a href="#">Home</a></li>
     <li class="breadcrumb-item"><a href="#">Sinhvien</a></li>
-    <li class="breadcrumb-item"><a href="#">Italy</a></li>
+    <li class="breadcrumb-item"><a href="#">{{sinhvien.LastName}}</a></li>
   </ul>
   <br>
   <div class="card">
@@ -42,10 +42,10 @@
               </tr>
             </thead>
             <tbody>
-              <tr *ngFor="let sv of students">
-                <td>{{sv.LastName}}</td>
-                <td>{{sv.FirstMidName}}</td>
-                <td></td>
+              <tr *ngFor="let en of enroll">
+                <td>1 </td>
+                <td>{{en.Grade}}</td>
+                <td>2</td>
               </tr>
             </tbody>
           </table>

@@ -32,7 +32,8 @@
                 <td>{{sv.FirstMidName}}</td>
                 <td>{{sv.EnrollmentDate}}</td>
                 <td>
-                  <a routerLink="/sv-detail/{{sv.ID}}"><i class="fas fa-info info-ico"></i></a> <i class="fas fa-trash del-ico"></i> 
+                  <a routerLink="/sv-detail/{{sv.ID}}" (click) = chooseStudent(sv.ID)><i class="fas fa-info info-ico"></i></a> 
+                  <button (click) = removeStudent(sv.ID)><i class="fas fa-trash del-ico"></i> </button>
                 </td>
               </tr>
             </tbody>

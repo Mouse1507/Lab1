@@ -118,7 +118,7 @@ module.exports = "<div class=\"col-md-12 col-sm-12 col-lg-12\">\n  <nav class=\"
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<div class=container>\n  <ul class=\"breadcrumb\">\n    <li class=\"breadcrumb-item\"><a href=\"#\">Home</a></li>\n    <li class=\"breadcrumb-item\"><a href=\"#\">Sinh vien</a></li>\n  </ul>\n  <br>\n  <div class=\"card\">\n    <div class=\"card-header\"><i class=\"fas fa-table\"></i> Danh sach sinh vien</div>\n    <div class=\"card-body\">\n      <div class=\"row\">\n        <div class=\"input-group col-md-4\">\n          <input type=\"text\" class=\"form-control\" placeholder=\"search....\">\n          <div class=\"input-group-prepend\">\n            <span class=\"input-group-text bg-primary\"><i class=\"fas fa-search\"></i></span>\n          </div>\n        </div>\n      </div>\n      <div class=\"row\">\n        <div class=\"col-md-12\">\n          <table class=\"table table-bordered text-left sv-table\">\n            <thead>\n              <tr>\n                <th>LastName</th>\n                <th>FirstName</th>\n                <th>EnrollDate</th>\n                <th>Action</th>\n              </tr>\n            </thead>\n            <tbody>\n              <tr *ngFor=\"let sv of students\">\n                <td>{{sv.LastName}}</td>\n                <td>{{sv.FirstMidName}}</td>\n                <td>{{sv.EnrollmentDate}}</td>\n                <td>\n                  <a routerLink=\"/sv-detail/{{sv.ID}}\"><i class=\"fas fa-info info-ico\"></i></a> <i class=\"fas fa-trash del-ico\"></i> \n                </td>\n              </tr>\n            </tbody>\n          </table>\n        </div>\n      </div>\n    </div>\n    <div class=\"card-footer\">\n      <div class=\"row\">\n        <div class=\"col-md-6\">Showing 1 of 3</div>\n        <div class=\"col-md-6 foot-card\">\n          <ul class=\"pagination\">\n            <li class=\"page-item\"><a class=\"page-link\" href=\"#\">1</a></li>\n            <li class=\"page-item active\"><a class=\"page-link\" href=\"#\">2</a></li>\n            <li class=\"page-item\"><a class=\"page-link\" href=\"#\">3</a></li>\n            <li class=\"page-item\"><a class=\"page-link\" href=\"#\"><i class=\"fas fa-forward\"></i></a></li>\n          </ul>\n        </div>\n      </div>\n    </div>\n  </div>\n\n</div>\n"
+module.exports = "<div class=container>\n  <ul class=\"breadcrumb\">\n    <li class=\"breadcrumb-item\"><a href=\"#\">Home</a></li>\n    <li class=\"breadcrumb-item\"><a href=\"#\">Sinh vien</a></li>\n  </ul>\n  <br>\n  <div class=\"card\">\n    <div class=\"card-header\"><i class=\"fas fa-table\"></i> Danh sach sinh vien</div>\n    <div class=\"card-body\">\n      <div class=\"row\">\n        <div class=\"input-group col-md-4\">\n          <input type=\"text\" class=\"form-control\" placeholder=\"search....\">\n          <div class=\"input-group-prepend\">\n            <span class=\"input-group-text bg-primary\"><i class=\"fas fa-search\"></i></span>\n          </div>\n        </div>\n      </div>\n      <div class=\"row\">\n        <div class=\"col-md-12\">\n          <table class=\"table table-bordered text-left sv-table\">\n            <thead>\n              <tr>\n                <th>LastName</th>\n                <th>FirstName</th>\n                <th>EnrollDate</th>\n                <th>Action</th>\n              </tr>\n            </thead>\n            <tbody>\n              <tr *ngFor=\"let sv of students\">\n                <td>{{sv.LastName}}</td>\n                <td>{{sv.FirstMidName}}</td>\n                <td>{{sv.EnrollmentDate}}</td>\n                <td>\n                  <a routerLink=\"/sv-detail/{{sv.ID}}\" (click) = chooseStudent(sv.ID)><i class=\"fas fa-info info-ico\"></i></a> \n                  <button (click) = removeStudent(sv.ID)><i class=\"fas fa-trash del-ico\"></i> </button>\n                </td>\n              </tr>\n            </tbody>\n          </table>\n        </div>\n      </div>\n    </div>\n    <div class=\"card-footer\">\n      <div class=\"row\">\n        <div class=\"col-md-6\">Showing 1 of 3</div>\n        <div class=\"col-md-6 foot-card\">\n          <ul class=\"pagination\">\n            <li class=\"page-item\"><a class=\"page-link\" href=\"#\">1</a></li>\n            <li class=\"page-item active\"><a class=\"page-link\" href=\"#\">2</a></li>\n            <li class=\"page-item\"><a class=\"page-link\" href=\"#\">3</a></li>\n            <li class=\"page-item\"><a class=\"page-link\" href=\"#\"><i class=\"fas fa-forward\"></i></a></li>\n          </ul>\n        </div>\n      </div>\n    </div>\n  </div>\n\n</div>\n"
 
 /***/ }),
 
@@ -129,7 +129,7 @@ module.exports = "<div class=container>\n  <ul class=\"breadcrumb\">\n    <li cl
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<div class=container>\n  <ul class=\"breadcrumb\">\n    <li class=\"breadcrumb-item\"><a href=\"#\">Home</a></li>\n    <li class=\"breadcrumb-item\"><a href=\"#\">Sinhvien</a></li>\n    <li class=\"breadcrumb-item\"><a href=\"#\">{{sinhvien.LastName}}</a></li>\n  </ul>\n  <br>\n  <div class=\"card\">\n    <div class=\"card-header\"><i class=\"fas fa-table\"></i> Details</div>\n    <div class=\"card-body\">\n      <div class=\"row\">\n        <div class=\"input-group col-md-4\">\n          <input type=\"text\" class=\"form-control\" placeholder=\"Search....\">\n          <div class=\"input-group-prepend\">\n            <span class=\"input-group-text bg-primary\"><i class=\"fas fa-search\"></i></span>\n          </div>\n        </div>\n      </div>\n      <div class=\"row\">\n        <div class=\"col-md-12\">\n          <br>\n            <div class=row>\n            <div class=\"col-md-4\">\n              Last Name : {{sinhvien.LastName}}\n            </div>\n            <div class=\"col-md-4\">\n              First Name : {{sinhvien.FirstMidName}}\n            </div>\n            <div class=\"col-md-4\">\n              Enroll Date : {{sinhvien.EnrollmentDate}} 12:00:00 AM\n            </div>\n          </div>\n          <br>\n        </div>\n        <div class=\"col-md-12\">\n          <table class=\"table table-bordered text-left sv-table\">\n            <thead>\n              <tr>\n                <th>Course Title</th>\n                <th>Grade</th>\n                <th>Credits</th>\n              </tr>\n            </thead>\n            <tbody>\n              <tr *ngFor=\"let en of enroll\">\n                <td>1 </td>\n                <td>{{en.Grade}}</td>\n                <td>2</td>\n              </tr>\n            </tbody>\n          </table>\n        </div>\n      </div>\n    </div>\n  </div>\n</div>\n"
+module.exports = "<div class=container>\n  <ul class=\"breadcrumb\">\n    <li class=\"breadcrumb-item\"><a href=\"#\">Home</a></li>\n    <li class=\"breadcrumb-item\"><a href=\"#\">Sinhvien</a></li>\n    <li class=\"breadcrumb-item\"><a href=\"#\">{{sinhvien.LastName}}</a></li>\n  </ul>\n  <br>\n  <div class=\"card\">\n    <div class=\"card-header\"><i class=\"fas fa-table\"></i> Details</div>\n    <div class=\"card-body\">\n      <div class=\"row\">\n        <div class=\"input-group col-md-4\">\n          <input type=\"text\" class=\"form-control\" placeholder=\"Search....\">\n          <div class=\"input-group-prepend\">\n            <span class=\"input-group-text bg-primary\"><i class=\"fas fa-search\"></i></span>\n          </div>\n        </div>\n      </div>\n      <div class=\"row\">\n        <div class=\"col-md-12\">\n          <br>\n            <div class=row>\n            <div class=\"col-md-4\">\n              Last Name : {{sinhvien.LastName}}\n            </div>\n            <div class=\"col-md-4\">\n              First Name : {{sinhvien.FirstMidName}}\n            </div>\n            <div class=\"col-md-4\">\n              Enroll Date : {{sinhvien.EnrollmentDate}} 12:00:00 AM\n            </div>\n          </div>\n          <br>\n        </div>\n        <div class=\"col-md-12\">\n          <table class=\"table table-bordered text-left sv-table\">\n            <thead>\n              <tr>\n                <th>Course Title</th>\n                <th>Grade</th>\n                <th>Credits</th>\n              </tr>\n            </thead>\n            <tbody>\n              <tr *ngFor=\"let ele of thongtinlienquansv\">\n                <td>{{ele.Title}} </td>\n                <td>{{ele.Grade}}</td>\n                <td>{{ele.Credits}}</td>\n              </tr>\n            </tbody>\n          </table>\n        </div>\n      </div>\n    </div>\n  </div>\n</div>\n"
 
 /***/ }),
 
@@ -199,6 +199,8 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _menu_menu_component__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! ./menu/menu.component */ "./src/app/menu/menu.component.ts");
 /* harmony import */ var _main_menu_main_menu_component__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! ./main-menu/main-menu.component */ "./src/app/main-menu/main-menu.component.ts");
 /* harmony import */ var _sv_detail_sv_detail_component__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(/*! ./sv-detail/sv-detail.component */ "./src/app/sv-detail/sv-detail.component.ts");
+/* harmony import */ var _student_info_service__WEBPACK_IMPORTED_MODULE_14__ = __webpack_require__(/*! ./student-info.service */ "./src/app/student-info.service.ts");
+
 
 
 
@@ -241,7 +243,7 @@ AppModule = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
                 { path: 'sv-detail/:svId', component: _sv_detail_sv_detail_component__WEBPACK_IMPORTED_MODULE_13__["SvDetailComponent"] }
             ])
         ],
-        providers: [],
+        providers: [_student_info_service__WEBPACK_IMPORTED_MODULE_14__["StudentInfoService"]],
         bootstrap: [_app_component__WEBPACK_IMPORTED_MODULE_3__["AppComponent"]]
     })
 ], AppModule);
@@ -743,57 +745,27 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "SinhvienComponent", function() { return SinhvienComponent; });
 /* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! tslib */ "./node_modules/tslib/tslib.es6.js");
 /* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm2015/core.js");
+/* harmony import */ var _student_info_service__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./../student-info.service */ "./src/app/student-info.service.ts");
+
 
 
 let SinhvienComponent = class SinhvienComponent {
-    constructor() {
-        this.students = [
-            {
-                ID: 1,
-                FirstMidName: "Carson",
-                LastName: "Alexander",
-                EnrollmentDate: "2005-09-01"
-            }, {
-                ID: 2,
-                FirstMidName: "Meredith",
-                LastName: "Alonso",
-                EnrollmentDate: "2002-09-01"
-            }, {
-                ID: 3,
-                FirstMidName: "Arturo",
-                LastName: "Anand",
-                EnrollmentDate: "2003-09-01"
-            }, {
-                ID: 4,
-                FirstMidName: "Gytis",
-                LastName: "Barzdukas",
-                EnrollmentDate: "2002-09-01"
-            }, {
-                ID: 5,
-                FirstMidName: "Yan",
-                LastName: "Li",
-                EnrollmentDate: "2002-09-01"
-            }, {
-                ID: 6,
-                FirstMidName: "Peggy",
-                LastName: "Justice",
-                EnrollmentDate: "2001-09-01"
-            },
-            {
-                ID: 7,
-                FirstMidName: "Laura",
-                LastName: "Norman",
-                EnrollmentDate: "2003-09-01"
-            }, {
-                ID: 8,
-                FirstMidName: "Nino",
-                LastName: "Olivetto",
-                EnrollmentDate: "2005-09-01"
-            }
-        ];
+    constructor(_studentService) {
+        this._studentService = _studentService;
     }
-    ngOnInit() { }
+    ngOnInit() {
+        this.students = this._studentService.students;
+    }
+    chooseStudent(studentId) {
+        this._studentService.chooseStudent(studentId);
+    }
+    removeStudent(studentId) {
+        this._studentService.removeStudent(studentId);
+    }
 };
+SinhvienComponent.ctorParameters = () => [
+    { type: _student_info_service__WEBPACK_IMPORTED_MODULE_2__["StudentInfoService"] }
+];
 SinhvienComponent = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
     Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Component"])({
         selector: 'app-sinhvien',
@@ -806,62 +778,55 @@ SinhvienComponent = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
 
 /***/ }),
 
-/***/ "./src/app/sv-detail/sv-detail.component.css":
-/*!***************************************************!*\
-  !*** ./src/app/sv-detail/sv-detail.component.css ***!
-  \***************************************************/
-/*! no static exports found */
-/***/ (function(module, exports) {
-
-module.exports = ".sv-table td, .sv-table th {\r\n    vertical-align: middle;\r\n}\r\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbImFwcC9zdi1kZXRhaWwvc3YtZGV0YWlsLmNvbXBvbmVudC5jc3MiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBQUE7SUFDSSxzQkFBc0I7QUFDMUIiLCJmaWxlIjoiYXBwL3N2LWRldGFpbC9zdi1kZXRhaWwuY29tcG9uZW50LmNzcyIsInNvdXJjZXNDb250ZW50IjpbIi5zdi10YWJsZSB0ZCwgLnN2LXRhYmxlIHRoIHtcclxuICAgIHZlcnRpY2FsLWFsaWduOiBtaWRkbGU7XHJcbn0iXX0= */"
-
-/***/ }),
-
-/***/ "./src/app/sv-detail/sv-detail.component.ts":
-/*!**************************************************!*\
-  !*** ./src/app/sv-detail/sv-detail.component.ts ***!
-  \**************************************************/
-/*! exports provided: SvDetailComponent */
+/***/ "./src/app/student-info.service.ts":
+/*!*****************************************!*\
+  !*** ./src/app/student-info.service.ts ***!
+  \*****************************************/
+/*! exports provided: StudentInfoService */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "SvDetailComponent", function() { return SvDetailComponent; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "StudentInfoService", function() { return StudentInfoService; });
 /* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! tslib */ "./node_modules/tslib/tslib.es6.js");
 /* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm2015/core.js");
-/* harmony import */ var _angular_router__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @angular/router */ "./node_modules/@angular/router/fesm2015/router.js");
 
 
-
-let SvDetailComponent = class SvDetailComponent {
-    constructor(route) {
-        this.route = route;
+let StudentInfoService = class StudentInfoService {
+    //Mảng chứa ID khóa học của 1 student
+    //Mảng chứa 
+    constructor() {
         this.students = [{
                 ID: 1,
                 FirstMidName: "Carson",
                 LastName: "Alexander",
                 EnrollmentDate: "2005-09-01"
-            }, {
+            },
+            {
                 ID: 2,
                 FirstMidName: "Meredith",
                 LastName: "Alonso",
                 EnrollmentDate: "2002-09-01"
-            }, {
+            },
+            {
                 ID: 3,
                 FirstMidName: "Arturo",
                 LastName: "Anand",
                 EnrollmentDate: "2003-09-01"
-            }, {
+            },
+            {
                 ID: 4,
                 FirstMidName: "Gytis",
                 LastName: "Barzdukas",
                 EnrollmentDate: "2002-09-01"
-            }, {
+            },
+            {
                 ID: 5,
                 FirstMidName: "Yan",
                 LastName: "Li",
                 EnrollmentDate: "2002-09-01"
-            }, {
+            },
+            {
                 ID: 6,
                 FirstMidName: "Peggy",
                 LastName: "Justice",
@@ -872,15 +837,15 @@ let SvDetailComponent = class SvDetailComponent {
                 FirstMidName: "Laura",
                 LastName: "Norman",
                 EnrollmentDate: "2003-09-01"
-            }, {
+            },
+            {
                 ID: 8,
                 FirstMidName: "Nino",
                 LastName: "Olivetto",
                 EnrollmentDate: "2005-09-01"
             }
         ];
-        this.courses = [
-            {
+        this.courses = [{
                 CourseID: 1050,
                 Title: "Chemistry",
                 Credits: 3,
@@ -916,8 +881,7 @@ let SvDetailComponent = class SvDetailComponent {
                 Credits: 4,
             }
         ];
-        this.enrollments = [
-            {
+        this.enrollments = [{
                 StudentID: 1,
                 CourseID: 1050,
                 Grade: 'A'
@@ -978,17 +942,131 @@ let SvDetailComponent = class SvDetailComponent {
                 Grade: 'A'
             },
         ];
+        //Lấy chỉ mục student được chọn trong mảng students
+        this.chooseIndex = null;
+        this.coursesId = [];
+    }
+    chooseStudent(studentId) {
+        for (let i = 0; i < this.students.length; i++) {
+            if (this.students[i].ID == studentId) {
+                this.chooseIndex = i;
+                this.studentID = this.students[this.chooseIndex].ID;
+                return 0;
+            }
+            ;
+        }
+        ;
+    }
+    refreshStoredArray() {
+        this.coursesId = [];
+        this.studentID = null;
+    }
+    ;
+    filterInfoStudent() {
+        this.coursesId = this.enrollments.filter(course => {
+            return course.StudentID == this.studentID;
+        });
+        for (let i = 0; i < this.coursesId.length; i++) {
+            for (let j = 0; j < this.courses.length; j++) {
+                if (this.courses[j].CourseID == this.coursesId[i].CourseID) {
+                    Object.assign(this.coursesId[i], {
+                        Title: this.courses[j].Title
+                    }, {
+                        Credits: this.courses[j].Credits
+                    });
+                }
+            }
+        }
+        ;
+        return this.coursesId;
+    }
+    ;
+    removeStudent(studentId) {
+        let startedIndex;
+        let amountOfIndex = 0;
+        for (let i = 0; i < this.students.length; i++) {
+            if (this.students[i].ID == studentId) {
+                this.chooseIndex = i;
+                break;
+            }
+            ;
+        }
+        ;
+        //Remove student in list students
+        this.students.splice(this.chooseIndex, 1);
+        for (let j = 0; j < this.enrollments.length; j++) {
+            if (this.enrollments[j].StudentID == studentId) {
+                startedIndex = j;
+                for (let h = +startedIndex; h < this.enrollments.length; h++) {
+                    if (this.enrollments[h].StudentID == studentId) {
+                        amountOfIndex += 1;
+                    }
+                    else
+                        break;
+                }
+            }
+        }
+        ;
+        this.enrollments.splice(startedIndex, amountOfIndex);
+    }
+    ;
+};
+StudentInfoService = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
+    Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Injectable"])({
+        providedIn: 'root'
+    })
+], StudentInfoService);
+
+
+
+/***/ }),
+
+/***/ "./src/app/sv-detail/sv-detail.component.css":
+/*!***************************************************!*\
+  !*** ./src/app/sv-detail/sv-detail.component.css ***!
+  \***************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = ".sv-table td, .sv-table th {\r\n    vertical-align: middle;\r\n}\r\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbImFwcC9zdi1kZXRhaWwvc3YtZGV0YWlsLmNvbXBvbmVudC5jc3MiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBQUE7SUFDSSxzQkFBc0I7QUFDMUIiLCJmaWxlIjoiYXBwL3N2LWRldGFpbC9zdi1kZXRhaWwuY29tcG9uZW50LmNzcyIsInNvdXJjZXNDb250ZW50IjpbIi5zdi10YWJsZSB0ZCwgLnN2LXRhYmxlIHRoIHtcclxuICAgIHZlcnRpY2FsLWFsaWduOiBtaWRkbGU7XHJcbn0iXX0= */"
+
+/***/ }),
+
+/***/ "./src/app/sv-detail/sv-detail.component.ts":
+/*!**************************************************!*\
+  !*** ./src/app/sv-detail/sv-detail.component.ts ***!
+  \**************************************************/
+/*! exports provided: SvDetailComponent */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "SvDetailComponent", function() { return SvDetailComponent; });
+/* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! tslib */ "./node_modules/tslib/tslib.es6.js");
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm2015/core.js");
+/* harmony import */ var _student_info_service__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./../student-info.service */ "./src/app/student-info.service.ts");
+/* harmony import */ var _angular_router__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @angular/router */ "./node_modules/@angular/router/fesm2015/router.js");
+
+
+
+
+let SvDetailComponent = class SvDetailComponent {
+    constructor(route, _studentService) {
+        this.route = route;
+        this._studentService = _studentService;
     }
     ngOnInit() {
         this.route.paramMap.subscribe(param => {
             this.svId = +param.get("svId");
         });
-        this.sinhvien = this.students.find(sv => sv.ID === this.svId);
+        this.sinhvien = this._studentService.students.find(sv => sv.ID === this.svId);
         //get student course
+        this.thongtinlienquansv = this._studentService.filterInfoStudent();
     }
 };
 SvDetailComponent.ctorParameters = () => [
-    { type: _angular_router__WEBPACK_IMPORTED_MODULE_2__["ActivatedRoute"] }
+    { type: _angular_router__WEBPACK_IMPORTED_MODULE_3__["ActivatedRoute"] },
+    { type: _student_info_service__WEBPACK_IMPORTED_MODULE_2__["StudentInfoService"] }
 ];
 SvDetailComponent = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
     Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Component"])({

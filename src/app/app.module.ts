@@ -12,6 +12,8 @@ import { RouterModule } from '@angular/router';
 import { MenuComponent } from './menu/menu.component';
 import { MainMenuComponent } from './main-menu/main-menu.component';
 import { SvDetailComponent } from './sv-detail/sv-detail.component';
+import { StudentInfoService } from './student-info.service'
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -37,7 +39,7 @@ import { SvDetailComponent } from './sv-detail/sv-detail.component';
       {path : 'sv-detail/:svId', component : SvDetailComponent}
     ])
   ],
-  providers: [],
+  providers: [StudentInfoService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

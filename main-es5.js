@@ -56,6 +56,39 @@ module.exports = "<div class=\"container-fluid\">\n  <div class=\"row pad-20\">\
 
 /***/ }),
 
+/***/ "./node_modules/raw-loader/index.js!./src/app/chungloai/chungloai.component.html":
+/*!******************************************************************************!*\
+  !*** ./node_modules/raw-loader!./src/app/chungloai/chungloai.component.html ***!
+  \******************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = "<div class=\"container pad-t-15\">\n  <header>\n    <div class=\"row\">\n      <div class=\"col-md-6\">\n        <img src=\"assets/images/online-shop-mall.jpg\" alt=\"\">\n      </div>\n      <div class=\"col-md-6\">\n        <img src=\"assets/images/header-object.png\" alt=\"\">\n      </div>\n    </div>\n    <div class=\"row\">\n      <nav class=\"navbar navbar-expand-sm bg-dark navbar-dark menu-bar\">\n        <!-- Links -->\n        <ul class=\"navbar-nav\">\n          <li class=\"nav-item\">\n            <a class=\"nav-link\" href=\"#\"><i class=\"fas fa-home\"></i> Trang chủ</a>\n          </li>\n          <li class=\"nav-item\">\n            <a class=\"nav-link\" href=\"#\"><i class=\"fas fa-barcode\"></i> Giới thiệu</a>\n          </li>\n          <li class=\"nav-item\">\n            <a class=\"nav-link\" href=\"#\"><i class=\"fas fa-address-book\"></i> Liên hệ</a>\n          </li>\n          <li class=\"nav-item\">\n            <a class=\"nav-link\" href=\"#\"><i class=\"fas fa-envelope\"></i> Góp ý</a>\n          </li>\n          <li class=\"nav-item\">\n            <a class=\"nav-link\" href=\"#\"><i class=\"fas fa-question\"></i> Hỏi đáp</a>\n          </li>\n        </ul>\n      </nav>\n    </div>\n  </header>\n  <div class=\"row pad-t-15\">\n    <div class=\"col-md-9 pad-l-0 \">\n      <div class=\"row chungloai-list\">\n        <div class=\"col-md-4\">\n          <div class=\"card cl-item\">\n            <img class=\"card-img-top cl-item-img\" src=\"assets/images/products/1001.jpg\" alt=\"Card image\">\n            <div class=\"card-body\">\n              <p>Yeu cau khach hang cung cap giay chung nhan tieu chuan chat luong va dau tu vao noi dung quang cao cho\n                nhung website</p>\n              <button type=\"button\" class=\"cl-item-button btn btn-primary\">Chi tiết</button>\n            </div>\n          </div>\n        </div>\n        <div class=\"col-md-4\">\n          <div class=\"card cl-item\">\n            <img class=\"card-img-top cl-item-img\" src=\"assets/images/products/1001.jpg\" alt=\"Card image\">\n            <div class=\"card-body\">\n              <p>Yeu cau khach hang cung cap giay chung nhan tieu chuan chat luong va dau tu vao noi dung quang cao cho\n                nhung website</p>\n              <button type=\"button\" class=\"cl-item-button btn btn-primary\">Chi tiết</button>\n            </div>\n          </div>\n        </div>\n        <div class=\"col-md-4\">\n          <div class=\"card cl-item\">\n            <img class=\"card-img-top cl-item-img\" src=\"assets/images/products/1001.jpg\" alt=\"Card image\">\n            <div class=\"card-body\">\n              <p>Yeu cau khach hang cung cap giay chung nhan tieu chuan chat luong va dau tu vao noi dung quang cao cho\n                nhung website</p>\n              <button type=\"button\" class=\"cl-item-button btn btn-primary\">Chi tiết</button>\n            </div>\n          </div>\n        </div>\n      </div>\n      <div class=\"row cl-action pos-relative\">\n        <div class=\"btn-group btn-group-sm\">\n          <button type=\"button\" class=\"btn btn-dark cl-action-icon\"><i class=\"fas fa-thumbs-up\"></i></button>\n          <button type=\"button\" class=\"btn btn-light cl-action-icon\"><i class=\"fas fa-thumbs-down\"></i></button>\n          <button type=\"button\" class=\"btn btn-light cl-action-icon\"><i class=\"fas fa-hand-point-left\"></i></button>\n          <button type=\"button\" class=\"btn btn-dark cl-action-icon\"><i class=\"fas fa-hand-point-right\"></i></button>\n        </div>\n      </div>\n    </div>\n    <div class=\"col-md-3\">\n      <div class=\"row right-box\">\n        <div class=\"col-md-5 text-right pos-relative\">\n          <img src=\"assets/images/shoppingcart.gif\" alt=\"shopping-cart\" class=\"cart-icon\">\n        </div>\n        <div class=\"col-md-7 cart-info\">\n          <p>100 items</p>\n          <p>$ 56.8</p>\n          <a href=\"cart\">View Cart</a>\n        </div>\n      </div>\n      <div class=\"row right-box\">\n        <input type=\"text\" class=\"keywords-field\" placeholder=\"keywords ..\">\n      </div>\n      <div class=\"row right-box\">\n        <table class=\"table table-bordered chungloai-list\">\n          <thead class=\"bg-light\">\n            <tr>\n              <th><i class=\"fas fa-list\"></i> Chủng loại</th>\n            </tr>\n          </thead>\n          <tbody>\n            <tr *ngFor=\"let cl of chungLoai\">\n              <td>{{cl.clName}}</td>\n            </tr>\n          </tbody>\n        </table>\n      </div>\n\n    </div>\n  </div>\n</div>\n"
+
+/***/ }),
+
+/***/ "./node_modules/raw-loader/index.js!./src/app/congnghe-detail/congnghe-detail.component.html":
+/*!******************************************************************************************!*\
+  !*** ./node_modules/raw-loader!./src/app/congnghe-detail/congnghe-detail.component.html ***!
+  \******************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = "<div class=\"container pad-t-15\">\n  <header>\n    <div class=\"row\">\n      <div class=\"col-md-6\">\n        <img src=\"assets/images/online-shop-mall.jpg\" alt=\"\">\n      </div>\n      <div class=\"col-md-6\">\n        <img src=\"assets/images/header-object.png\" alt=\"\">\n      </div>\n    </div>\n    <div class=\"row\">\n      <nav class=\"navbar navbar-expand-sm bg-dark navbar-dark menu-bar\">\n        <!-- Links -->\n        <ul class=\"navbar-nav\">\n          <li class=\"nav-item\">\n            <a class=\"nav-link\" href=\"#\"><i class=\"fas fa-home\"></i> Trang chủ</a>\n          </li>\n          <li class=\"nav-item\">\n            <a class=\"nav-link\" href=\"#\"><i class=\"fas fa-barcode\"></i> Giới thiệu</a>\n          </li>\n          <li class=\"nav-item\">\n            <a class=\"nav-link\" href=\"#\"><i class=\"fas fa-address-book\"></i> Liên hệ</a>\n          </li>\n          <li class=\"nav-item\">\n            <a class=\"nav-link\" href=\"#\"><i class=\"fas fa-envelope\"></i> Góp ý</a>\n          </li>\n          <li class=\"nav-item\">\n            <a class=\"nav-link\" href=\"#\"><i class=\"fas fa-question\"></i> Hỏi đáp</a>\n          </li>\n        </ul>\n      </nav>\n    </div>\n  </header>\n  <div class=\"row pad-t-15\">\n    <div class=\"col-md-5\">\n      <img src=\"assets/images/products/1005.jpg\" alt=\"\">\n    </div>\n    <div class=\"col-md-7\">\n      <ul class=\"list-group\">\n        <li class=\"list-group-item list-group-item-light\">Tên hàng : <span></span></li>\n        <li class=\"list-group-item list-group-item-light\">Đơn giá : <span></span></li>\n        <li class=\"list-group-item list-group-item-light\">Nhà cung cấp : <span></span></li>\n        <li class=\"list-group-item list-group-item-light\">Chủng loại : <span></span></li>\n        <li class=\"list-group-item list-group-item-light\">Số lượng : <span></span></li>\n        <li class=\"list-group-item list-group-item-light\">Giảm giá : <span></span></li>\n      </ul>\n    </div>\n  </div>\n  <div class=\"related-list\">\n    <h2>Hàng liên quan</h2>\n    <hr>\n    <div class=\"related-item-list pos-relative\">\n      <ul class=\"list-group list-group-horizontal\">\n        <li class=\"list-group-item\">\n          <img src=\"assets/images/products/1002.jpg\" alt=\"\" class=\"related-it-img\" />\n        </li>\n        <li class=\"list-group-item\">\n          <img src=\"assets/images/products/1002.jpg\" alt=\"\" class=\"related-it-img\" />\n        </li>\n        <li class=\"list-group-item\">\n          <img src=\"assets/images/products/1002.jpg\" alt=\"\" class=\"related-it-img\" />\n        </li>\n        <li class=\"list-group-item\">\n          <img src=\"assets/images/products/1002.jpg\" alt=\"\" class=\"related-it-img\" />\n        </li>\n        <li class=\"list-group-item\">\n          <img src=\"assets/images/products/1002.jpg\" alt=\"\" class=\"related-it-img\" />\n        </li>\n      </ul>\n    </div>\n\n  </div>\n</div>\n"
+
+/***/ }),
+
+/***/ "./node_modules/raw-loader/index.js!./src/app/congnghe/congnghe.component.html":
+/*!****************************************************************************!*\
+  !*** ./node_modules/raw-loader!./src/app/congnghe/congnghe.component.html ***!
+  \****************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = "<div class=\"container pad-t-15\">\n  <header>\n    <div class=\"row\">\n      <div class=\"col-md-6\">\n        <img src=\"assets/images/online-shop-mall.jpg\" alt=\"\">\n      </div>\n      <div class=\"col-md-6\">\n        <img src=\"assets/images/header-object.png\" alt=\"\">\n      </div>\n    </div>\n    <div class=\"row\">\n      <nav class=\"navbar navbar-expand-sm bg-dark navbar-dark menu-bar\">\n        <!-- Links -->\n        <ul class=\"navbar-nav\">\n          <li class=\"nav-item\">\n            <a class=\"nav-link\" href=\"#\"><i class=\"fas fa-home\"></i> Trang chủ</a>\n          </li>\n          <li class=\"nav-item\">\n            <a class=\"nav-link\" href=\"#\"><i class=\"fas fa-barcode\"></i> Giới thiệu</a>\n          </li>\n          <li class=\"nav-item\">\n            <a class=\"nav-link\" href=\"#\"><i class=\"fas fa-address-book\"></i> Liên hệ</a>\n          </li>\n          <li class=\"nav-item\">\n            <a class=\"nav-link\" href=\"#\"><i class=\"fas fa-envelope\"></i> Góp ý</a>\n          </li>\n          <li class=\"nav-item\">\n            <a class=\"nav-link\" href=\"#\"><i class=\"fas fa-question\"></i> Hỏi đáp</a>\n          </li>\n        </ul>\n      </nav>\n    </div>\n  </header>\n  <div class=\"row pad-t-15\">\n    <div class=\"col-md-9 pad-l-0 \">\n      <div class=\"jumbotron\">\n        <h1>FRONT-END FRAMEWORK</h1>\n        <p>One of the most popular framework in the world</p>\n        <button type=\"button\" class=\"btn btn-primary\">Xem thêm ...</button>\n      </div>\n      <div id=\"demo\" class=\"carousel slide\" data-ride=\"carousel\">\n        <div class=\"carousel-inner\">\n          <div class=\"carousel-item active\">\n            <img src=\"assets/images/products/1001.jpg\" alt=\"Los Angeles\" class=\"carou-item-img\">\n            <div class=\"carousel-caption\">\n              <h3>Los Angeles</h3>\n              <p>We had such a great time in LA!</p>\n            </div>\n          </div>\n          <div class=\"carousel-item\">\n            <img src=\"assets/images/products/1002.jpg\" alt=\"Chicago\" class=\"carou-item-img\">\n            <div class=\"carousel-caption\">\n              <h3>Chicago</h3>\n              <p>Thank you, Chicago!</p>\n            </div>\n          </div>\n          <div class=\"carousel-item\">\n            <img src=\"assets/images/products/1003.jpg\" alt=\"New York\" class=\"carou-item-img\">\n            <div class=\"carousel-caption\">\n              <h3>New York</h3>\n              <p>We love the Big Apple!</p>\n            </div>\n          </div>\n        </div>\n        <a class=\"carou-control carousel-control-prev\">\n          <span class=\"carousel-control-prev-icon\"></span>\n        </a>\n        <a class=\"carou-control carousel-control-next\">\n          <span class=\"carousel-control-next-icon\"></span>\n        </a>\n      </div>\n    </div>\n    <div class=\"col-md-3\">\n      <div class=\"row right-box\">\n        <div class=\"col-md-5 text-right pos-relative\">\n          <img src=\"assets/images/shoppingcart.gif\" alt=\"shopping-cart\" class=\"cart-icon\">\n        </div>\n        <div class=\"col-md-7 cart-info\">\n          <p>100 items</p>\n          <p>$ 56.8</p>\n          <a href=\"cart\">View Cart</a>\n        </div>\n      </div>\n      <div class=\"row right-box\">\n        <input type=\"text\" class=\"keywords-field\" placeholder=\"keywords ..\">\n      </div>\n      <div class=\"row right-box\">\n        <table class=\"table table-bordered chungloai-list\">\n          <thead class=\"bg-light\">\n            <tr>\n              <th><i class=\"fas fa-list\"></i> Chủng loại</th>\n            </tr>\n          </thead>\n          <tbody>\n            <tr *ngFor=\"let cl of chungLoai\">\n              <td><a routerLink=\"/chung-loai/{{cl.clId}}\">{{cl.clName}}</a></td>\n            </tr>\n          </tbody>\n        </table>\n      </div>\n\n    </div>\n  </div>\n</div>\n"
+
+/***/ }),
+
 /***/ "./node_modules/raw-loader/index.js!./src/app/main-menu/main-menu.component.html":
 /*!******************************************************************************!*\
   !*** ./node_modules/raw-loader!./src/app/main-menu/main-menu.component.html ***!
@@ -63,7 +96,7 @@ module.exports = "<div class=\"container-fluid\">\n  <div class=\"row pad-20\">\
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<div class=\"col-md-12 col-sm-12 col-lg-12\">\n        <nav class=\"navbar navbar-expand-sm bg-dark navbar-dark\">\n            <ul class=\"navbar-nav\">\n              <li class=\"nav-item\">\n                <a class=\"nav-link\" routerLink=\"/product-list\">Lab1</a>\n              </li>\n              <li class=\"nav-item\">\n                  <a class=\"nav-link\" routerLink=\"/sinhvien\">Lab2</a>\n              </li>\n            </ul>\n          </nav>\n    </div>\n    "
+module.exports = "<div class=\"col-md-12 col-sm-12 col-lg-12\">\n        <nav class=\"navbar navbar-expand-sm bg-dark navbar-dark\">\n            <ul class=\"navbar-nav\">\n              <li class=\"nav-item\">\n                <a class=\"nav-link\" routerLink=\"/product-list\">Lab1</a>\n              </li>\n              <li class=\"nav-item\">\n                  <a class=\"nav-link\" routerLink=\"/sinhvien\">Lab2</a>\n              </li>\n              <li class=\"nav-item\">\n                <a class=\"nav-link\" routerLink=\"/cong-nghe\">Lab3</a>\n              </li>\n              <li class=\"nav-item\">\n                <a class=\"nav-link\" routerLink=\"/pagination\">Lab4</a>\n              </li>\n            </ul>\n          </nav>\n    </div>\n    "
 
 /***/ }),
 
@@ -75,6 +108,17 @@ module.exports = "<div class=\"col-md-12 col-sm-12 col-lg-12\">\n        <nav cl
 /***/ (function(module, exports) {
 
 module.exports = "<div class=\"col-md-12 col-sm-12 col-lg-12\">\n    <nav class=\"navbar navbar-expand-sm bg-dark navbar-dark\">\n        <ul class=\"navbar-nav\">\n          <li class=\"nav-item\">\n            <a class=\"nav-link\" routerLink=\"/product-list\" >Home</a>\n          </li>\n          <li class=\"nav-item\">\n            <a class=\"nav-link\" routerLink=\"/product-list\">Product List</a>\n          </li>\n          <li class=\"nav-item\">\n            <a class=\"nav-link\" routerLink=\"/product-cart\">Product Cart</a>\n          </li>\n          <li class=\"nav-item\">\n              <a class=\"nav-link\" routerLink=\"/sinhvien\">Lab2</a>\n          </li>\n        </ul>\n      </nav>\n</div>\n"
+
+/***/ }),
+
+/***/ "./node_modules/raw-loader/index.js!./src/app/pagination/pagination.component.html":
+/*!********************************************************************************!*\
+  !*** ./node_modules/raw-loader!./src/app/pagination/pagination.component.html ***!
+  \********************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = "<div class=\"container\">\n  <div class=\"row\">\n    <div class=\"col-md-12\">\n      <table class=\"table table-bordered table-striped\">\n        <thead>\n          <tr>\n            <th (click)=\"orderClick('name')\">Name</th>\n            <th (click)=\"orderClick('price')\">Price</th>\n            <th (click)=\"orderClick('discount')\">Discount</th>\n            <th (click)=\"orderClick('date')\">Date</th>\n          </tr>\n        </thead>\n        <tbody>\n          <tr\n            *ngFor='let lIt of list | paginate : {itemsPerPage : itemPage, currentPage : curPage} | orderBy: orderName'>\n            <td>{{lIt.name}}</td>\n            <td>{{lIt.price}}</td>\n            <td>{{lIt.discount}}</td>\n            <td>{{lIt.date}}</td>\n          </tr>\n        </tbody>\n      </table>\n    </div>\n  </div>\n  <div class=\"row\">\n    <div class=\"col-md-12 text-right\">\n      <div class=\"btn-group round-corner\">\n        <button type=\"button\" (click)=\"toPage(1)\" class=\"btn btn-primary\">First</button>\n        <button type=\"button\" (click)=\"prevPage()\" class=\"btn btn-primary\">Prev</button>\n        <button type=\"button\" (click)=\"nextPage()\" class=\"btn btn-primary\">Next</button>\n        <button type=\"button\" (click)=\"toPage(numberOfPage)\" class=\"btn btn-primary\">Last</button>\n      </div>\n    </div>\n  </div>\n</div>\n"
 
 /***/ }),
 
@@ -201,6 +245,20 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _main_menu_main_menu_component__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! ./main-menu/main-menu.component */ "./src/app/main-menu/main-menu.component.ts");
 /* harmony import */ var _sv_detail_sv_detail_component__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(/*! ./sv-detail/sv-detail.component */ "./src/app/sv-detail/sv-detail.component.ts");
 /* harmony import */ var _student_info_service__WEBPACK_IMPORTED_MODULE_14__ = __webpack_require__(/*! ./student-info.service */ "./src/app/student-info.service.ts");
+/* harmony import */ var _congnghe_congnghe_component__WEBPACK_IMPORTED_MODULE_15__ = __webpack_require__(/*! ./congnghe/congnghe.component */ "./src/app/congnghe/congnghe.component.ts");
+/* harmony import */ var _chungloai_chungloai_component__WEBPACK_IMPORTED_MODULE_16__ = __webpack_require__(/*! ./chungloai/chungloai.component */ "./src/app/chungloai/chungloai.component.ts");
+/* harmony import */ var _congnghe_detail_congnghe_detail_component__WEBPACK_IMPORTED_MODULE_17__ = __webpack_require__(/*! ./congnghe-detail/congnghe-detail.component */ "./src/app/congnghe-detail/congnghe-detail.component.ts");
+/* harmony import */ var _tech_service_service__WEBPACK_IMPORTED_MODULE_18__ = __webpack_require__(/*! ./tech-service.service */ "./src/app/tech-service.service.ts");
+/* harmony import */ var _pagination_pagination_component__WEBPACK_IMPORTED_MODULE_19__ = __webpack_require__(/*! ./pagination/pagination.component */ "./src/app/pagination/pagination.component.ts");
+/* harmony import */ var ngx_pagination__WEBPACK_IMPORTED_MODULE_20__ = __webpack_require__(/*! ngx-pagination */ "./node_modules/ngx-pagination/dist/ngx-pagination.js");
+/* harmony import */ var ngx_order_pipe__WEBPACK_IMPORTED_MODULE_21__ = __webpack_require__(/*! ngx-order-pipe */ "./node_modules/ngx-order-pipe/fesm5/ngx-order-pipe.js");
+
+
+
+
+
+
+
 
 
 
@@ -231,10 +289,14 @@ var AppModule = /** @class */ (function () {
                 _card_info_card_info_component__WEBPACK_IMPORTED_MODULE_9__["CardInfoComponent"],
                 _menu_menu_component__WEBPACK_IMPORTED_MODULE_11__["MenuComponent"],
                 _main_menu_main_menu_component__WEBPACK_IMPORTED_MODULE_12__["MainMenuComponent"],
-                _sv_detail_sv_detail_component__WEBPACK_IMPORTED_MODULE_13__["SvDetailComponent"]
+                _sv_detail_sv_detail_component__WEBPACK_IMPORTED_MODULE_13__["SvDetailComponent"],
+                _congnghe_congnghe_component__WEBPACK_IMPORTED_MODULE_15__["CongngheComponent"],
+                _chungloai_chungloai_component__WEBPACK_IMPORTED_MODULE_16__["ChungloaiComponent"],
+                _congnghe_detail_congnghe_detail_component__WEBPACK_IMPORTED_MODULE_17__["CongngheDetailComponent"],
+                _pagination_pagination_component__WEBPACK_IMPORTED_MODULE_19__["PaginationComponent"]
             ],
             imports: [
-                _angular_platform_browser__WEBPACK_IMPORTED_MODULE_1__["BrowserModule"],
+                _angular_platform_browser__WEBPACK_IMPORTED_MODULE_1__["BrowserModule"], ngx_pagination__WEBPACK_IMPORTED_MODULE_20__["NgxPaginationModule"], ngx_order_pipe__WEBPACK_IMPORTED_MODULE_21__["OrderModule"],
                 _angular_router__WEBPACK_IMPORTED_MODULE_10__["RouterModule"].forRoot([
                     { path: '', component: _main_menu_main_menu_component__WEBPACK_IMPORTED_MODULE_12__["MainMenuComponent"] },
                     { path: 'product-detail/:id', component: _product_dt_product_dt_component__WEBPACK_IMPORTED_MODULE_4__["ProductDTComponent"] },
@@ -242,10 +304,14 @@ var AppModule = /** @class */ (function () {
                     { path: 'product-cart', component: _product_cart_product_cart_component__WEBPACK_IMPORTED_MODULE_7__["ProductCartComponent"] },
                     { path: 'sinhvien', component: _sinhvien_sinhvien_component__WEBPACK_IMPORTED_MODULE_8__["SinhvienComponent"] },
                     { path: 'main-menu', component: _main_menu_main_menu_component__WEBPACK_IMPORTED_MODULE_12__["MainMenuComponent"] },
-                    { path: 'sv-detail/:svId', component: _sv_detail_sv_detail_component__WEBPACK_IMPORTED_MODULE_13__["SvDetailComponent"] }
+                    { path: 'sv-detail/:svId', component: _sv_detail_sv_detail_component__WEBPACK_IMPORTED_MODULE_13__["SvDetailComponent"] },
+                    { path: 'cong-nghe', component: _congnghe_congnghe_component__WEBPACK_IMPORTED_MODULE_15__["CongngheComponent"] },
+                    { path: 'chung-loai/:clId', component: _chungloai_chungloai_component__WEBPACK_IMPORTED_MODULE_16__["ChungloaiComponent"] },
+                    { path: 'cong-nghe-detail', component: _congnghe_detail_congnghe_detail_component__WEBPACK_IMPORTED_MODULE_17__["CongngheDetailComponent"] },
+                    { path: 'pagination', component: _pagination_pagination_component__WEBPACK_IMPORTED_MODULE_19__["PaginationComponent"] },
                 ])
             ],
-            providers: [_student_info_service__WEBPACK_IMPORTED_MODULE_14__["StudentInfoService"]],
+            providers: [_student_info_service__WEBPACK_IMPORTED_MODULE_14__["StudentInfoService"], _tech_service_service__WEBPACK_IMPORTED_MODULE_18__["TechServiceService"]],
             bootstrap: [_app_component__WEBPACK_IMPORTED_MODULE_3__["AppComponent"]]
         })
     ], AppModule);
@@ -351,6 +417,161 @@ var CenterComponent = /** @class */ (function () {
 
 /***/ }),
 
+/***/ "./src/app/chungloai/chungloai.component.css":
+/*!***************************************************!*\
+  !*** ./src/app/chungloai/chungloai.component.css ***!
+  \***************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = ".carou-item-img {\r\n    width: 100%;\r\n    height: 300px;\r\n  }\r\n  \r\n  .carou-control {\r\n    background-color: rgba(0, 0, 0, 0.5);\r\n  }\r\n  \r\n  .cart-icon {\r\n    width:50%;\r\n    height:50px;\r\n    position: absolute;\r\n    top:50%;\r\n    left:50%;\r\n    transform:translate(-50%,-50%);\r\n  }\r\n  \r\n  .pad-t-15 {\r\n    padding-top:15px;\r\n  }\r\n  \r\n  .cart-info p {\r\n    margin:0;\r\n  }\r\n  \r\n  .pos-relative {\r\n    position: relative;\r\n  }\r\n  \r\n  .right-box {\r\n    border:1px solid lightgray;\r\n    border-radius:5px;\r\n    padding:10px;\r\n    margin-bottom:15px;\r\n  }\r\n  \r\n  .keywords-field {\r\n    width:100%;\r\n    border-radius:5px;\r\n    border:0.5px solid lightgray;\r\n    padding:10px;\r\n  }\r\n  \r\n  .right-box .list-group{\r\n    width:100%;\r\n  }\r\n  \r\n  .list-group-item.active {\r\n    background-color: rgba(0,0,0,.03);\r\n    border:1px solid rgba(0,0,0,.03);\r\n    color:black;\r\n  }\r\n  \r\n  .menu-bar{\r\n    width:100%;\r\n    border-radius:5px;\r\n  }\r\n  \r\n  .pad-l-0 {\r\n    padding-left:0;\r\n  }\r\n  \r\n  .pad-t-15 {\r\n      padding-top:15px;\r\n  }\r\n  \r\n  .nav-item {\r\n    margin:0 10px;\r\n  }\r\n  \r\n  .chungloai-list {\r\n    padding-left:15px; ;\r\n}\r\n  \r\n  .cl-item-button {\r\n    position: absolute;\r\n    right:20px;\r\n    bottom:20px;\r\n}\r\n  \r\n  .cl-item-img {\r\n    height:150px;\r\n}\r\n  \r\n  .cl-action {\r\n    margin-top:30px;\r\n}\r\n  \r\n  .cl-action div {\r\n    position: absolute;\r\n    left:50%;\r\n    transform: translateX(-50%);\r\n}\r\n  \r\n  .cl-action-icon {\r\n    border-radius:50%;\r\n    margin:0 5px;\r\n}\r\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbImFwcC9jaHVuZ2xvYWkvY2h1bmdsb2FpLmNvbXBvbmVudC5jc3MiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBQUE7SUFDSSxXQUFXO0lBQ1gsYUFBYTtFQUNmOztFQUVBO0lBQ0Usb0NBQW9DO0VBQ3RDOztFQUNBO0lBQ0UsU0FBUztJQUNULFdBQVc7SUFDWCxrQkFBa0I7SUFDbEIsT0FBTztJQUNQLFFBQVE7SUFDUiw4QkFBOEI7RUFDaEM7O0VBQ0E7SUFDRSxnQkFBZ0I7RUFDbEI7O0VBQ0E7SUFDRSxRQUFRO0VBQ1Y7O0VBQ0E7SUFDRSxrQkFBa0I7RUFDcEI7O0VBQ0E7SUFDRSwwQkFBMEI7SUFDMUIsaUJBQWlCO0lBQ2pCLFlBQVk7SUFDWixrQkFBa0I7RUFDcEI7O0VBQ0E7SUFDRSxVQUFVO0lBQ1YsaUJBQWlCO0lBQ2pCLDRCQUE0QjtJQUM1QixZQUFZO0VBQ2Q7O0VBQ0E7SUFDRSxVQUFVO0VBQ1o7O0VBQ0E7SUFDRSxpQ0FBaUM7SUFDakMsZ0NBQWdDO0lBQ2hDLFdBQVc7RUFDYjs7RUFDQTtJQUNFLFVBQVU7SUFDVixpQkFBaUI7RUFDbkI7O0VBQ0E7SUFDRSxjQUFjO0VBQ2hCOztFQUNBO01BQ0ksZ0JBQWdCO0VBQ3BCOztFQUNBO0lBQ0UsYUFBYTtFQUNmOztFQUNGO0lBQ0ksaUJBQWlCO0FBQ3JCOztFQUNBO0lBQ0ksa0JBQWtCO0lBQ2xCLFVBQVU7SUFDVixXQUFXO0FBQ2Y7O0VBQ0E7SUFDSSxZQUFZO0FBQ2hCOztFQUNBO0lBQ0ksZUFBZTtBQUNuQjs7RUFDQTtJQUNJLGtCQUFrQjtJQUNsQixRQUFRO0lBQ1IsMkJBQTJCO0FBQy9COztFQUNBO0lBQ0ksaUJBQWlCO0lBQ2pCLFlBQVk7QUFDaEIiLCJmaWxlIjoiYXBwL2NodW5nbG9haS9jaHVuZ2xvYWkuY29tcG9uZW50LmNzcyIsInNvdXJjZXNDb250ZW50IjpbIi5jYXJvdS1pdGVtLWltZyB7XHJcbiAgICB3aWR0aDogMTAwJTtcclxuICAgIGhlaWdodDogMzAwcHg7XHJcbiAgfVxyXG4gIFxyXG4gIC5jYXJvdS1jb250cm9sIHtcclxuICAgIGJhY2tncm91bmQtY29sb3I6IHJnYmEoMCwgMCwgMCwgMC41KTtcclxuICB9XHJcbiAgLmNhcnQtaWNvbiB7XHJcbiAgICB3aWR0aDo1MCU7XHJcbiAgICBoZWlnaHQ6NTBweDtcclxuICAgIHBvc2l0aW9uOiBhYnNvbHV0ZTtcclxuICAgIHRvcDo1MCU7XHJcbiAgICBsZWZ0OjUwJTtcclxuICAgIHRyYW5zZm9ybTp0cmFuc2xhdGUoLTUwJSwtNTAlKTtcclxuICB9XHJcbiAgLnBhZC10LTE1IHtcclxuICAgIHBhZGRpbmctdG9wOjE1cHg7XHJcbiAgfVxyXG4gIC5jYXJ0LWluZm8gcCB7XHJcbiAgICBtYXJnaW46MDtcclxuICB9XHJcbiAgLnBvcy1yZWxhdGl2ZSB7XHJcbiAgICBwb3NpdGlvbjogcmVsYXRpdmU7XHJcbiAgfVxyXG4gIC5yaWdodC1ib3gge1xyXG4gICAgYm9yZGVyOjFweCBzb2xpZCBsaWdodGdyYXk7XHJcbiAgICBib3JkZXItcmFkaXVzOjVweDtcclxuICAgIHBhZGRpbmc6MTBweDtcclxuICAgIG1hcmdpbi1ib3R0b206MTVweDtcclxuICB9XHJcbiAgLmtleXdvcmRzLWZpZWxkIHtcclxuICAgIHdpZHRoOjEwMCU7XHJcbiAgICBib3JkZXItcmFkaXVzOjVweDtcclxuICAgIGJvcmRlcjowLjVweCBzb2xpZCBsaWdodGdyYXk7XHJcbiAgICBwYWRkaW5nOjEwcHg7XHJcbiAgfVxyXG4gIC5yaWdodC1ib3ggLmxpc3QtZ3JvdXB7XHJcbiAgICB3aWR0aDoxMDAlO1xyXG4gIH1cclxuICAubGlzdC1ncm91cC1pdGVtLmFjdGl2ZSB7XHJcbiAgICBiYWNrZ3JvdW5kLWNvbG9yOiByZ2JhKDAsMCwwLC4wMyk7XHJcbiAgICBib3JkZXI6MXB4IHNvbGlkIHJnYmEoMCwwLDAsLjAzKTtcclxuICAgIGNvbG9yOmJsYWNrO1xyXG4gIH1cclxuICAubWVudS1iYXJ7XHJcbiAgICB3aWR0aDoxMDAlO1xyXG4gICAgYm9yZGVyLXJhZGl1czo1cHg7XHJcbiAgfVxyXG4gIC5wYWQtbC0wIHtcclxuICAgIHBhZGRpbmctbGVmdDowO1xyXG4gIH1cclxuICAucGFkLXQtMTUge1xyXG4gICAgICBwYWRkaW5nLXRvcDoxNXB4O1xyXG4gIH1cclxuICAubmF2LWl0ZW0ge1xyXG4gICAgbWFyZ2luOjAgMTBweDtcclxuICB9XHJcbi5jaHVuZ2xvYWktbGlzdCB7XHJcbiAgICBwYWRkaW5nLWxlZnQ6MTVweDsgO1xyXG59ICBcclxuLmNsLWl0ZW0tYnV0dG9uIHtcclxuICAgIHBvc2l0aW9uOiBhYnNvbHV0ZTtcclxuICAgIHJpZ2h0OjIwcHg7XHJcbiAgICBib3R0b206MjBweDtcclxufVxyXG4uY2wtaXRlbS1pbWcge1xyXG4gICAgaGVpZ2h0OjE1MHB4O1xyXG59XHJcbi5jbC1hY3Rpb24ge1xyXG4gICAgbWFyZ2luLXRvcDozMHB4O1xyXG59XHJcbi5jbC1hY3Rpb24gZGl2IHtcclxuICAgIHBvc2l0aW9uOiBhYnNvbHV0ZTtcclxuICAgIGxlZnQ6NTAlO1xyXG4gICAgdHJhbnNmb3JtOiB0cmFuc2xhdGVYKC01MCUpO1xyXG59XHJcbi5jbC1hY3Rpb24taWNvbiB7XHJcbiAgICBib3JkZXItcmFkaXVzOjUwJTtcclxuICAgIG1hcmdpbjowIDVweDtcclxufSJdfQ== */"
+
+/***/ }),
+
+/***/ "./src/app/chungloai/chungloai.component.ts":
+/*!**************************************************!*\
+  !*** ./src/app/chungloai/chungloai.component.ts ***!
+  \**************************************************/
+/*! exports provided: ChungloaiComponent */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "ChungloaiComponent", function() { return ChungloaiComponent; });
+/* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! tslib */ "./node_modules/tslib/tslib.es6.js");
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
+/* harmony import */ var _tech_service_service__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../tech-service.service */ "./src/app/tech-service.service.ts");
+/* harmony import */ var _angular_router__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @angular/router */ "./node_modules/@angular/router/fesm5/router.js");
+
+
+
+
+var ChungloaiComponent = /** @class */ (function () {
+    function ChungloaiComponent(_techServices, route) {
+        this._techServices = _techServices;
+        this.route = route;
+    }
+    ChungloaiComponent.prototype.ngOnInit = function () {
+        var _this = this;
+        this.chungLoai = this._techServices.chungLoai;
+        this.route.paramMap.subscribe(function (param) {
+            _this.clId = +param.get("clId");
+        });
+        this.cl = this.chungLoai.find(function (cl) { return cl.clId === _this.clId; });
+    };
+    ChungloaiComponent.ctorParameters = function () { return [
+        { type: _tech_service_service__WEBPACK_IMPORTED_MODULE_2__["TechServiceService"] },
+        { type: _angular_router__WEBPACK_IMPORTED_MODULE_3__["ActivatedRoute"] }
+    ]; };
+    ChungloaiComponent = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
+        Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Component"])({
+            selector: 'app-chungloai',
+            template: __webpack_require__(/*! raw-loader!./chungloai.component.html */ "./node_modules/raw-loader/index.js!./src/app/chungloai/chungloai.component.html"),
+            styles: [__webpack_require__(/*! ./chungloai.component.css */ "./src/app/chungloai/chungloai.component.css")]
+        })
+    ], ChungloaiComponent);
+    return ChungloaiComponent;
+}());
+
+
+
+/***/ }),
+
+/***/ "./src/app/congnghe-detail/congnghe-detail.component.css":
+/*!***************************************************************!*\
+  !*** ./src/app/congnghe-detail/congnghe-detail.component.css ***!
+  \***************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = ".cart-icon {\r\n  width: 50%;\r\n  height: 50px;\r\n  position: absolute;\r\n  top: 50%;\r\n  left: 50%;\r\n  transform: translate(-50%, -50%);\r\n}\r\n\r\n.pad-t-15 {\r\n  padding-top: 15px;\r\n}\r\n\r\n.cart-info p {\r\n  margin: 0;\r\n}\r\n\r\n.pos-relative {\r\n  position: relative;\r\n}\r\n\r\n.right-box {\r\n  border: 1px solid lightgray;\r\n  border-radius: 5px;\r\n  padding: 10px;\r\n  margin-bottom: 15px;\r\n}\r\n\r\n.keywords-field {\r\n  width: 100%;\r\n  border-radius: 5px;\r\n  border: 0.5px solid lightgray;\r\n  padding: 10px;\r\n}\r\n\r\n.right-box .list-group {\r\n  width: 100%;\r\n}\r\n\r\n.list-group-item.active {\r\n  background-color: rgba(0, 0, 0, .03);\r\n  border: 1px solid rgba(0, 0, 0, .03);\r\n  color: black;\r\n}\r\n\r\n.menu-bar {\r\n  width: 100%;\r\n  border-radius: 5px;\r\n}\r\n\r\n.pad-l-0 {\r\n  padding-left: 0;\r\n}\r\n\r\n.nav-item {\r\n  margin: 0 10px;\r\n}\r\n\r\n.related-it-img {\r\n  width: 150px;\r\n  height: 150px;\r\n}\r\n\r\n.related-item-list {\r\n    margin:0 auto;\r\n}\r\n\r\n.related-item-list .list-group .list-group-item {\r\n    margin:10px;\r\n}\r\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbImFwcC9jb25nbmdoZS1kZXRhaWwvY29uZ25naGUtZGV0YWlsLmNvbXBvbmVudC5jc3MiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBQUE7RUFDRSxVQUFVO0VBQ1YsWUFBWTtFQUNaLGtCQUFrQjtFQUNsQixRQUFRO0VBQ1IsU0FBUztFQUNULGdDQUFnQztBQUNsQzs7QUFFQTtFQUNFLGlCQUFpQjtBQUNuQjs7QUFFQTtFQUNFLFNBQVM7QUFDWDs7QUFFQTtFQUNFLGtCQUFrQjtBQUNwQjs7QUFFQTtFQUNFLDJCQUEyQjtFQUMzQixrQkFBa0I7RUFDbEIsYUFBYTtFQUNiLG1CQUFtQjtBQUNyQjs7QUFFQTtFQUNFLFdBQVc7RUFDWCxrQkFBa0I7RUFDbEIsNkJBQTZCO0VBQzdCLGFBQWE7QUFDZjs7QUFFQTtFQUNFLFdBQVc7QUFDYjs7QUFFQTtFQUNFLG9DQUFvQztFQUNwQyxvQ0FBb0M7RUFDcEMsWUFBWTtBQUNkOztBQUVBO0VBQ0UsV0FBVztFQUNYLGtCQUFrQjtBQUNwQjs7QUFFQTtFQUNFLGVBQWU7QUFDakI7O0FBRUE7RUFDRSxjQUFjO0FBQ2hCOztBQUVBO0VBQ0UsWUFBWTtFQUNaLGFBQWE7QUFDZjs7QUFDQTtJQUNJLGFBQWE7QUFDakI7O0FBQ0E7SUFDSSxXQUFXO0FBQ2YiLCJmaWxlIjoiYXBwL2NvbmduZ2hlLWRldGFpbC9jb25nbmdoZS1kZXRhaWwuY29tcG9uZW50LmNzcyIsInNvdXJjZXNDb250ZW50IjpbIi5jYXJ0LWljb24ge1xyXG4gIHdpZHRoOiA1MCU7XHJcbiAgaGVpZ2h0OiA1MHB4O1xyXG4gIHBvc2l0aW9uOiBhYnNvbHV0ZTtcclxuICB0b3A6IDUwJTtcclxuICBsZWZ0OiA1MCU7XHJcbiAgdHJhbnNmb3JtOiB0cmFuc2xhdGUoLTUwJSwgLTUwJSk7XHJcbn1cclxuXHJcbi5wYWQtdC0xNSB7XHJcbiAgcGFkZGluZy10b3A6IDE1cHg7XHJcbn1cclxuXHJcbi5jYXJ0LWluZm8gcCB7XHJcbiAgbWFyZ2luOiAwO1xyXG59XHJcblxyXG4ucG9zLXJlbGF0aXZlIHtcclxuICBwb3NpdGlvbjogcmVsYXRpdmU7XHJcbn1cclxuXHJcbi5yaWdodC1ib3gge1xyXG4gIGJvcmRlcjogMXB4IHNvbGlkIGxpZ2h0Z3JheTtcclxuICBib3JkZXItcmFkaXVzOiA1cHg7XHJcbiAgcGFkZGluZzogMTBweDtcclxuICBtYXJnaW4tYm90dG9tOiAxNXB4O1xyXG59XHJcblxyXG4ua2V5d29yZHMtZmllbGQge1xyXG4gIHdpZHRoOiAxMDAlO1xyXG4gIGJvcmRlci1yYWRpdXM6IDVweDtcclxuICBib3JkZXI6IDAuNXB4IHNvbGlkIGxpZ2h0Z3JheTtcclxuICBwYWRkaW5nOiAxMHB4O1xyXG59XHJcblxyXG4ucmlnaHQtYm94IC5saXN0LWdyb3VwIHtcclxuICB3aWR0aDogMTAwJTtcclxufVxyXG5cclxuLmxpc3QtZ3JvdXAtaXRlbS5hY3RpdmUge1xyXG4gIGJhY2tncm91bmQtY29sb3I6IHJnYmEoMCwgMCwgMCwgLjAzKTtcclxuICBib3JkZXI6IDFweCBzb2xpZCByZ2JhKDAsIDAsIDAsIC4wMyk7XHJcbiAgY29sb3I6IGJsYWNrO1xyXG59XHJcblxyXG4ubWVudS1iYXIge1xyXG4gIHdpZHRoOiAxMDAlO1xyXG4gIGJvcmRlci1yYWRpdXM6IDVweDtcclxufVxyXG5cclxuLnBhZC1sLTAge1xyXG4gIHBhZGRpbmctbGVmdDogMDtcclxufVxyXG5cclxuLm5hdi1pdGVtIHtcclxuICBtYXJnaW46IDAgMTBweDtcclxufVxyXG5cclxuLnJlbGF0ZWQtaXQtaW1nIHtcclxuICB3aWR0aDogMTUwcHg7XHJcbiAgaGVpZ2h0OiAxNTBweDtcclxufVxyXG4ucmVsYXRlZC1pdGVtLWxpc3Qge1xyXG4gICAgbWFyZ2luOjAgYXV0bztcclxufVxyXG4ucmVsYXRlZC1pdGVtLWxpc3QgLmxpc3QtZ3JvdXAgLmxpc3QtZ3JvdXAtaXRlbSB7XHJcbiAgICBtYXJnaW46MTBweDtcclxufSJdfQ== */"
+
+/***/ }),
+
+/***/ "./src/app/congnghe-detail/congnghe-detail.component.ts":
+/*!**************************************************************!*\
+  !*** ./src/app/congnghe-detail/congnghe-detail.component.ts ***!
+  \**************************************************************/
+/*! exports provided: CongngheDetailComponent */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "CongngheDetailComponent", function() { return CongngheDetailComponent; });
+/* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! tslib */ "./node_modules/tslib/tslib.es6.js");
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
+
+
+var CongngheDetailComponent = /** @class */ (function () {
+    function CongngheDetailComponent() {
+    }
+    CongngheDetailComponent.prototype.ngOnInit = function () {
+    };
+    CongngheDetailComponent = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
+        Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Component"])({
+            selector: 'app-congnghe-detail',
+            template: __webpack_require__(/*! raw-loader!./congnghe-detail.component.html */ "./node_modules/raw-loader/index.js!./src/app/congnghe-detail/congnghe-detail.component.html"),
+            styles: [__webpack_require__(/*! ./congnghe-detail.component.css */ "./src/app/congnghe-detail/congnghe-detail.component.css")]
+        })
+    ], CongngheDetailComponent);
+    return CongngheDetailComponent;
+}());
+
+
+
+/***/ }),
+
+/***/ "./src/app/congnghe/congnghe.component.css":
+/*!*************************************************!*\
+  !*** ./src/app/congnghe/congnghe.component.css ***!
+  \*************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = ".carou-item-img {\r\n  width: 100%;\r\n  height: 300px;\r\n}\r\n\r\n.carou-control {\r\n  background-color: rgba(0, 0, 0, 0.5);\r\n}\r\n\r\n.cart-icon {\r\n  width:50%;\r\n  height:50px;\r\n  position: absolute;\r\n  top:50%;\r\n  left:50%;\r\n  transform:translate(-50%,-50%);\r\n}\r\n\r\n.pad-t-15 {\r\n  padding-top:15px;\r\n}\r\n\r\n.cart-info p {\r\n  margin:0;\r\n}\r\n\r\n.pos-relative {\r\n  position: relative;\r\n}\r\n\r\n.right-box {\r\n  border:1px solid lightgray;\r\n  border-radius:5px;\r\n  padding:10px;\r\n  margin-bottom:15px;\r\n}\r\n\r\n.keywords-field {\r\n  width:100%;\r\n  border-radius:5px;\r\n  border:0.5px solid lightgray;\r\n  padding:10px;\r\n}\r\n\r\n.right-box .list-group{\r\n  width:100%;\r\n}\r\n\r\n.list-group-item.active {\r\n  background-color: rgba(0,0,0,.03);\r\n  border:1px solid rgba(0,0,0,.03);\r\n  color:black;\r\n}\r\n\r\n.menu-bar{\r\n  width:100%;\r\n  border-radius:5px;\r\n}\r\n\r\n.pad-l-0 {\r\n  padding-left:0;\r\n}\r\n\r\n.nav-item {\r\n  margin:0 10px;\r\n}\r\n\r\n.chungloai-list {\r\n  border-radius:5px;\r\n}\r\n\r\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbImFwcC9jb25nbmdoZS9jb25nbmdoZS5jb21wb25lbnQuY3NzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQUFBO0VBQ0UsV0FBVztFQUNYLGFBQWE7QUFDZjs7QUFFQTtFQUNFLG9DQUFvQztBQUN0Qzs7QUFDQTtFQUNFLFNBQVM7RUFDVCxXQUFXO0VBQ1gsa0JBQWtCO0VBQ2xCLE9BQU87RUFDUCxRQUFRO0VBQ1IsOEJBQThCO0FBQ2hDOztBQUNBO0VBQ0UsZ0JBQWdCO0FBQ2xCOztBQUNBO0VBQ0UsUUFBUTtBQUNWOztBQUNBO0VBQ0Usa0JBQWtCO0FBQ3BCOztBQUNBO0VBQ0UsMEJBQTBCO0VBQzFCLGlCQUFpQjtFQUNqQixZQUFZO0VBQ1osa0JBQWtCO0FBQ3BCOztBQUNBO0VBQ0UsVUFBVTtFQUNWLGlCQUFpQjtFQUNqQiw0QkFBNEI7RUFDNUIsWUFBWTtBQUNkOztBQUNBO0VBQ0UsVUFBVTtBQUNaOztBQUNBO0VBQ0UsaUNBQWlDO0VBQ2pDLGdDQUFnQztFQUNoQyxXQUFXO0FBQ2I7O0FBQ0E7RUFDRSxVQUFVO0VBQ1YsaUJBQWlCO0FBQ25COztBQUNBO0VBQ0UsY0FBYztBQUNoQjs7QUFDQTtFQUNFLGFBQWE7QUFDZjs7QUFDQTtFQUNFLGlCQUFpQjtBQUNuQiIsImZpbGUiOiJhcHAvY29uZ25naGUvY29uZ25naGUuY29tcG9uZW50LmNzcyIsInNvdXJjZXNDb250ZW50IjpbIi5jYXJvdS1pdGVtLWltZyB7XHJcbiAgd2lkdGg6IDEwMCU7XHJcbiAgaGVpZ2h0OiAzMDBweDtcclxufVxyXG5cclxuLmNhcm91LWNvbnRyb2wge1xyXG4gIGJhY2tncm91bmQtY29sb3I6IHJnYmEoMCwgMCwgMCwgMC41KTtcclxufVxyXG4uY2FydC1pY29uIHtcclxuICB3aWR0aDo1MCU7XHJcbiAgaGVpZ2h0OjUwcHg7XHJcbiAgcG9zaXRpb246IGFic29sdXRlO1xyXG4gIHRvcDo1MCU7XHJcbiAgbGVmdDo1MCU7XHJcbiAgdHJhbnNmb3JtOnRyYW5zbGF0ZSgtNTAlLC01MCUpO1xyXG59XHJcbi5wYWQtdC0xNSB7XHJcbiAgcGFkZGluZy10b3A6MTVweDtcclxufVxyXG4uY2FydC1pbmZvIHAge1xyXG4gIG1hcmdpbjowO1xyXG59XHJcbi5wb3MtcmVsYXRpdmUge1xyXG4gIHBvc2l0aW9uOiByZWxhdGl2ZTtcclxufVxyXG4ucmlnaHQtYm94IHtcclxuICBib3JkZXI6MXB4IHNvbGlkIGxpZ2h0Z3JheTtcclxuICBib3JkZXItcmFkaXVzOjVweDtcclxuICBwYWRkaW5nOjEwcHg7XHJcbiAgbWFyZ2luLWJvdHRvbToxNXB4O1xyXG59XHJcbi5rZXl3b3Jkcy1maWVsZCB7XHJcbiAgd2lkdGg6MTAwJTtcclxuICBib3JkZXItcmFkaXVzOjVweDtcclxuICBib3JkZXI6MC41cHggc29saWQgbGlnaHRncmF5O1xyXG4gIHBhZGRpbmc6MTBweDtcclxufVxyXG4ucmlnaHQtYm94IC5saXN0LWdyb3Vwe1xyXG4gIHdpZHRoOjEwMCU7XHJcbn1cclxuLmxpc3QtZ3JvdXAtaXRlbS5hY3RpdmUge1xyXG4gIGJhY2tncm91bmQtY29sb3I6IHJnYmEoMCwwLDAsLjAzKTtcclxuICBib3JkZXI6MXB4IHNvbGlkIHJnYmEoMCwwLDAsLjAzKTtcclxuICBjb2xvcjpibGFjaztcclxufVxyXG4ubWVudS1iYXJ7XHJcbiAgd2lkdGg6MTAwJTtcclxuICBib3JkZXItcmFkaXVzOjVweDtcclxufVxyXG4ucGFkLWwtMCB7XHJcbiAgcGFkZGluZy1sZWZ0OjA7XHJcbn1cclxuLm5hdi1pdGVtIHtcclxuICBtYXJnaW46MCAxMHB4O1xyXG59XHJcbi5jaHVuZ2xvYWktbGlzdCB7XHJcbiAgYm9yZGVyLXJhZGl1czo1cHg7XHJcbn1cclxuIl19 */"
+
+/***/ }),
+
+/***/ "./src/app/congnghe/congnghe.component.ts":
+/*!************************************************!*\
+  !*** ./src/app/congnghe/congnghe.component.ts ***!
+  \************************************************/
+/*! exports provided: CongngheComponent */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "CongngheComponent", function() { return CongngheComponent; });
+/* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! tslib */ "./node_modules/tslib/tslib.es6.js");
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
+/* harmony import */ var _tech_service_service__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../tech-service.service */ "./src/app/tech-service.service.ts");
+
+
+
+var CongngheComponent = /** @class */ (function () {
+    function CongngheComponent(_techServices) {
+        this._techServices = _techServices;
+    }
+    CongngheComponent.prototype.ngOnInit = function () {
+        this.chungLoai = this._techServices.chungLoai;
+    };
+    CongngheComponent.ctorParameters = function () { return [
+        { type: _tech_service_service__WEBPACK_IMPORTED_MODULE_2__["TechServiceService"] }
+    ]; };
+    CongngheComponent = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
+        Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Component"])({
+            selector: 'app-congnghe',
+            template: __webpack_require__(/*! raw-loader!./congnghe.component.html */ "./node_modules/raw-loader/index.js!./src/app/congnghe/congnghe.component.html"),
+            styles: [__webpack_require__(/*! ./congnghe.component.css */ "./src/app/congnghe/congnghe.component.css")]
+        })
+    ], CongngheComponent);
+    return CongngheComponent;
+}());
+
+
+
+/***/ }),
+
 /***/ "./src/app/main-menu/main-menu.component.css":
 /*!***************************************************!*\
   !*** ./src/app/main-menu/main-menu.component.css ***!
@@ -433,6 +654,475 @@ var MenuComponent = /** @class */ (function () {
         })
     ], MenuComponent);
     return MenuComponent;
+}());
+
+
+
+/***/ }),
+
+/***/ "./src/app/pagination/pagination.component.css":
+/*!*****************************************************!*\
+  !*** ./src/app/pagination/pagination.component.css ***!
+  \*****************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = ".round-corner button {\r\n    margin: 1px;\r\n}\r\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbImFwcC9wYWdpbmF0aW9uL3BhZ2luYXRpb24uY29tcG9uZW50LmNzcyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUFBQTtJQUNJLFdBQVc7QUFDZiIsImZpbGUiOiJhcHAvcGFnaW5hdGlvbi9wYWdpbmF0aW9uLmNvbXBvbmVudC5jc3MiLCJzb3VyY2VzQ29udGVudCI6WyIucm91bmQtY29ybmVyIGJ1dHRvbiB7XHJcbiAgICBtYXJnaW46IDFweDtcclxufSJdfQ== */"
+
+/***/ }),
+
+/***/ "./src/app/pagination/pagination.component.ts":
+/*!****************************************************!*\
+  !*** ./src/app/pagination/pagination.component.ts ***!
+  \****************************************************/
+/*! exports provided: PaginationComponent */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "PaginationComponent", function() { return PaginationComponent; });
+/* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! tslib */ "./node_modules/tslib/tslib.es6.js");
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
+
+
+var PaginationComponent = /** @class */ (function () {
+    function PaginationComponent() {
+        this.list = [{
+                "name": "Aniseed Syrup",
+                "price": 190,
+                "discount": 0.19,
+                "date": "2000-03-16"
+            },
+            {
+                "name": "Change",
+                "price": 19,
+                "discount": 0,
+                "date": "1982-12-18"
+            },
+            {
+                "name": "Aniseed Syrup",
+                "price": 10,
+                "discount": 0,
+                "date": "1973-06-14"
+            },
+            {
+                "name": "Chef Anton\u0027s Cajun Seasoning",
+                "price": 22,
+                "discount": 0,
+                "date": "1976-03-10"
+            }, {
+                "name": "Chef Anton\u0027s Gumbo Mix",
+                "price": 21.35,
+                "discount": 0,
+                "date": "1978-12-06"
+            }, {
+                "name": "Grandma\u0027s Boysenberry Spread",
+                "price": 25,
+                "discount": 0.03,
+                "date": "1981-09-03"
+            }, {
+                "name": "Uncle Bob\u0027s Organic Dried Pears",
+                "price": 30,
+                "discount": 0.03,
+                "date": "1983-03-13"
+            }, {
+                "name": "Northwoods Cranberry Sauce",
+                "price": 40,
+                "discount": 0.04,
+                "date": "1972-02-26"
+            }, {
+                "name": "Mishi Kobe Niku",
+                "price": 97,
+                "discount": 0.1,
+                "date": "1985-12-10"
+            }, {
+                "name": "Ikura",
+                "price": 31,
+                "discount": 0.03,
+                "date": "1994-03-23"
+            }, {
+                "name": "Queso Cabrales",
+                "price": 21,
+                "discount": 0,
+                "date": "1985-11-28"
+            }, {
+                "name": "Queso Manchego La Pastora",
+                "price": 38,
+                "discount": 0.04,
+                "date": "1988-08-27"
+            }, {
+                "name": "Konbu",
+                "price": 6,
+                "discount": 0.5,
+                "date": "2002-07-01"
+            }, {
+                "name": "Tofu",
+                "price": 23.25,
+                "discount": 0,
+                "date": "2002-06-24"
+            }, {
+                "name": "Genen Shouyu",
+                "price": 15.5,
+                "discount": 0,
+                "date": "1991-05-04"
+            }, {
+                "name": "Pavlova",
+                "price": 17.45,
+                "discount": 0,
+                "date": "1996-11-09"
+            }, {
+                "name": "Alice Mutton",
+                "price": 39,
+                "discount": 0.04,
+                "date": "2007-12-15"
+            }, {
+                "name": "Carnarvon Tigers",
+                "price": 62.5,
+                "discount": 0.06,
+                "date": "2011-04-13"
+            }, {
+                "name": "Teatime Chocolate Biscuits",
+                "price": 9.2,
+                "discount": 0.5,
+                "date": "2005-02-02"
+            }, {
+                "name": "Sir Rodney\u0027s Marmalade",
+                "price": 81,
+                "discount": 0.08,
+                "date": "2007-11-01"
+            }, {
+                "name": "Sir Rodney\u0027s Scones",
+                "price": 10,
+                "discount": 0,
+                "date": "2010-07-29"
+            }, {
+                "name": "Gustaf flower",
+                "price": 21,
+                "discount": 0,
+                "date": "2008-12-01"
+            }, {
+                "name": "Tunnbr Korea",
+                "price": 9,
+                "discount": 0.5,
+                "date": "2011-08-31"
+            }, {
+                "name": "Guarana¡ Fanta¡stica",
+                "price": 4.5,
+                "discount": 0.45,
+                "date": "2008-03-13"
+            }, {
+                "name": "NuNuCa Nuaa-Nougat-Creme",
+                "price": 14,
+                "discount": 0,
+                "date": "2011-07-20"
+            }, {
+                "name": "Gumbar Gummibarchen",
+                "price": 31.23,
+                "discount": 0.03,
+                "date": "2009-04-17"
+            }, {
+                "name": "Schoggi Schokolade",
+                "price": 43.9,
+                "discount": 0.04,
+                "date": "2007-01-14"
+            }, {
+                "name": "Russle Sauerkraut",
+                "price": 45.6,
+                "discount": 0.05,
+                "date": "2011-01-14"
+            }, {
+                "name": "Tharinger Rostbratwurst",
+                "price": 123.79,
+                "discount": 0.12,
+                "date": "2010-12-21"
+            }, {
+                "name": "Nord-Ost Matjeshering",
+                "price": 25.89,
+                "discount": 0.03,
+                "date": "2011-05-14"
+            }, {
+                "name": "Gorgonzola Telino",
+                "price": 12.5,
+                "discount": 0,
+                "date": "2010-10-30"
+            }, {
+                "name": "Mascarpone Fabioli",
+                "price": 32,
+                "discount": 0.03,
+                "date": "2011-07-30"
+            }, {
+                "name": "Geitost",
+                "price": 2.5,
+                "discount": 0.25,
+                "date": "2010-04-29"
+            }, {
+                "name": "Sasquatch Ale",
+                "price": 14,
+                "discount": 0,
+                "date": "2010-07-30"
+            }, {
+                "name": "Steeleye Stout",
+                "price": 18,
+                "discount": 0,
+                "date": "2011-04-25"
+            }, {
+                "name": "Inlagd Sill",
+                "price": 19,
+                "discount": 0,
+                "date": "1980-11-28"
+            }, {
+                "name": "Gravad lax",
+                "price": 26,
+                "discount": 0.03,
+                "date": "1983-08-31"
+            }, {
+                "name": "Cate de Blaye",
+                "price": 263.5,
+                "discount": 0.26,
+                "date": "1981-07-12"
+            }, {
+                "name": "Chartreuse verte",
+                "price": 18,
+                "discount": 0,
+                "date": "1984-04-08"
+            }, {
+                "name": "Boston Crab Meat",
+                "price": 18.4,
+                "discount": 0,
+                "date": "1976-12-08"
+            }, {
+                "name": "Jack\u0027s New England Clam Chowder",
+                "price": 9.65,
+                "discount": 0.5,
+                "date": "1979-09-10"
+            }, {
+                "name": "Singaporean Hokkien Fried Mee",
+                "price": 14,
+                "discount": 0,
+                "date": "1973-11-21"
+            }, {
+                "name": "Ipoh Coffee",
+                "price": 46,
+                "discount": 0.05,
+                "date": "1980-03-20"
+            }, {
+                "name": "Gula Malacca",
+                "price": 19.45,
+                "discount": 0,
+                "date": "1970-10-25"
+            }, {
+                "name": "Rogede sild",
+                "price": 9.5,
+                "discount": 0.5,
+                "date": "1990-09-21"
+            }, {
+                "name": "Spegesild",
+                "price": 12,
+                "discount": 0,
+                "date": "1993-06-23"
+            }, {
+                "name": "Zaanse koeken",
+                "price": 9.5,
+                "discount": 0.5,
+                "date": "1981-11-25"
+            }, {
+                "name": "Chocolade",
+                "price": 12.75,
+                "discount": 0,
+                "date": "1984-08-24"
+            }, {
+                "name": "Maxilaku",
+                "price": 20,
+                "discount": 0,
+                "date": "1987-05-23"
+            }, {
+                "name": "Valkoinen suklaa",
+                "price": 16.25,
+                "discount": 0,
+                "date": "1990-02-17"
+            }, {
+                "name": "Manjimup Dried Apples",
+                "price": 53,
+                "discount": 0.05,
+                "date": "2004-05-22"
+            }, {
+                "name": "Filo Mix",
+                "price": 7,
+                "discount": 0.5,
+                "date": "2001-05-20"
+            }, {
+                "name": "Perth Pasties",
+                "price": 32.8,
+                "discount": 0.03,
+                "date": "2007-01-06"
+            }, {
+                "name": "Tourtiare",
+                "price": 7.45,
+                "discount": 0.5,
+                "date": "2009-10-07"
+            }, {
+                "name": "Pacta chinois",
+                "price": 24,
+                "discount": 0,
+                "date": "2007-07-08"
+            }, {
+                "name": "Gnocchi di nonna Alice",
+                "price": 38,
+                "discount": 0.04,
+                "date": "2007-05-18"
+            }, {
+                "name": "Ravioli Angelo",
+                "price": 19.5,
+                "discount": 0,
+                "date": "2010-02-16"
+            }, {
+                "name": "Escargots de Bourgogne",
+                "price": 13.25,
+                "discount": 0,
+                "date": "2011-07-26"
+            }, {
+                "name": "Raclette Courdavault",
+                "price": 55,
+                "discount": 0.05,
+                "date": "2007-09-22"
+            }, {
+                "name": "Camembert Pierrot",
+                "price": 34,
+                "discount": 0.03,
+                "date": "2010-06-20"
+            }, {
+                "name": "Sirop d\u0027aOrable",
+                "price": 28.5,
+                "discount": 0.03,
+                "date": "2007-05-29"
+            }, {
+                "name": "Tarte au sucre",
+                "price": 49.3,
+                "discount": 0.05,
+                "date": "2008-01-21"
+            }, {
+                "name": "Vegie-spread",
+                "price": 43.9,
+                "discount": 0.04,
+                "date": "2007-11-21"
+            }, {
+                "name": "Wimmers gute Semmelknadel",
+                "price": 33.25,
+                "discount": 0.03,
+                "date": "2009-05-15"
+            }, {
+                "name": "Louisiana Fiery Hot Pepper Sauce",
+                "price": 21.05,
+                "discount": 0,
+                "date": "2008-05-15"
+            }, {
+                "name": "Louisiana Hot Spiced Okra",
+                "price": 17,
+                "discount": 0,
+                "date": "2011-02-10"
+            }, {
+                "name": "Laughing Lumberjack Lager",
+                "price": 14,
+                "discount": 0,
+                "date": "2010-12-05"
+            }, {
+                "name": "Scottish Longbreads",
+                "price": 12.5,
+                "discount": 0,
+                "date": "2009-07-08"
+            }, {
+                "name": "Gudbrandsdalsost",
+                "price": 36,
+                "discount": 0.04,
+                "date": "2011-03-09"
+            }, {
+                "name": "Outback Lager",
+                "price": 15,
+                "discount": 0,
+                "date": "2009-02-21"
+            }, {
+                "name": "Flotemysost",
+                "price": 21.5,
+                "discount": 0,
+                "date": "1980-09-04"
+            }, {
+                "name": "Mozzarella di Giovanni",
+                "price": 34.8,
+                "discount": 0.03,
+                "date": "1983-06-03"
+            }, {
+                "name": "Rad Kaviar",
+                "price": 15,
+                "discount": 0,
+                "date": "1982-12-03"
+            }, {
+                "name": "Longlife Tofu",
+                "price": 10,
+                "discount": 0.5,
+                "date": "1982-09-27"
+            }, {
+                "name": "RhanbrAu Klosterbier",
+                "price": 7.75,
+                "discount": 0.5,
+                "date": "1982-10-31"
+            }, {
+                "name": "Lakkalik AAri",
+                "price": 18,
+                "discount": 0,
+                "date": "1970-07-28"
+            }, {
+                "name": "Original Frankfurter grane Soae",
+                "price": 13,
+                "discount": 0,
+                "date": "1976-04-04"
+            }, {
+                "name": "Chai",
+                "price": 19,
+                "discount": 0,
+                "date": "1984-04-04"
+            }, {
+                "name": "Mishi Kobe Niku",
+                "price": 97,
+                "discount": 0.1,
+                "date": "1989-07-23"
+            }
+        ];
+        this.itemPage = 10;
+        this.curPage = 1;
+        this.numberOfPage = (this.list.length % this.itemPage == 0) ? Math.floor(this.list.length / this.itemPage) : (Math.floor(this.list.length / this.itemPage) + 1);
+        this.orderName = 'name';
+    }
+    PaginationComponent.prototype.nextPage = function () {
+        if (this.curPage == this.numberOfPage) {
+            return 0;
+        }
+        else {
+            this.curPage++;
+        }
+    };
+    PaginationComponent.prototype.prevPage = function () {
+        if (this.curPage <= 1) {
+            return 0;
+        }
+        else {
+            this.curPage--;
+        }
+    };
+    PaginationComponent.prototype.toPage = function (num) {
+        this.curPage = num;
+    };
+    PaginationComponent.prototype.orderClick = function (name) {
+        this.orderName = name;
+    };
+    PaginationComponent.prototype.ngOnInit = function () { };
+    PaginationComponent = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
+        Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Component"])({
+            selector: 'app-pagination',
+            template: __webpack_require__(/*! raw-loader!./pagination.component.html */ "./node_modules/raw-loader/index.js!./src/app/pagination/pagination.component.html"),
+            styles: [__webpack_require__(/*! ./pagination.component.css */ "./src/app/pagination/pagination.component.css")]
+        })
+    ], PaginationComponent);
+    return PaginationComponent;
 }());
 
 
@@ -1094,6 +1784,129 @@ var SvDetailComponent = /** @class */ (function () {
         })
     ], SvDetailComponent);
     return SvDetailComponent;
+}());
+
+
+
+/***/ }),
+
+/***/ "./src/app/tech-service.service.ts":
+/*!*****************************************!*\
+  !*** ./src/app/tech-service.service.ts ***!
+  \*****************************************/
+/*! exports provided: TechServiceService */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "TechServiceService", function() { return TechServiceService; });
+/* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! tslib */ "./node_modules/tslib/tslib.es6.js");
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
+
+
+var TechServiceService = /** @class */ (function () {
+    function TechServiceService() {
+        this.chungLoai = [{
+                clId: 1,
+                clName: "Điện thoại di động"
+            }, {
+                clId: 2,
+                clName: "Laptop"
+            }, {
+                clId: 3,
+                clName: "Đồ gia dụng"
+            }, {
+                clId: 4,
+                clName: "Phụ kiện"
+            }];
+        this.sanpham = [{
+                spId: 1,
+                spName: "Galaxy S10",
+                spNcc: "Samsung ",
+                clId: 1,
+                spSl: 5,
+                spSale: "5%"
+            },
+            {
+                spId: 2,
+                spName: "Apple Iphone",
+                spNcc: "Apple",
+                clId: 1,
+                spSl: 10,
+                spSale: "5%"
+            },
+            {
+                spId: 3,
+                spName: "Note 9",
+                spNcc: "Samsung",
+                clId: 1,
+                spSl: 10,
+                spSale: "15%"
+            },
+            {
+                spId: 4,
+                spName: "Asus F560U",
+                spNcc: "Asus",
+                clId: 2,
+                spSl: 1,
+                spSale: "25%"
+            },
+            {
+                spId: 5,
+                spName: "Lenovo Idea Pad",
+                spNcc: "Lenovo",
+                clId: 2,
+                spSl: 4,
+                spSale: "5%"
+            },
+            {
+                spId: 6,
+                spName: "Dell XPS 13",
+                spNcc: "Dell",
+                clId: 2,
+                spSl: 100,
+                spSale: "13%"
+            },
+            {
+                spId: 7,
+                spName: "Noi com dien",
+                spNcc: "Aqua",
+                clId: 3,
+                spSl: 1,
+                spSale: "5%"
+            },
+            {
+                spId: 8,
+                spName: "Bep nuong",
+                spNcc: "Lavie",
+                clId: 3,
+                spSl: 1,
+                spSale: "5%"
+            },
+            {
+                spId: 9,
+                spName: "Tai nghe",
+                spNcc: "Anker",
+                clId: 4,
+                spSl: 10,
+                spSale: "7%"
+            },
+            {
+                spId: 10,
+                spName: "Sạc du phong",
+                spNcc: "Enegizer",
+                clId: 4,
+                spSl: 1,
+                spSale: "5%"
+            }
+        ];
+    }
+    TechServiceService = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
+        Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Injectable"])({
+            providedIn: 'root'
+        })
+    ], TechServiceService);
+    return TechServiceService;
 }());
 
 

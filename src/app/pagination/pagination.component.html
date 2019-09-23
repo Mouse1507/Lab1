@@ -1,0 +1,35 @@
+<div class="container">
+  <div class="row">
+    <div class="col-md-12">
+      <table class="table table-bordered table-striped">
+        <thead>
+          <tr>
+            <th (click)="orderClick('name')">Name</th>
+            <th (click)="orderClick('price')">Price</th>
+            <th (click)="orderClick('discount')">Discount</th>
+            <th (click)="orderClick('date')">Date</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr
+            *ngFor='let lIt of list | paginate : {itemsPerPage : itemPage, currentPage : curPage} | orderBy: orderName'>
+            <td>{{lIt.name}}</td>
+            <td>{{lIt.price}}</td>
+            <td>{{lIt.discount}}</td>
+            <td>{{lIt.date}}</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-md-12 text-right">
+      <div class="btn-group round-corner">
+        <button type="button" (click)="toPage(1)" class="btn btn-primary">First</button>
+        <button type="button" (click)="prevPage()" class="btn btn-primary">Prev</button>
+        <button type="button" (click)="nextPage()" class="btn btn-primary">Next</button>
+        <button type="button" (click)="toPage(numberOfPage)" class="btn btn-primary">Last</button>
+      </div>
+    </div>
+  </div>
+</div>

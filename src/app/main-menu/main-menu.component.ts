@@ -6,9 +6,11 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./main-menu.component.css']
 })
 export class MainMenuComponent implements OnInit {
-
+  toggleTus = false;
   constructor() { }
-
+  toggleMenu(){
+    this.toggleTus = !this.toggleTus;
+  }
   ngOnInit() {
   }
 

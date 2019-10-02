@@ -34,6 +34,17 @@ module.exports = "<router-outlet></router-outlet>"
 
 /***/ }),
 
+/***/ "./node_modules/raw-loader/index.js!./src/app/banhang/banhang.component.html":
+/*!**************************************************************************!*\
+  !*** ./node_modules/raw-loader!./src/app/banhang/banhang.component.html ***!
+  \**************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = "<div class=\"container\">\n  <div class=\"row\">\n    <div class=\"col-md-12\">\n      <h2>Bán hàng giải khát</h2>\n      <div class=\"card\">\n        <div class=\"card-header\">Bán hàng giải khát</div>\n        <div class=\"card-body\">\n          <table class=\"table\">\n            <thead>\n              <tr>\n                <th></th>\n                <th>Tên hàng</th>\n                <th>Số lượng</th>\n                <th>Đơn giá</th>\n                <th>Thành tiền</th>\n              </tr>\n            </thead>\n            <tbody>\n              <tr *ngFor=\"let mh of mathang\">\n                <td><input type=\"checkbox\" [(ngModel)]=\"mh.check\" style=\"width:15px;height:15px;\"></td>\n                <td>{{mh.name}}</td>\n                <td><input type=\"number\" [disabled]=\"!mh.check\" name=\"soluong\" style=\"width:100%;\" (change)=\"tongTungCai()\" [(ngModel)]=\"mh.soluong\" ></td>\n                <td>{{mh.price}}</td>\n                <td>{{mh.tong}}</td>\n              </tr>\n            </tbody>\n          </table>\n        </div>\n        <div class=\"card-footer\">Tong tien : {{tinhtongTien()}}</div>\n      </div>\n    </div>\n  </div>\n</div>\n"
+
+/***/ }),
+
 /***/ "./node_modules/raw-loader/index.js!./src/app/card-info/card-info.component.html":
 /*!******************************************************************************!*\
   !*** ./node_modules/raw-loader!./src/app/card-info/card-info.component.html ***!
@@ -89,6 +100,39 @@ module.exports = "<div class=\"container pad-t-15\">\n  <header>\n    <div class
 
 /***/ }),
 
+/***/ "./node_modules/raw-loader/index.js!./src/app/hinhchunhat/hinhchunhat.component.html":
+/*!**********************************************************************************!*\
+  !*** ./node_modules/raw-loader!./src/app/hinhchunhat/hinhchunhat.component.html ***!
+  \**********************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = "<div class=\"container\">\n  <div class=\"row\">\n    <div class=\"col-md-12\">\n      <h2>Calculate Hinh Chu Nhat</h2>\n      <form action=\"\" method=\"POST\">\n        <div class=\"form-group\">\n          <label for=\"dai\">Dai:</label>\n          <input type=\"text\" class=\"form-control\" id=\"dai\" name=\"dai\" [(ngModel)]=\"hcn.dai\">\n        </div>\n        <div class=\"form-group\">\n          <label for=\"rong\">Rong:</label>\n          <input type=\"text\" class=\"form-control\" id=\"rong\" name=\"rong\" [(ngModel)]=\"hcn.rong\">\n        </div>\n        <div class=\"form-group\">\n          <label for=\"chuvi\">Chuvi:</label>\n          <input type=\"text\" class=\"form-control\" id=\"chuvi\" name=\"chuvi\" [(ngModel)]=\"hcn.chuvi\">\n        </div>\n        <div class=\"form-group\">\n          <label for=\"dtich\">Dien Tich:</label>\n          <input type=\"text\" class=\"form-control\" id=\"dtich\" name=\"dtich\" [(ngModel)]=\"hcn.dtich\">\n        </div>\n        <button type=\"button\" class=\"btn btn-primary\" (click)=\"calculate()\">Calculate</button>\n      </form>\n    </div>\n  </div>\n</div>\n"
+
+/***/ }),
+
+/***/ "./node_modules/raw-loader/index.js!./src/app/hocluc/hocluc.component.html":
+/*!************************************************************************!*\
+  !*** ./node_modules/raw-loader!./src/app/hocluc/hocluc.component.html ***!
+  \************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = "<div class=\"container\">\n  <div class=\"row\">\n    <div class=\"col-md-12\">\n      <h2>Học lực</h2>\n      <form action=\"\" method=\"POST\">\n        <div class=\"form-group\">\n          <label for=\"ten\">Họ và tên:</label>\n          <input type=\"text\" class=\"form-control\" id=\"ten\" name=\"ten\" [(ngModel)]=\"sv.ten\">\n        </div>\n        <div class=\"form-group\">\n          <label for=\"ns\">Ngày sinh:</label>\n          <input type=\"text\" class=\"form-control\" id=\"ns\" name=\"ns\" [(ngModel)]=\"sv.ngaysinh\">\n        </div>\n        <div class=\"form-group\">\n          <label for=\"diem\">Diem:</label>\n          <input type=\"text\" class=\"form-control\" id=\"diem\" name=\"diem\" [(ngModel)]=\"sv.diem\">\n        </div>\n        <div class=\"form-group\">\n          <label for=\"gt\">Giới tính:</label><br>\n          <select name=\"gt\" id=\"gt\" [(ngModel)]=\"sv.gioitinh\">\n            <option value=\"nam\">Nam</option>\n            <option value=\"nu\">Nữ</option>\n          </select>\n        </div>\n        <div class=\"form-group\">\n          <label for=\"hocluc\">Hoc Lực:</label>\n          <input type=\"text\" class=\"form-control\" id=\"\n                \" name=\"hocluc\" [(ngModel)]=\"sv.hocluc\">\n        </div>\n        <button type=\"button\" class=\"btn btn-primary\" (click)=\"xeploai()\">Xep loai</button>\n      </form>\n    </div>\n  </div>\n</div>\n"
+
+/***/ }),
+
+/***/ "./node_modules/raw-loader/index.js!./src/app/kiemloi/kiemloi.component.html":
+/*!**************************************************************************!*\
+  !*** ./node_modules/raw-loader!./src/app/kiemloi/kiemloi.component.html ***!
+  \**************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = "<div class=\"container\">\n    <div class=\"row\">\n      <div class=\"col-md-12\">\n        <h2>TÍnh thưởng</h2>\n        <div class=\"card\">\n          <div class=\"card-header\">Tính thưởng tết nguyên đán</div>\n          <div class=\"card-body\">\n            <form action=\"\" method=\"POST\">\n              <div class=\"form-group\">\n                <label for=\"\">Họ và tên</label><br>\n                <input type=\"text\" [(ngModel)]=\"cn.ten\" [ngModelOptions]=\"{standalone: true}\" required/>\n              </div>\n              <div class=\"form-group\">\n                <label for=\"\">Luong</label>\n                <div class=\"input-group mb-3\">\n                  <input type=\"number\" class=\"form-control\" [(ngModel)]=\"cn.luong\" [ngModelOptions]=\"{standalone: true}\">\n                  <div class=\"input-group-prepend\">\n                    <span class=\"input-group-text\">VNĐ</span>\n                  </div>\n                </div>\n              </div>\n              <div class=\"form-group\">\n                <label for=\"\">Giới tính</label><br>\n                <input type=\"radio\" value=\"nam\" name=\"gender\" [(ngModel)]=\"cn.gioitinh\"\n                  [ngModelOptions]=\"{standalone: true}\" /> Nam <input type=\"radio\" value=\"nu\" name=\"gender\"\n                  [(ngModel)]=\"cn.gioitinh\" /> Nữ\n              </div>\n              <div class=\"form-group\">\n                <label for=\"\">Tuổi</label><br>\n                <select name=\"tuoi\" id=\"cn-gender\" [(ngModel)]=\"cn.tuoi\" [ngModelOptions]=\"{standalone: true}\">\n                  <option value=\"1\">Dưới 25</option>\n                  <option value=\"2\">Từ 25 đến 40</option>\n                  <option value=\"3\">Trên 40 </option>\n                </select>\n              </div>\n            </form>\n          </div>\n          <div class=\"card-footer\">\n            Tiền thưởng : {{cn.thuong}}\n          </div>\n        </div>\n        <br>\n        <button type=\"button\" (click)=\"thuong()\" class=\"btn btn-primary\">Tinh Thuong</button>\n      </div>\n    </div>\n  </div>\n  "
+
+/***/ }),
+
 /***/ "./node_modules/raw-loader/index.js!./src/app/main-menu/main-menu.component.html":
 /*!******************************************************************************!*\
   !*** ./node_modules/raw-loader!./src/app/main-menu/main-menu.component.html ***!
@@ -96,7 +140,7 @@ module.exports = "<div class=\"container pad-t-15\">\n  <header>\n    <div class
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<div class=\"col-md-12 col-sm-12 col-lg-12\">\n        <nav class=\"navbar navbar-expand-sm bg-dark navbar-dark\">\n            <ul class=\"navbar-nav\">\n              <li class=\"nav-item\">\n                <a class=\"nav-link\" routerLink=\"/product-list\">Lab1</a>\n              </li>\n              <li class=\"nav-item\">\n                  <a class=\"nav-link\" routerLink=\"/sinhvien\">Lab2</a>\n              </li>\n              <li class=\"nav-item\">\n                <a class=\"nav-link\" routerLink=\"/cong-nghe\">Lab3</a>\n              </li>\n              <li class=\"nav-item\">\n                <a class=\"nav-link\" routerLink=\"/pagination\">Lab4</a>\n              </li>\n            </ul>\n          </nav>\n    </div>\n    "
+module.exports = "<div class=\"col-md-12 col-sm-12 col-lg-12\">\n  <nav class=\"navbar navbar-expand-sm bg-dark navbar-dark\">\n    <ul class=\"navbar-nav\">\n      <li class=\"nav-item\">\n        <a class=\"nav-link\" routerLink=\"/product-list\">Lab1</a>\n      </li>\n      <li class=\"nav-item\">\n        <a class=\"nav-link\" routerLink=\"/sinhvien\">Lab2</a>\n      </li>\n      <li class=\"nav-item\">\n        <a class=\"nav-link\" routerLink=\"/cong-nghe\">Lab3</a>\n      </li>\n      <li class=\"nav-item\">\n        <a class=\"nav-link\" routerLink=\"/pagination\">Lab4</a>\n      </li>\n      <li class=\"nav-item dropdown\">\n        <a class=\"nav-link dropdown-toggle\" id=\"navbardrop\" data-toggle=\"dropdown\" (click) = \"toggleMenu()\">Lab5</a>\n        <div class=\"dropdown-menu\" *ngIf=\"toggleTus\">\n          <a class=\"dropdown-item\" routerLink = \"/hinhchunhat\">Bài 1-1</a>\n          <a class=\"dropdown-item\" routerLink = \"/hocluc\">Bài 1-2</a>\n          <a class=\"dropdown-item\" routerLink = \"/thuong\">Bài 2</a>\n          <a class=\"dropdown-item\" routerLink = \"/banhang\">Bài 3</a>\n          <a class=\"dropdown-item\" routerLink = \"/kiemloi\">Bài 4</a>\n\n        </div>\n      </li>\n    </ul>\n  </nav>\n</div>\n"
 
 /***/ }),
 
@@ -177,6 +221,17 @@ module.exports = "<div class=container>\n  <ul class=\"breadcrumb\">\n    <li cl
 
 /***/ }),
 
+/***/ "./node_modules/raw-loader/index.js!./src/app/thuong/thuong.component.html":
+/*!************************************************************************!*\
+  !*** ./node_modules/raw-loader!./src/app/thuong/thuong.component.html ***!
+  \************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = "<div class=\"container\">\n  <div class=\"row\">\n    <div class=\"col-md-12\">\n      <h2>TÍnh thưởng</h2>\n      <div class=\"card\">\n        <div class=\"card-header\">Tính thưởng tết nguyên đán</div>\n        <div class=\"card-body\">\n          <form action=\"\" method=\"POST\">\n            <div class=\"form-group\">\n              <label for=\"\">Họ và tên</label><br>\n              <input type=\"text\" [(ngModel)]=\"cn.ten\" [ngModelOptions]=\"{standalone: true}\" />\n            </div>\n            <div class=\"form-group\">\n              <label for=\"\">Luong</label>\n              <div class=\"input-group mb-3\">\n                <input type=\"text\" class=\"form-control\" [(ngModel)]=\"cn.luong\" [ngModelOptions]=\"{standalone: true}\">\n                <div class=\"input-group-prepend\">\n                  <span class=\"input-group-text\">VNĐ</span>\n                </div>\n              </div>\n            </div>\n            <div class=\"form-group\">\n              <label for=\"\">Giới tính</label><br>\n              <input type=\"radio\" value=\"nam\" name=\"gender\" [(ngModel)]=\"cn.gioitinh\"\n                [ngModelOptions]=\"{standalone: true}\" /> Nam <input type=\"radio\" value=\"nu\" name=\"gender\"\n                [(ngModel)]=\"cn.gioitinh\" /> Nữ\n            </div>\n            <div class=\"form-group\">\n              <label for=\"\">Tuổi</label><br>\n              <select name=\"tuoi\" id=\"cn-gender\" [(ngModel)]=\"cn.tuoi\" [ngModelOptions]=\"{standalone: true}\">\n                <option value=\"1\">Dưới 25</option>\n                <option value=\"2\">Từ 25 đến 40</option>\n                <option value=\"3\">Trên 40 </option>\n              </select>\n            </div>\n          </form>\n        </div>\n        <div class=\"card-footer\">\n          Tiền thưởng : {{cn.thuong}}\n        </div>\n      </div>\n      <br>\n      <button type=\"button\" (click)=\"thuong()\" class=\"btn btn-primary\">Tinh Thuong</button>\n    </div>\n  </div>\n</div>\n"
+
+/***/ }),
+
 /***/ "./src/app/app.component.css":
 /*!***********************************!*\
   !*** ./src/app/app.component.css ***!
@@ -233,25 +288,37 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! tslib */ "./node_modules/tslib/tslib.es6.js");
 /* harmony import */ var _angular_platform_browser__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/platform-browser */ "./node_modules/@angular/platform-browser/fesm5/platform-browser.js");
 /* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
-/* harmony import */ var _app_component__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./app.component */ "./src/app/app.component.ts");
-/* harmony import */ var _product_dt_product_dt_component__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./product-dt/product-dt.component */ "./src/app/product-dt/product-dt.component.ts");
-/* harmony import */ var _product_list_product_list_component__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./product-list/product-list.component */ "./src/app/product-list/product-list.component.ts");
-/* harmony import */ var _center_center_component__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./center/center.component */ "./src/app/center/center.component.ts");
-/* harmony import */ var _product_cart_product_cart_component__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./product-cart/product-cart.component */ "./src/app/product-cart/product-cart.component.ts");
-/* harmony import */ var _sinhvien_sinhvien_component__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ./sinhvien/sinhvien.component */ "./src/app/sinhvien/sinhvien.component.ts");
-/* harmony import */ var _card_info_card_info_component__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ./card-info/card-info.component */ "./src/app/card-info/card-info.component.ts");
-/* harmony import */ var _angular_router__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! @angular/router */ "./node_modules/@angular/router/fesm5/router.js");
-/* harmony import */ var _menu_menu_component__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! ./menu/menu.component */ "./src/app/menu/menu.component.ts");
-/* harmony import */ var _main_menu_main_menu_component__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! ./main-menu/main-menu.component */ "./src/app/main-menu/main-menu.component.ts");
-/* harmony import */ var _sv_detail_sv_detail_component__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(/*! ./sv-detail/sv-detail.component */ "./src/app/sv-detail/sv-detail.component.ts");
-/* harmony import */ var _student_info_service__WEBPACK_IMPORTED_MODULE_14__ = __webpack_require__(/*! ./student-info.service */ "./src/app/student-info.service.ts");
-/* harmony import */ var _congnghe_congnghe_component__WEBPACK_IMPORTED_MODULE_15__ = __webpack_require__(/*! ./congnghe/congnghe.component */ "./src/app/congnghe/congnghe.component.ts");
-/* harmony import */ var _chungloai_chungloai_component__WEBPACK_IMPORTED_MODULE_16__ = __webpack_require__(/*! ./chungloai/chungloai.component */ "./src/app/chungloai/chungloai.component.ts");
-/* harmony import */ var _congnghe_detail_congnghe_detail_component__WEBPACK_IMPORTED_MODULE_17__ = __webpack_require__(/*! ./congnghe-detail/congnghe-detail.component */ "./src/app/congnghe-detail/congnghe-detail.component.ts");
-/* harmony import */ var _tech_service_service__WEBPACK_IMPORTED_MODULE_18__ = __webpack_require__(/*! ./tech-service.service */ "./src/app/tech-service.service.ts");
-/* harmony import */ var _pagination_pagination_component__WEBPACK_IMPORTED_MODULE_19__ = __webpack_require__(/*! ./pagination/pagination.component */ "./src/app/pagination/pagination.component.ts");
-/* harmony import */ var ngx_pagination__WEBPACK_IMPORTED_MODULE_20__ = __webpack_require__(/*! ngx-pagination */ "./node_modules/ngx-pagination/dist/ngx-pagination.js");
-/* harmony import */ var ngx_order_pipe__WEBPACK_IMPORTED_MODULE_21__ = __webpack_require__(/*! ngx-order-pipe */ "./node_modules/ngx-order-pipe/fesm5/ngx-order-pipe.js");
+/* harmony import */ var _angular_forms__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @angular/forms */ "./node_modules/@angular/forms/fesm5/forms.js");
+/* harmony import */ var _app_component__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./app.component */ "./src/app/app.component.ts");
+/* harmony import */ var _product_dt_product_dt_component__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./product-dt/product-dt.component */ "./src/app/product-dt/product-dt.component.ts");
+/* harmony import */ var _product_list_product_list_component__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./product-list/product-list.component */ "./src/app/product-list/product-list.component.ts");
+/* harmony import */ var _center_center_component__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./center/center.component */ "./src/app/center/center.component.ts");
+/* harmony import */ var _product_cart_product_cart_component__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ./product-cart/product-cart.component */ "./src/app/product-cart/product-cart.component.ts");
+/* harmony import */ var _sinhvien_sinhvien_component__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ./sinhvien/sinhvien.component */ "./src/app/sinhvien/sinhvien.component.ts");
+/* harmony import */ var _card_info_card_info_component__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ./card-info/card-info.component */ "./src/app/card-info/card-info.component.ts");
+/* harmony import */ var _angular_router__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! @angular/router */ "./node_modules/@angular/router/fesm5/router.js");
+/* harmony import */ var _menu_menu_component__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! ./menu/menu.component */ "./src/app/menu/menu.component.ts");
+/* harmony import */ var _main_menu_main_menu_component__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(/*! ./main-menu/main-menu.component */ "./src/app/main-menu/main-menu.component.ts");
+/* harmony import */ var _sv_detail_sv_detail_component__WEBPACK_IMPORTED_MODULE_14__ = __webpack_require__(/*! ./sv-detail/sv-detail.component */ "./src/app/sv-detail/sv-detail.component.ts");
+/* harmony import */ var _student_info_service__WEBPACK_IMPORTED_MODULE_15__ = __webpack_require__(/*! ./student-info.service */ "./src/app/student-info.service.ts");
+/* harmony import */ var _congnghe_congnghe_component__WEBPACK_IMPORTED_MODULE_16__ = __webpack_require__(/*! ./congnghe/congnghe.component */ "./src/app/congnghe/congnghe.component.ts");
+/* harmony import */ var _chungloai_chungloai_component__WEBPACK_IMPORTED_MODULE_17__ = __webpack_require__(/*! ./chungloai/chungloai.component */ "./src/app/chungloai/chungloai.component.ts");
+/* harmony import */ var _congnghe_detail_congnghe_detail_component__WEBPACK_IMPORTED_MODULE_18__ = __webpack_require__(/*! ./congnghe-detail/congnghe-detail.component */ "./src/app/congnghe-detail/congnghe-detail.component.ts");
+/* harmony import */ var _tech_service_service__WEBPACK_IMPORTED_MODULE_19__ = __webpack_require__(/*! ./tech-service.service */ "./src/app/tech-service.service.ts");
+/* harmony import */ var _pagination_pagination_component__WEBPACK_IMPORTED_MODULE_20__ = __webpack_require__(/*! ./pagination/pagination.component */ "./src/app/pagination/pagination.component.ts");
+/* harmony import */ var ngx_pagination__WEBPACK_IMPORTED_MODULE_21__ = __webpack_require__(/*! ngx-pagination */ "./node_modules/ngx-pagination/dist/ngx-pagination.js");
+/* harmony import */ var ngx_order_pipe__WEBPACK_IMPORTED_MODULE_22__ = __webpack_require__(/*! ngx-order-pipe */ "./node_modules/ngx-order-pipe/fesm5/ngx-order-pipe.js");
+/* harmony import */ var _hinhchunhat_hinhchunhat_component__WEBPACK_IMPORTED_MODULE_23__ = __webpack_require__(/*! ./hinhchunhat/hinhchunhat.component */ "./src/app/hinhchunhat/hinhchunhat.component.ts");
+/* harmony import */ var _hocluc_hocluc_component__WEBPACK_IMPORTED_MODULE_24__ = __webpack_require__(/*! ./hocluc/hocluc.component */ "./src/app/hocluc/hocluc.component.ts");
+/* harmony import */ var _thuong_thuong_component__WEBPACK_IMPORTED_MODULE_25__ = __webpack_require__(/*! ./thuong/thuong.component */ "./src/app/thuong/thuong.component.ts");
+/* harmony import */ var _banhang_banhang_component__WEBPACK_IMPORTED_MODULE_26__ = __webpack_require__(/*! ./banhang/banhang.component */ "./src/app/banhang/banhang.component.ts");
+/* harmony import */ var _kiemloi_kiemloi_component__WEBPACK_IMPORTED_MODULE_27__ = __webpack_require__(/*! ./kiemloi/kiemloi.component */ "./src/app/kiemloi/kiemloi.component.ts");
+
+
+
+
+
+
 
 
 
@@ -280,42 +347,135 @@ var AppModule = /** @class */ (function () {
     AppModule = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
         Object(_angular_core__WEBPACK_IMPORTED_MODULE_2__["NgModule"])({
             declarations: [
-                _app_component__WEBPACK_IMPORTED_MODULE_3__["AppComponent"],
-                _product_dt_product_dt_component__WEBPACK_IMPORTED_MODULE_4__["ProductDTComponent"],
-                _product_list_product_list_component__WEBPACK_IMPORTED_MODULE_5__["ProductListComponent"],
-                _center_center_component__WEBPACK_IMPORTED_MODULE_6__["CenterComponent"],
-                _product_cart_product_cart_component__WEBPACK_IMPORTED_MODULE_7__["ProductCartComponent"],
-                _sinhvien_sinhvien_component__WEBPACK_IMPORTED_MODULE_8__["SinhvienComponent"],
-                _card_info_card_info_component__WEBPACK_IMPORTED_MODULE_9__["CardInfoComponent"],
-                _menu_menu_component__WEBPACK_IMPORTED_MODULE_11__["MenuComponent"],
-                _main_menu_main_menu_component__WEBPACK_IMPORTED_MODULE_12__["MainMenuComponent"],
-                _sv_detail_sv_detail_component__WEBPACK_IMPORTED_MODULE_13__["SvDetailComponent"],
-                _congnghe_congnghe_component__WEBPACK_IMPORTED_MODULE_15__["CongngheComponent"],
-                _chungloai_chungloai_component__WEBPACK_IMPORTED_MODULE_16__["ChungloaiComponent"],
-                _congnghe_detail_congnghe_detail_component__WEBPACK_IMPORTED_MODULE_17__["CongngheDetailComponent"],
-                _pagination_pagination_component__WEBPACK_IMPORTED_MODULE_19__["PaginationComponent"]
+                _app_component__WEBPACK_IMPORTED_MODULE_4__["AppComponent"],
+                _product_dt_product_dt_component__WEBPACK_IMPORTED_MODULE_5__["ProductDTComponent"],
+                _product_list_product_list_component__WEBPACK_IMPORTED_MODULE_6__["ProductListComponent"],
+                _center_center_component__WEBPACK_IMPORTED_MODULE_7__["CenterComponent"],
+                _product_cart_product_cart_component__WEBPACK_IMPORTED_MODULE_8__["ProductCartComponent"],
+                _sinhvien_sinhvien_component__WEBPACK_IMPORTED_MODULE_9__["SinhvienComponent"],
+                _card_info_card_info_component__WEBPACK_IMPORTED_MODULE_10__["CardInfoComponent"],
+                _menu_menu_component__WEBPACK_IMPORTED_MODULE_12__["MenuComponent"],
+                _main_menu_main_menu_component__WEBPACK_IMPORTED_MODULE_13__["MainMenuComponent"],
+                _sv_detail_sv_detail_component__WEBPACK_IMPORTED_MODULE_14__["SvDetailComponent"],
+                _congnghe_congnghe_component__WEBPACK_IMPORTED_MODULE_16__["CongngheComponent"],
+                _chungloai_chungloai_component__WEBPACK_IMPORTED_MODULE_17__["ChungloaiComponent"],
+                _congnghe_detail_congnghe_detail_component__WEBPACK_IMPORTED_MODULE_18__["CongngheDetailComponent"],
+                _pagination_pagination_component__WEBPACK_IMPORTED_MODULE_20__["PaginationComponent"],
+                _hinhchunhat_hinhchunhat_component__WEBPACK_IMPORTED_MODULE_23__["HinhchunhatComponent"],
+                _hocluc_hocluc_component__WEBPACK_IMPORTED_MODULE_24__["HoclucComponent"],
+                _thuong_thuong_component__WEBPACK_IMPORTED_MODULE_25__["ThuongComponent"],
+                _banhang_banhang_component__WEBPACK_IMPORTED_MODULE_26__["BanhangComponent"],
+                _kiemloi_kiemloi_component__WEBPACK_IMPORTED_MODULE_27__["KiemloiComponent"]
             ],
             imports: [
-                _angular_platform_browser__WEBPACK_IMPORTED_MODULE_1__["BrowserModule"], ngx_pagination__WEBPACK_IMPORTED_MODULE_20__["NgxPaginationModule"], ngx_order_pipe__WEBPACK_IMPORTED_MODULE_21__["OrderModule"],
-                _angular_router__WEBPACK_IMPORTED_MODULE_10__["RouterModule"].forRoot([
-                    { path: '', component: _main_menu_main_menu_component__WEBPACK_IMPORTED_MODULE_12__["MainMenuComponent"] },
-                    { path: 'product-detail/:id', component: _product_dt_product_dt_component__WEBPACK_IMPORTED_MODULE_4__["ProductDTComponent"] },
-                    { path: 'product-list', component: _product_list_product_list_component__WEBPACK_IMPORTED_MODULE_5__["ProductListComponent"] },
-                    { path: 'product-cart', component: _product_cart_product_cart_component__WEBPACK_IMPORTED_MODULE_7__["ProductCartComponent"] },
-                    { path: 'sinhvien', component: _sinhvien_sinhvien_component__WEBPACK_IMPORTED_MODULE_8__["SinhvienComponent"] },
-                    { path: 'main-menu', component: _main_menu_main_menu_component__WEBPACK_IMPORTED_MODULE_12__["MainMenuComponent"] },
-                    { path: 'sv-detail/:svId', component: _sv_detail_sv_detail_component__WEBPACK_IMPORTED_MODULE_13__["SvDetailComponent"] },
-                    { path: 'cong-nghe', component: _congnghe_congnghe_component__WEBPACK_IMPORTED_MODULE_15__["CongngheComponent"] },
-                    { path: 'chung-loai/:clId', component: _chungloai_chungloai_component__WEBPACK_IMPORTED_MODULE_16__["ChungloaiComponent"] },
-                    { path: 'cong-nghe-detail', component: _congnghe_detail_congnghe_detail_component__WEBPACK_IMPORTED_MODULE_17__["CongngheDetailComponent"] },
-                    { path: 'pagination', component: _pagination_pagination_component__WEBPACK_IMPORTED_MODULE_19__["PaginationComponent"] },
+                _angular_platform_browser__WEBPACK_IMPORTED_MODULE_1__["BrowserModule"], ngx_pagination__WEBPACK_IMPORTED_MODULE_21__["NgxPaginationModule"], ngx_order_pipe__WEBPACK_IMPORTED_MODULE_22__["OrderModule"], _angular_forms__WEBPACK_IMPORTED_MODULE_3__["FormsModule"],
+                _angular_router__WEBPACK_IMPORTED_MODULE_11__["RouterModule"].forRoot([
+                    { path: '', component: _main_menu_main_menu_component__WEBPACK_IMPORTED_MODULE_13__["MainMenuComponent"] },
+                    { path: 'product-detail/:id', component: _product_dt_product_dt_component__WEBPACK_IMPORTED_MODULE_5__["ProductDTComponent"] },
+                    { path: 'product-list', component: _product_list_product_list_component__WEBPACK_IMPORTED_MODULE_6__["ProductListComponent"] },
+                    { path: 'product-cart', component: _product_cart_product_cart_component__WEBPACK_IMPORTED_MODULE_8__["ProductCartComponent"] },
+                    { path: 'sinhvien', component: _sinhvien_sinhvien_component__WEBPACK_IMPORTED_MODULE_9__["SinhvienComponent"] },
+                    { path: 'main-menu', component: _main_menu_main_menu_component__WEBPACK_IMPORTED_MODULE_13__["MainMenuComponent"] },
+                    { path: 'sv-detail/:svId', component: _sv_detail_sv_detail_component__WEBPACK_IMPORTED_MODULE_14__["SvDetailComponent"] },
+                    { path: 'cong-nghe', component: _congnghe_congnghe_component__WEBPACK_IMPORTED_MODULE_16__["CongngheComponent"] },
+                    { path: 'chung-loai/:clId', component: _chungloai_chungloai_component__WEBPACK_IMPORTED_MODULE_17__["ChungloaiComponent"] },
+                    { path: 'cong-nghe-detail', component: _congnghe_detail_congnghe_detail_component__WEBPACK_IMPORTED_MODULE_18__["CongngheDetailComponent"] },
+                    { path: 'pagination', component: _pagination_pagination_component__WEBPACK_IMPORTED_MODULE_20__["PaginationComponent"] },
+                    { path: 'hinhchunhat', component: _hinhchunhat_hinhchunhat_component__WEBPACK_IMPORTED_MODULE_23__["HinhchunhatComponent"] },
+                    { path: 'hocluc', component: _hocluc_hocluc_component__WEBPACK_IMPORTED_MODULE_24__["HoclucComponent"] },
+                    { path: 'thuong', component: _thuong_thuong_component__WEBPACK_IMPORTED_MODULE_25__["ThuongComponent"] },
+                    { path: 'banhang', component: _banhang_banhang_component__WEBPACK_IMPORTED_MODULE_26__["BanhangComponent"] },
+                    { path: 'kiemloi', component: _kiemloi_kiemloi_component__WEBPACK_IMPORTED_MODULE_27__["KiemloiComponent"] }
                 ])
             ],
-            providers: [_student_info_service__WEBPACK_IMPORTED_MODULE_14__["StudentInfoService"], _tech_service_service__WEBPACK_IMPORTED_MODULE_18__["TechServiceService"]],
-            bootstrap: [_app_component__WEBPACK_IMPORTED_MODULE_3__["AppComponent"]]
+            providers: [_student_info_service__WEBPACK_IMPORTED_MODULE_15__["StudentInfoService"], _tech_service_service__WEBPACK_IMPORTED_MODULE_19__["TechServiceService"]],
+            bootstrap: [_app_component__WEBPACK_IMPORTED_MODULE_4__["AppComponent"]]
         })
     ], AppModule);
     return AppModule;
+}());
+
+
+
+/***/ }),
+
+/***/ "./src/app/banhang/banhang.component.css":
+/*!***********************************************!*\
+  !*** ./src/app/banhang/banhang.component.css ***!
+  \***********************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = "\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IiIsImZpbGUiOiJhcHAvYmFuaGFuZy9iYW5oYW5nLmNvbXBvbmVudC5jc3MifQ== */"
+
+/***/ }),
+
+/***/ "./src/app/banhang/banhang.component.ts":
+/*!**********************************************!*\
+  !*** ./src/app/banhang/banhang.component.ts ***!
+  \**********************************************/
+/*! exports provided: BanhangComponent */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "BanhangComponent", function() { return BanhangComponent; });
+/* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! tslib */ "./node_modules/tslib/tslib.es6.js");
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
+
+
+var BanhangComponent = /** @class */ (function () {
+    function BanhangComponent() {
+        this.mathang = [{
+                name: "nuoc ngot",
+                price: 10000,
+                soluong: 0,
+                tong: 0,
+                check: false
+            },
+            {
+                name: "ca phe den",
+                price: 12000,
+                soluong: 0,
+                tong: 0,
+                check: false
+            },
+            {
+                name: "thuoc la",
+                price: 18000,
+                soluong: 0,
+                tong: 0,
+                check: false
+            }
+        ];
+        this.tongTien = 0;
+    }
+    BanhangComponent.prototype.tongTungCai = function () {
+        this.mathang.forEach(function (element) {
+            if (element.soluong <= 0)
+                element.soluong = 0;
+            if (element.check) {
+                element.tong = element.price * element.soluong;
+            }
+        });
+    };
+    BanhangComponent.prototype.tinhtongTien = function () {
+        var tong = 0;
+        this.mathang.forEach(function (element) {
+            tong += element.tong;
+        });
+        return tong;
+    };
+    BanhangComponent.prototype.ngOnInit = function () {
+    };
+    BanhangComponent = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
+        Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Component"])({
+            selector: 'app-banhang',
+            template: __webpack_require__(/*! raw-loader!./banhang.component.html */ "./node_modules/raw-loader/index.js!./src/app/banhang/banhang.component.html"),
+            styles: [__webpack_require__(/*! ./banhang.component.css */ "./src/app/banhang/banhang.component.css")]
+        })
+    ], BanhangComponent);
+    return BanhangComponent;
 }());
 
 
@@ -572,6 +732,189 @@ var CongngheComponent = /** @class */ (function () {
 
 /***/ }),
 
+/***/ "./src/app/hinhchunhat/hinhchunhat.component.css":
+/*!*******************************************************!*\
+  !*** ./src/app/hinhchunhat/hinhchunhat.component.css ***!
+  \*******************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = "#gt {\r\n    height:38px;\r\n    width:200px;\r\n}\r\ninput{\r\n    width:100%;\r\n}\r\ninput[type = 'radio'] {\r\n    width:auto;\r\n}\r\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbImFwcC9oaW5oY2h1bmhhdC9oaW5oY2h1bmhhdC5jb21wb25lbnQuY3NzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQUFBO0lBQ0ksV0FBVztJQUNYLFdBQVc7QUFDZjtBQUNBO0lBQ0ksVUFBVTtBQUNkO0FBQ0E7SUFDSSxVQUFVO0FBQ2QiLCJmaWxlIjoiYXBwL2hpbmhjaHVuaGF0L2hpbmhjaHVuaGF0LmNvbXBvbmVudC5jc3MiLCJzb3VyY2VzQ29udGVudCI6WyIjZ3Qge1xyXG4gICAgaGVpZ2h0OjM4cHg7XHJcbiAgICB3aWR0aDoyMDBweDtcclxufVxyXG5pbnB1dHtcclxuICAgIHdpZHRoOjEwMCU7XHJcbn1cclxuaW5wdXRbdHlwZSA9ICdyYWRpbyddIHtcclxuICAgIHdpZHRoOmF1dG87XHJcbn0iXX0= */"
+
+/***/ }),
+
+/***/ "./src/app/hinhchunhat/hinhchunhat.component.ts":
+/*!******************************************************!*\
+  !*** ./src/app/hinhchunhat/hinhchunhat.component.ts ***!
+  \******************************************************/
+/*! exports provided: HinhchunhatComponent */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "HinhchunhatComponent", function() { return HinhchunhatComponent; });
+/* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! tslib */ "./node_modules/tslib/tslib.es6.js");
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
+
+
+var HinhchunhatComponent = /** @class */ (function () {
+    function HinhchunhatComponent() {
+        this.hcn = {
+            dai: null,
+            rong: null,
+            chuvi: null,
+            dtich: null,
+        };
+    }
+    HinhchunhatComponent.prototype.calculate = function () {
+        this.hcn.chuvi = (this.hcn.dai * 1 + this.hcn.rong * 1) * 2;
+        this.hcn.dtich = this.hcn.dai * this.hcn.rong;
+    };
+    HinhchunhatComponent.prototype.ngOnInit = function () { };
+    HinhchunhatComponent = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
+        Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Component"])({
+            selector: 'app-hinhchunhat',
+            template: __webpack_require__(/*! raw-loader!./hinhchunhat.component.html */ "./node_modules/raw-loader/index.js!./src/app/hinhchunhat/hinhchunhat.component.html"),
+            styles: [__webpack_require__(/*! ./hinhchunhat.component.css */ "./src/app/hinhchunhat/hinhchunhat.component.css")]
+        })
+    ], HinhchunhatComponent);
+    return HinhchunhatComponent;
+}());
+
+
+
+/***/ }),
+
+/***/ "./src/app/hocluc/hocluc.component.css":
+/*!*********************************************!*\
+  !*** ./src/app/hocluc/hocluc.component.css ***!
+  \*********************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = "\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IiIsImZpbGUiOiJhcHAvaG9jbHVjL2hvY2x1Yy5jb21wb25lbnQuY3NzIn0= */"
+
+/***/ }),
+
+/***/ "./src/app/hocluc/hocluc.component.ts":
+/*!********************************************!*\
+  !*** ./src/app/hocluc/hocluc.component.ts ***!
+  \********************************************/
+/*! exports provided: HoclucComponent */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "HoclucComponent", function() { return HoclucComponent; });
+/* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! tslib */ "./node_modules/tslib/tslib.es6.js");
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
+
+
+var HoclucComponent = /** @class */ (function () {
+    function HoclucComponent() {
+        this.sv = {
+            ten: "",
+            ngaysinh: "",
+            gioitinh: "nam",
+            diem: 0,
+            hocluc: "",
+        };
+    }
+    HoclucComponent.prototype.xeploai = function () {
+        if (this.sv.diem >= 5) {
+            this.sv.hocluc = "Dau";
+            document.getElementById("hocluc").style.backgroundColor = "lightgreen";
+        }
+        else {
+            this.sv.hocluc = "Rot";
+            document.getElementById("hocluc").style.backgroundColor = "lightcoral";
+        }
+    };
+    HoclucComponent.prototype.ngOnInit = function () { };
+    HoclucComponent = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
+        Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Component"])({
+            selector: 'app-hocluc',
+            template: __webpack_require__(/*! raw-loader!./hocluc.component.html */ "./node_modules/raw-loader/index.js!./src/app/hocluc/hocluc.component.html"),
+            styles: [__webpack_require__(/*! ./hocluc.component.css */ "./src/app/hocluc/hocluc.component.css")]
+        })
+    ], HoclucComponent);
+    return HoclucComponent;
+}());
+
+
+
+/***/ }),
+
+/***/ "./src/app/kiemloi/kiemloi.component.css":
+/*!***********************************************!*\
+  !*** ./src/app/kiemloi/kiemloi.component.css ***!
+  \***********************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = "input{\r\n    width:100%;\r\n}\r\ninput[type = 'radio'] {\r\n    width:auto;\r\n}\r\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbImFwcC9raWVtbG9pL2tpZW1sb2kuY29tcG9uZW50LmNzcyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUFBQTtJQUNJLFVBQVU7QUFDZDtBQUNBO0lBQ0ksVUFBVTtBQUNkIiwiZmlsZSI6ImFwcC9raWVtbG9pL2tpZW1sb2kuY29tcG9uZW50LmNzcyIsInNvdXJjZXNDb250ZW50IjpbImlucHV0e1xyXG4gICAgd2lkdGg6MTAwJTtcclxufVxyXG5pbnB1dFt0eXBlID0gJ3JhZGlvJ10ge1xyXG4gICAgd2lkdGg6YXV0bztcclxufSJdfQ== */"
+
+/***/ }),
+
+/***/ "./src/app/kiemloi/kiemloi.component.ts":
+/*!**********************************************!*\
+  !*** ./src/app/kiemloi/kiemloi.component.ts ***!
+  \**********************************************/
+/*! exports provided: KiemloiComponent */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "KiemloiComponent", function() { return KiemloiComponent; });
+/* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! tslib */ "./node_modules/tslib/tslib.es6.js");
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
+
+
+var KiemloiComponent = /** @class */ (function () {
+    function KiemloiComponent() {
+        this.cn = {
+            ten: "",
+            luong: null,
+            gioitinh: 'nam',
+            tuoi: '1',
+            thuong: null,
+            rate: null,
+        };
+    }
+    KiemloiComponent.prototype.thuong = function () {
+        switch (this.cn.tuoi) {
+            case "1":
+                this.cn.rate = 0.07;
+                break;
+            case "2":
+                this.cn.rate = 0.1;
+                break;
+            case "3":
+                this.cn.rate = 0.15;
+                break;
+        }
+        this.cn.thuong = (this.cn.luong * 1) * this.cn.rate;
+        if (this.cn.gioitinh == "nu") {
+            this.cn.thuong += 200000;
+        }
+        this.cn.thuong = this.cn.thuong * 100 / 100;
+    };
+    KiemloiComponent.prototype.ngOnInit = function () {
+    };
+    KiemloiComponent = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
+        Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Component"])({
+            selector: 'app-kiemloi',
+            template: __webpack_require__(/*! raw-loader!./kiemloi.component.html */ "./node_modules/raw-loader/index.js!./src/app/kiemloi/kiemloi.component.html"),
+            styles: [__webpack_require__(/*! ./kiemloi.component.css */ "./src/app/kiemloi/kiemloi.component.css")]
+        })
+    ], KiemloiComponent);
+    return KiemloiComponent;
+}());
+
+
+
+/***/ }),
+
 /***/ "./src/app/main-menu/main-menu.component.css":
 /*!***************************************************!*\
   !*** ./src/app/main-menu/main-menu.component.css ***!
@@ -579,7 +922,7 @@ var CongngheComponent = /** @class */ (function () {
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IiIsImZpbGUiOiJhcHAvbWFpbi1tZW51L21haW4tbWVudS5jb21wb25lbnQuY3NzIn0= */"
+module.exports = ".dropdown-menu {\r\n    display:block;\r\n}\r\n#navbardrop {\r\n    cursor:pointer;\r\n}\r\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbImFwcC9tYWluLW1lbnUvbWFpbi1tZW51LmNvbXBvbmVudC5jc3MiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBQUE7SUFDSSxhQUFhO0FBQ2pCO0FBQ0E7SUFDSSxjQUFjO0FBQ2xCIiwiZmlsZSI6ImFwcC9tYWluLW1lbnUvbWFpbi1tZW51LmNvbXBvbmVudC5jc3MiLCJzb3VyY2VzQ29udGVudCI6WyIuZHJvcGRvd24tbWVudSB7XHJcbiAgICBkaXNwbGF5OmJsb2NrO1xyXG59XHJcbiNuYXZiYXJkcm9wIHtcclxuICAgIGN1cnNvcjpwb2ludGVyO1xyXG59Il19 */"
 
 /***/ }),
 
@@ -599,7 +942,11 @@ __webpack_require__.r(__webpack_exports__);
 
 var MainMenuComponent = /** @class */ (function () {
     function MainMenuComponent() {
+        this.toggleTus = false;
     }
+    MainMenuComponent.prototype.toggleMenu = function () {
+        this.toggleTus = !this.toggleTus;
+    };
     MainMenuComponent.prototype.ngOnInit = function () {
     };
     MainMenuComponent = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
@@ -1907,6 +2254,75 @@ var TechServiceService = /** @class */ (function () {
         })
     ], TechServiceService);
     return TechServiceService;
+}());
+
+
+
+/***/ }),
+
+/***/ "./src/app/thuong/thuong.component.css":
+/*!*********************************************!*\
+  !*** ./src/app/thuong/thuong.component.css ***!
+  \*********************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = "input{\r\n    width:100%;\r\n}\r\ninput[type = 'radio'] {\r\n    width:auto;\r\n}\r\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbImFwcC90aHVvbmcvdGh1b25nLmNvbXBvbmVudC5jc3MiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBQUE7SUFDSSxVQUFVO0FBQ2Q7QUFDQTtJQUNJLFVBQVU7QUFDZCIsImZpbGUiOiJhcHAvdGh1b25nL3RodW9uZy5jb21wb25lbnQuY3NzIiwic291cmNlc0NvbnRlbnQiOlsiaW5wdXR7XHJcbiAgICB3aWR0aDoxMDAlO1xyXG59XHJcbmlucHV0W3R5cGUgPSAncmFkaW8nXSB7XHJcbiAgICB3aWR0aDphdXRvO1xyXG59Il19 */"
+
+/***/ }),
+
+/***/ "./src/app/thuong/thuong.component.ts":
+/*!********************************************!*\
+  !*** ./src/app/thuong/thuong.component.ts ***!
+  \********************************************/
+/*! exports provided: ThuongComponent */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "ThuongComponent", function() { return ThuongComponent; });
+/* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! tslib */ "./node_modules/tslib/tslib.es6.js");
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
+
+
+var ThuongComponent = /** @class */ (function () {
+    function ThuongComponent() {
+        this.cn = {
+            ten: "",
+            luong: null,
+            gioitinh: 'nam',
+            tuoi: '1',
+            thuong: null,
+            rate: null,
+        };
+    }
+    ThuongComponent.prototype.thuong = function () {
+        switch (this.cn.tuoi) {
+            case "1":
+                this.cn.rate = 0.07;
+                break;
+            case "2":
+                this.cn.rate = 0.1;
+                break;
+            case "3":
+                this.cn.rate = 0.15;
+                break;
+        }
+        this.cn.thuong = (this.cn.luong * 1) * this.cn.rate;
+        if (this.cn.gioitinh == "nu") {
+            this.cn.thuong += 200000;
+        }
+    };
+    ThuongComponent.prototype.ngOnInit = function () {
+    };
+    ThuongComponent = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
+        Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Component"])({
+            selector: 'app-thuong',
+            template: __webpack_require__(/*! raw-loader!./thuong.component.html */ "./node_modules/raw-loader/index.js!./src/app/thuong/thuong.component.html"),
+            styles: [__webpack_require__(/*! ./thuong.component.css */ "./src/app/thuong/thuong.component.css")]
+        })
+    ], ThuongComponent);
+    return ThuongComponent;
 }());
 
 

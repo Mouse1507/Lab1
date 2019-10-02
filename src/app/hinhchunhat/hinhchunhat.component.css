@@ -1,0 +1,10 @@
+#gt {
+    height:38px;
+    width:200px;
+}
+input{
+    width:100%;
+}
+input[type = 'radio'] {
+    width:auto;
+}

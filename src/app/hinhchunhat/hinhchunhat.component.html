@@ -1,0 +1,26 @@
+<div class="container">
+  <div class="row">
+    <div class="col-md-12">
+      <h2>Calculate Hinh Chu Nhat</h2>
+      <form action="" method="POST">
+        <div class="form-group">
+          <label for="dai">Dai:</label>
+          <input type="text" class="form-control" id="dai" name="dai" [(ngModel)]="hcn.dai">
+        </div>
+        <div class="form-group">
+          <label for="rong">Rong:</label>
+          <input type="text" class="form-control" id="rong" name="rong" [(ngModel)]="hcn.rong">
+        </div>
+        <div class="form-group">
+          <label for="chuvi">Chuvi:</label>
+          <input type="text" class="form-control" id="chuvi" name="chuvi" [(ngModel)]="hcn.chuvi">
+        </div>
+        <div class="form-group">
+          <label for="dtich">Dien Tich:</label>
+          <input type="text" class="form-control" id="dtich" name="dtich" [(ngModel)]="hcn.dtich">
+        </div>
+        <button type="button" class="btn btn-primary" (click)="calculate()">Calculate</button>
+      </form>
+    </div>
+  </div>
+</div>

@@ -868,19 +868,25 @@ let KiemloiComponent = class KiemloiComponent {
     }
     thuong() {
         if (this.cn.ten == "") {
-            this.errorTen = true;
             this.success = false;
+            this.errorTen = true;
         }
         else {
-            this.errorTen = false;
             this.success = true;
+            this.errorTen = false;
         }
         if (this.cn.luong < 2000000) {
+            this.success = false;
             this.errorLuong = true;
+        }
+        else {
+            this.success = true;
+            this.errorLuong = false;
+        }
+        if (this.cn.ten == "" || this.cn.luong < 2000000) {
             this.success = false;
         }
         else {
-            this.errorLuong = false;
             this.success = true;
         }
         if (this.success == true) {

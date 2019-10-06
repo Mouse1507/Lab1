@@ -21,18 +21,23 @@ export class KiemloiComponent implements OnInit {
   errorLuong: boolean;
   success: boolean;
   thuong() {
-    if (this.cn.ten == "") {
+    if(this.cn.ten == ""){
+      this.success = false;
       this.errorTen = true;
-      this.success = false;
-    } else {
-      this.errorTen = false;
+    }else {
       this.success = true;
+      this.errorTen = false;
     }
-    if (this.cn.luong < 2000000) {
-      this.errorLuong = true;
+    if(this.cn.luong < 2000000){
       this.success = false;
-    } else {
+      this.errorLuong = true;
+    }else {
+      this.success = true;
       this.errorLuong = false;
+    }
+    if(this.cn.ten == "" || this.cn.luong < 2000000){
+      this.success = false;
+    }else {
       this.success = true;
     }
     if (this.success == true) {

@@ -1,0 +1,81 @@
+.carou-item-img {
+    width: 100%;
+    height: 300px;
+  }
+  
+  .carou-control {
+    background-color: rgba(0, 0, 0, 0.5);
+  }
+  .cart-icon {
+    width:50%;
+    height:50px;
+    position: absolute;
+    top:50%;
+    left:50%;
+    transform:translate(-50%,-50%);
+  }
+  .pad-t-15 {
+    padding-top:15px;
+  }
+  .cart-info p {
+    margin:0;
+  }
+  .pos-relative {
+    position: relative;
+  }
+  .right-box {
+    border:1px solid lightgray;
+    border-radius:5px;
+    padding:10px;
+    margin-bottom:15px;
+  }
+  .keywords-field {
+    width:100%;
+    border-radius:5px;
+    border:0.5px solid lightgray;
+    padding:10px;
+  }
+  .right-box .list-group{
+    width:100%;
+  }
+  .list-group-item.active {
+    background-color: rgba(0,0,0,.03);
+    border:1px solid rgba(0,0,0,.03);
+    color:black;
+  }
+  .menu-bar{
+    width:100%;
+    border-radius:5px;
+  }
+  .pad-l-0 {
+    padding-left:0;
+  }
+  .pad-t-15 {
+      padding-top:15px;
+  }
+  .nav-item {
+    margin:0 10px;
+  }
+.chungloai-list {
+    padding-left:15px; ;
+}  
+.cl-item-button {
+    position: absolute;
+    right:20px;
+    bottom:20px;
+}
+.cl-item-img {
+    height:150px;
+}
+.cl-action {
+    margin-top:30px;
+}
+.cl-action div {
+    position: absolute;
+    left:50%;
+    transform: translateX(-50%);
+}
+.cl-action-icon {
+    border-radius:50%;
+    margin:0 5px;
+}

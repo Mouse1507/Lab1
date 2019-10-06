@@ -129,7 +129,7 @@ module.exports = "<div class=\"container\">\n  <div class=\"row\">\n    <div cla
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<div class=\"container\">\n    <div class=\"row\">\n      <div class=\"col-md-12\">\n        <h2>TÍnh thưởng</h2>\n        <div class=\"card\">\n          <div class=\"card-header\">Tính thưởng tết nguyên đán</div>\n          <div class=\"card-body\">\n            <form action=\"\" method=\"POST\">\n              <div class=\"form-group\">\n                <label for=\"\">Họ và tên</label><br>\n                <input type=\"text\" [(ngModel)]=\"cn.ten\" [ngModelOptions]=\"{standalone: true}\" required/>\n              </div>\n              <div class=\"form-group\">\n                <label for=\"\">Luong</label>\n                <div class=\"input-group mb-3\">\n                  <input type=\"number\" class=\"form-control\" [(ngModel)]=\"cn.luong\" [ngModelOptions]=\"{standalone: true}\">\n                  <div class=\"input-group-prepend\">\n                    <span class=\"input-group-text\">VNĐ</span>\n                  </div>\n                </div>\n              </div>\n              <div class=\"form-group\">\n                <label for=\"\">Giới tính</label><br>\n                <input type=\"radio\" value=\"nam\" name=\"gender\" [(ngModel)]=\"cn.gioitinh\"\n                  [ngModelOptions]=\"{standalone: true}\" /> Nam <input type=\"radio\" value=\"nu\" name=\"gender\"\n                  [(ngModel)]=\"cn.gioitinh\" /> Nữ\n              </div>\n              <div class=\"form-group\">\n                <label for=\"\">Tuổi</label><br>\n                <select name=\"tuoi\" id=\"cn-gender\" [(ngModel)]=\"cn.tuoi\" [ngModelOptions]=\"{standalone: true}\">\n                  <option value=\"1\">Dưới 25</option>\n                  <option value=\"2\">Từ 25 đến 40</option>\n                  <option value=\"3\">Trên 40 </option>\n                </select>\n              </div>\n            </form>\n          </div>\n          <div class=\"card-footer\">\n            Tiền thưởng : {{cn.thuong}}\n          </div>\n        </div>\n        <br>\n        <button type=\"button\" (click)=\"thuong()\" class=\"btn btn-primary\">Tinh Thuong</button>\n      </div>\n    </div>\n  </div>\n  "
+module.exports = "<div class=\"container\">\n    <div class=\"row\">\n      <div class=\"col-md-12\">\n        <h2>TÍnh thưởng</h2>\n        <div class=\"card\">\n          <div class=\"card-header\">Tính thưởng tết nguyên đán</div>\n          <div class=\"card-body\">\n            <form action=\"\" method=\"POST\">\n              <div class=\"form-group\">\n                <label for=\"\">Họ và tên</label><br>\n                <input type=\"text\" [(ngModel)]=\"cn.ten\" [ngModelOptions]=\"{standalone: true}\" required/>\n              </div>\n              <div class=\"form-group\">\n                <label for=\"\">Luong</label>\n                <div class=\"input-group mb-3\">\n                  <input type=\"number\" class=\"form-control\" [(ngModel)]=\"cn.luong\" [ngModelOptions]=\"{standalone: true}\">\n                  <div class=\"input-group-prepend\">\n                    <span class=\"input-group-text\">VNĐ</span>\n                  </div>\n                </div>\n              </div>\n              <div class=\"form-group\">\n                <label for=\"\">Giới tính</label><br>\n                <input type=\"radio\" value=\"nam\" name=\"gender\" [(ngModel)]=\"cn.gioitinh\"\n                  [ngModelOptions]=\"{standalone: true}\" /> Nam <input type=\"radio\" value=\"nu\" name=\"gender\"\n                  [(ngModel)]=\"cn.gioitinh\" /> Nữ\n              </div>\n              <div class=\"form-group\">\n                <label for=\"\">Tuổi</label><br>\n                <select name=\"tuoi\" id=\"cn-gender\" [(ngModel)]=\"cn.tuoi\" [ngModelOptions]=\"{standalone: true}\">\n                  <option value=\"1\">Dưới 25</option>\n                  <option value=\"2\">Từ 25 đến 40</option>\n                  <option value=\"3\">Trên 40 </option>\n                </select>\n              </div>\n            </form>\n          </div>\n          <div class=\"card-footer\">\n            Tiền thưởng : {{cn.thuong}}\n          </div>\n        </div>\n        <br>\n        <button type=\"button\" (click)=\"thuong()\" class=\"btn btn-primary\" data-toggle=\"modal\" data-target=\"#myModal\">Tinh Thuong</button>\n      </div>\n    </div>\n    <div class=\"modal fade\" id=\"myModal\">\n      <div class=\"modal-dialog\">\n        <div class=\"modal-content\">\n    \n          <!-- Modal Header -->\n          <div class=\"modal-header\">\n            <h4 class=\"modal-title\">Thông báo </h4>\n            <button type=\"button\" class=\"close\" data-dismiss=\"modal\">&times;</button>\n          </div>\n    \n          <!-- Modal body -->\n          <div class=\"modal-body\">\n            <div *ngIf='errorTen'>Tên không được bỏ trống</div>\n            <div *ngIf='errorLuong'>Lương phải hơn 2 triệu</div>\n            <div *ngIf='success'>Thành công</div> \n          </div>\n    \n          <!-- Modal footer -->\n          <div class=\"modal-footer\">\n            <button type=\"button\" class=\"btn btn-danger\" data-dismiss=\"modal\">Close</button>\n          </div>\n    \n        </div>\n      </div>\n    </div>\n  </div>\n  "
 
 /***/ }),
 
@@ -867,25 +867,42 @@ let KiemloiComponent = class KiemloiComponent {
         };
     }
     thuong() {
-        switch (this.cn.tuoi) {
-            case "1":
-                this.cn.rate = 0.07;
-                break;
-            case "2":
-                this.cn.rate = 0.1;
-                break;
-            case "3":
-                this.cn.rate = 0.15;
-                break;
+        if (this.cn.ten == "") {
+            this.errorTen = true;
+            this.success = false;
         }
-        this.cn.thuong = (this.cn.luong * 1) * this.cn.rate;
-        if (this.cn.gioitinh == "nu") {
-            this.cn.thuong += 200000;
+        else {
+            this.errorTen = false;
+            this.success = true;
         }
-        this.cn.thuong = this.cn.thuong * 100 / 100;
+        if (this.cn.luong < 2000000) {
+            this.errorLuong = true;
+            this.success = false;
+        }
+        else {
+            this.errorLuong = false;
+            this.success = true;
+        }
+        if (this.success == true) {
+            switch (this.cn.tuoi) {
+                case "1":
+                    this.cn.rate = 0.07;
+                    break;
+                case "2":
+                    this.cn.rate = 0.1;
+                    break;
+                case "3":
+                    this.cn.rate = 0.15;
+                    break;
+            }
+            this.cn.thuong = (this.cn.luong * 1) * this.cn.rate;
+            if (this.cn.gioitinh == "nu") {
+                this.cn.thuong += 200000;
+            }
+            this.cn.thuong = this.cn.thuong * 100 / 100;
+        }
     }
-    ngOnInit() {
-    }
+    ngOnInit() { }
 };
 KiemloiComponent = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
     Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Component"])({

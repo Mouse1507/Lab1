@@ -1,0 +1,65 @@
+<div class="col-md-12 col-sm-12 col-lg-12">
+  <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+    <ul class="navbar-nav">
+      <li class="nav-item">
+        <a class="nav-link" routerLink="/main-menu">Home</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" routerLink="/product-list">Product List</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" routerLink="/product-cart">Product Cart</a>
+      </li>
+    </ul>
+  </nav>
+</div>
+
+<div class="card">
+  <div class="card-header">List Product</div>
+  <div class="card-body">
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-md-2 no-padding">Filter By:</div>
+        <div class="col-md-10">
+          <input type="text" name="filter" id="filter" placeholder="....." />
+        </div>
+      </div>
+      <div class="row">
+        <h2>Filter By:</h2>
+        <table class="table">
+          <thead>
+            <tr>
+              <td><button type="button" class="btn btn-primary" (click)="AnHien()">Hien Image</button></td>
+              <td>Product</td>
+              <td>Code</td>
+              <td>Available</td>
+              <td>Price</td>
+              <td>5 Star Rating</td>
+            </tr>
+          </thead>
+          <tbody>
+            <tr *ngFor="let p of listPD">
+              <td><a routerLink="/product-detail/{{p.id}}" target="_blank"><img src="assets/{{p.image}}"
+                    alt="{{p.name}}" class="image-list" *ngIf="isShow" /></a> </td>
+              <td>{{p.name}}</td>
+              <td>{{p.code}}</td>
+              <td>{{p.available}}</td>
+              <td>{{p.price}}</td>
+              <td>
+                <div class="star-rate">
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <div class="hidden" [ngStyle]="{'left':p.width}"></div>
+                </div>
+                {{TinhSao(p)}}
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+</div>

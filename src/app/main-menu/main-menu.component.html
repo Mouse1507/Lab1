@@ -1,0 +1,29 @@
+<div class="col-md-12 col-sm-12 col-lg-12">
+  <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+    <ul class="navbar-nav">
+      <li class="nav-item">
+        <a class="nav-link" routerLink="/product-list">Lab1</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" routerLink="/sinhvien">Lab2</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" routerLink="/cong-nghe">Lab3</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" routerLink="/pagination">Lab4</a>
+      </li>
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" id="navbardrop" data-toggle="dropdown" (click) = "toggleMenu()">Lab5</a>
+        <div class="dropdown-menu" *ngIf="toggleTus">
+          <a class="dropdown-item" routerLink = "/hinhchunhat">Bài 1-1</a>
+          <a class="dropdown-item" routerLink = "/hocluc">Bài 1-2</a>
+          <a class="dropdown-item" routerLink = "/thuong">Bài 2</a>
+          <a class="dropdown-item" routerLink = "/banhang">Bài 3</a>
+          <a class="dropdown-item" routerLink = "/kiemloi">Bài 4</a>
+
+        </div>
+      </li>
+    </ul>
+  </nav>
+</div>

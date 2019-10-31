@@ -1,0 +1,43 @@
+<div class="container">
+  <div class="card">
+    <div class="card-header">My Guitar Shop</div>
+    <div class="card-body">
+      <div class="row">
+        <div class="col-md-3">
+          <h3>Links</h3>
+          <ul class="menu">
+            <li class="menu-item"><a href="/guit-cart">View Cart</a></li>
+            <li class="menu-item"><a href="">Login / Register</a></li>
+            <li class="menu-item"><a href="/guitar/1">Home</a></li>
+          </ul>
+          <h3>Categories</h3>
+          <ul class="menu">
+            <li class="menu-item" *ngFor='let cate of categories'><a href="/guitar/{{cate.id}}">{{cate.catename}}</a></li>
+          </ul>
+          <h3>Temp Link</h3>
+          <ul class="menu">
+              <li class="menu-item"><a href="">Admin</a></li>
+          </ul>
+        </div>
+        <div class="col-md-9">
+          <p>
+            We have a great selection of musical instruments including guitars,basses, and drums. And we're constantly
+            adding more to give you the best
+          </p>
+          <h3>Featured Products</h3>
+          <div class="row" *ngFor='let prod of listProd'>
+              <div class="col-md-3">
+                <img class="product-img" src="assets/guitar/{{cateId}}.jpg" alt="1">
+              </div>
+              <div class="col-md-9">
+                <a routerLink="/guit-detail/{{prod.id}}" class="product-title">{{prod.productname}}</a>
+                <p><span>Price</span> : {{prod.price}}</p>
+                <p>{{prod.description}}</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="card-footer text-right">@ 2010 My Guitar Shop, Inc.</div>
+  </div>
+</div>

@@ -1,6 +1,9 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
+import { HttpClientModule} from '@angular/common/http';
+import {HttpServiceService} from './http-service.service';
+import { ShopServiceService } from './shop-service.service';
 
 import { AppComponent } from './app.component';
 import { ProductDTComponent } from './product-dt/product-dt.component';
@@ -26,6 +29,13 @@ import { HoclucComponent } from './hocluc/hocluc.component';
 import { ThuongComponent } from './thuong/thuong.component';
 import { BanhangComponent } from './banhang/banhang.component';
 import { KiemloiComponent } from './kiemloi/kiemloi.component';
+import { HttpComponent } from './http/http.component';
+import { FilmDetailComponent } from './film-detail/film-detail.component';
+import { FormSvComponent } from './form-sv/form-sv.component';
+import { GuitarShopComponent } from './guitar-shop/guitar-shop.component';
+import { GuitProdDetailComponent } from './guit-prod-detail/guit-prod-detail.component';
+import { GuitCartComponent } from './guit-cart/guit-cart.component';
+import { GuitCheckoutComponent } from './guit-checkout/guit-checkout.component';
 
 @NgModule({
   declarations: [
@@ -47,10 +57,17 @@ import { KiemloiComponent } from './kiemloi/kiemloi.component';
     HoclucComponent,
     ThuongComponent,
     BanhangComponent,
-    KiemloiComponent
+    KiemloiComponent,
+    HttpComponent,
+    FilmDetailComponent,
+    FormSvComponent,
+    GuitarShopComponent,
+    GuitProdDetailComponent,
+    GuitCartComponent,
+    GuitCheckoutComponent,
   ],
   imports: [
-    BrowserModule,NgxPaginationModule,OrderModule,FormsModule,
+    BrowserModule,NgxPaginationModule,OrderModule,FormsModule,HttpClientModule,
     RouterModule.forRoot([
       {path : '', component : MainMenuComponent},
       {path : 'product-detail/:id', component :  ProductDTComponent},
@@ -67,10 +84,19 @@ import { KiemloiComponent } from './kiemloi/kiemloi.component';
       {path : 'hocluc', component : HoclucComponent},
       {path : 'thuong', component : ThuongComponent},
       {path : 'banhang', component : BanhangComponent},
-      {path : 'kiemloi', component : KiemloiComponent}
+      {path : 'kiemloi', component : KiemloiComponent},
+      {path : 'http', component: HttpComponent},
+      {path : 'film-detail/:url', component:FilmDetailComponent},
+      {path : 'form-sv', component: FormSvComponent},
+      {path : 'guitar/:id', component: GuitarShopComponent},
+      {path : 'guit-detail/:prodId', component: GuitProdDetailComponent},
+      {path : 'guit-cart', component: GuitCartComponent},
+      {path : 'guit-checkout', component: GuitCheckoutComponent},
+
+
     ])
   ],
-  providers: [StudentInfoService,TechServiceService],
+  providers: [StudentInfoService,TechServiceService, HttpServiceService, ShopServiceService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

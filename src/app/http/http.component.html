@@ -1,0 +1,15 @@
+<div class="container">
+  <div class="row">
+    <div class="col-md-4" *ngFor='let film of listFilm'>
+      <div class="card">
+        <img class="card-img-top avatar" src="assets/avatar.png" alt="Card image">
+        <div class="card-body">
+          <h4 class="card-title"><a [routerLink]="['/film-detail', film.url]">{{film.title}}</a></h4>
+          <p class="card-text">Director : {{film.director}}</p>
+          <p class="card-text">Producer : {{film.producer}}</p>
+        </div>
+      </div>
+    </div>
+    
+  </div>
+</div>

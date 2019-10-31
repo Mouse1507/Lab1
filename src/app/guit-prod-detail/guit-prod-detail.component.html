@@ -1,0 +1,45 @@
+<div class="container">
+  <div class="card">
+    <div class="card-header">My Guitar Shop</div>
+    <div class="card-body">
+      <div class="row">
+        <div class="col-md-3">
+          <h3>Links</h3>
+          <ul class="menu">
+            <li class="menu-item"><a href="/guit-cart">View Cart</a></li>
+            <li class="menu-item"><a href="">Login / Register</a></li>
+            <li class="menu-item"><a href="/guitar/1">Home</a></li>
+          </ul>
+          <h3>Categories</h3>
+          <ul class="menu">
+            <li class="menu-item" *ngFor='let cate of categories'><a href="/guitar/{{cate.id}}">{{cate.catename}}</a></li>
+          </ul>
+          <h3>Temp Link</h3>
+          <ul class="menu">
+            <li class="menu-item"><a href="">Admin</a></li>
+          </ul>
+        </div>
+        <div class="col-md-9">
+          <h2>{{thisProd.productname}}</h2>
+          <div class="row">
+            <div class="col-md-4">
+              <img class="prod-img" src="assets/guitar/{{thisProd.cid}}.jpg" alt="">
+            </div>
+            <div class="col-md-8">
+              <p><span>List Price</span> : {{thisProd.price}}</p>
+              <p><span>Discount</span> : 30%</p>
+              <p><span>Quantity: </span> <input type="number" value='1' [(ngModel)]="quantity" class="quantity" min="1"/> <button type='button' (click)='addCart(thisProd.id,thisProd.productname,quantity)'>Addtocart</button></p>
+              <h4>Description</h4>
+              <p>{{thisProd.description}}</p>
+              <h4>New Feature</h4>
+              <ul class="feature-menu">
+                <li class="fea-item" *ngFor='let fea of thisProd.newfeature'>{{fea.text}}</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="card-footer text-right">@ 2010 My Guitar Shop, Inc.</div>
+  </div>
+</div>

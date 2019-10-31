@@ -100,6 +100,72 @@ module.exports = "<div class=\"container pad-t-15\">\n  <header>\n    <div class
 
 /***/ }),
 
+/***/ "./node_modules/raw-loader/index.js!./src/app/film-detail/film-detail.component.html":
+/*!**********************************************************************************!*\
+  !*** ./node_modules/raw-loader!./src/app/film-detail/film-detail.component.html ***!
+  \**********************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = "<div class=\"container\">\n    <div class=\"card\">\n        <div class=\"card-header\">{{film.title}}</div>\n        <div class=\"card-body\">\n            <div class=\"row\">\n                <div class=\"col-md-4\">\n                    <img src=\"assets/avatar.png\" alt=\"\" class=\"detail-img\">\n                </div>\n                <div class=\"col-md-8\">\n                    <p>{{film.opening_crawl}}</p>\n                </div>\n            </div>\n        </div>\n    </div>\n</div>"
+
+/***/ }),
+
+/***/ "./node_modules/raw-loader/index.js!./src/app/form-sv/form-sv.component.html":
+/*!**************************************************************************!*\
+  !*** ./node_modules/raw-loader!./src/app/form-sv/form-sv.component.html ***!
+  \**************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = "<div class=\"container\">\n  <div class=\"row\">\n    <div class=\"col-md-12 text-center\">\n      <h1 *ngIf='!showFormEdit'>Thêm sinh viên</h1>\n      <h1 *ngIf='showFormEdit'>Sửa thông tin sinh viên</h1>\n    </div>\n  </div>\n  <div class=\"row\">\n    <div class=\"col-md-12\">\n      <form action=\"\">\n        <div class=\"form-group\">\n          <label for=\"\">Họ và Tên</label>\n          <input type=\"text\" class=\"text-field-form\" [(ngModel)]=\"stuInfo.name\" [ngModelOptions]=\"{standalone: true}\">\n        </div>\n        <div class=\"form-group\">\n          <label for=\"\">Ngay sinh</label>\n          <input type=\"datetime\" class=\"text-field-form\" [(ngModel)]=\"stuInfo.birth\" [ngModelOptions]=\"{standalone: true}\">\n        </div>\n        <div class=\"form-group\">\n          <label for=\"\">Diem</label>\n          <input type=\"number\" class=\"text-field-form\" [(ngModel)]=\"stuInfo.rate\" [ngModelOptions]=\"{standalone: true}\">\n        </div>\n        <button type=\"button\" class=\"btn btn-danger\" *ngIf='!showFormEdit' (click) = \"save()\">Thêm</button>\n        <button type=\"button\" class=\"btn btn-success\" *ngIf=\"showFormEdit\" (click)=\"save()\">Lưu</button>\n        <button type=\"button\" class=\"btn btn-default bg-light\">Huy</button>\n      </form>\n\n    </div>\n  </div>\n  <div class=\"row\">\n    <div class=\"col-md-12\">\n      <table class=\"table\">\n        <thead>\n          <tr>\n            <th>Id</th>\n            <th>Name</th>\n            <th>Birth</th>\n            <th>Xếp loại</th>\n            <th></th>\n          </tr>\n        </thead>\n        <tbody>\n          <tr *ngFor='let stu of student'>\n            <td>{{stu.id}}</td>\n            <td>{{stu.name}}</td>\n            <td>{{stu.birth}}</td>\n            <td>{{stu.rate}}</td>\n            <td>\n              <button type='button' class=\"btn btn-primary\" (click)=\"edit(stu)\">Sửa</button>\n              <button type='button' class=\"btn btn-info\">Xoa</button>\n            </td>\n          </tr>\n        </tbody>\n      </table>\n    </div>\n  </div>\n</div>\n"
+
+/***/ }),
+
+/***/ "./node_modules/raw-loader/index.js!./src/app/guit-cart/guit-cart.component.html":
+/*!******************************************************************************!*\
+  !*** ./node_modules/raw-loader!./src/app/guit-cart/guit-cart.component.html ***!
+  \******************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = "<div class=\"container\">\n  <div class=\"card\">\n    <div class=\"card-header\">My Guitar Shop</div>\n    <div class=\"card-body\">\n      <div class=\"row\">\n        <div class=\"col-md-12\">\n          <h3>Your Cart</h3>\n          <p>To remove an item from cart, change it quantity to 0</p>\n          <table class=\"table\">\n            <thead>\n              <tr>\n                <th>Item</th>\n                <th>Price</th>\n                <th>Quantity</th>\n                <th>Total</th>\n              </tr>\n            </thead>\n            <tbody>\n              <tr *ngFor='let item of cartItems'>\n                  <td>{{item.name}}</td>\n                  <td>{{getPrice(item.prodId)}}</td>\n                  <td><input type=\"number\" [(ngModel)]=\"item.quantity\" class=\"cart-quantity\" min=\"0\"></td>\n                  <td class=\"total\">{{total(getPrice(item.prodId), item.quantity)}}</td>\n              </tr>\n            </tbody>\n            <tfoot>\n                <tr>\n                    <th></th>\n                    <th></th>\n                    <th>Subtotal</th>\n                    <th>{{subTotal()}}</th>\n                </tr>\n            </tfoot>\n          </table>\n        </div>\n      </div>\n      <div class=\"row\">\n          <div class=\"col-md-12 text-right\">\n            <button type='button' (click)=\"updateCart()\">Update Cart</button>\n          </div>\n      </div>\n      \n      <p>Return to : <a href='/guitar/1'>Home</a></p>\n      <p>Return to : <a href='/guitar/1'>Guitar</a></p>\n      <p>Proceed to : <a href='/guit-checkout'>Checkout</a></p>\n\n    </div>\n    <div class=\"card-footer text-right\">@ 2010 My Guitar Shop, Inc.</div>\n  </div>\n</div>\n"
+
+/***/ }),
+
+/***/ "./node_modules/raw-loader/index.js!./src/app/guit-checkout/guit-checkout.component.html":
+/*!**************************************************************************************!*\
+  !*** ./node_modules/raw-loader!./src/app/guit-checkout/guit-checkout.component.html ***!
+  \**************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = "<div class=\"container\">\n  <div class=\"card\">\n    <div class=\"card-header\">My Guitar Shop</div>\n    <div class=\"card-body\">\n      <div class=\"row\">\n        <div class=\"col-md-3\">\n          <h3>Links</h3>\n          <ul class=\"menu\">\n            <li class=\"menu-item\"><a href=\"/guit-cart\">View Cart</a></li>\n            <li class=\"menu-item\"><a href=\"\">Login / Register</a></li>\n            <li class=\"menu-item\"><a href=\"/guitar/1\">Home</a></li>\n          </ul>\n          <h3>Categories</h3>\n          <ul class=\"menu\">\n            <li class=\"menu-item\" *ngFor='let cate of categories'><a href=\"/guitar/{{cate.id}}\">{{cate.catename}}</a></li>\n          </ul>\n          <h3>Temp Link</h3>\n          <ul class=\"menu\">\n            <li class=\"menu-item\"><a href=\"\">Admin</a></li>\n          </ul>\n        </div>\n        <div class=\"col-md-9\">\n          <h3>Your Order</h3>\n          <p>Order Number : 4</p>\n          <p>Order Date : Oct 9, 2019</p>\n          <h5>Shipping</h5>\n          <p>Ship Date: Not shipped yet</p>\n          <p>Address : 123213 TCT, Q8, HCM</p>\n          <p>Sdt : 123213213</p>\n          <h5>Billing</h5>\n          <p>Card Number : 44444</p>\n          <p>Address : 123213 TCT, Q8, HCM</p>\n          <h5>Order Items</h5>\n          <table class=\"table\">\n            <thead>\n              <tr>\n                <th>Item</th>\n                <th>Price</th>\n                <th>Quantity</th>\n                <th>Total</th>\n              </tr>\n            </thead>\n            <tbody>\n              <tr *ngFor='let item of cartItems'>\n                  <td>{{item.name}}</td>\n                  <td>{{getPrice(item.prodId)}}</td>\n                  <td>{{item.quantity}}</td>\n                  <td class=\"total\">{{total(getPrice(item.prodId), item.quantity)}}</td>\n              </tr>\n            </tbody>\n            <tfoot>\n              <tr>\n                <th></th>\n                <th></th>\n                <th>Subtotal</th>\n                <th>{{subTotal()}}</th>\n              </tr>\n              </tfoot>\n          </table>\n        </div>\n      </div>\n    </div>\n    <div class=\"card-footer text-right\">@ 2010 My Guitar Shop, Inc.</div>\n  </div>\n</div>\n"
+
+/***/ }),
+
+/***/ "./node_modules/raw-loader/index.js!./src/app/guit-prod-detail/guit-prod-detail.component.html":
+/*!********************************************************************************************!*\
+  !*** ./node_modules/raw-loader!./src/app/guit-prod-detail/guit-prod-detail.component.html ***!
+  \********************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = "<div class=\"container\">\n  <div class=\"card\">\n    <div class=\"card-header\">My Guitar Shop</div>\n    <div class=\"card-body\">\n      <div class=\"row\">\n        <div class=\"col-md-3\">\n          <h3>Links</h3>\n          <ul class=\"menu\">\n            <li class=\"menu-item\"><a href=\"/guit-cart\">View Cart</a></li>\n            <li class=\"menu-item\"><a href=\"\">Login / Register</a></li>\n            <li class=\"menu-item\"><a href=\"/guitar/1\">Home</a></li>\n          </ul>\n          <h3>Categories</h3>\n          <ul class=\"menu\">\n            <li class=\"menu-item\" *ngFor='let cate of categories'><a href=\"/guitar/{{cate.id}}\">{{cate.catename}}</a></li>\n          </ul>\n          <h3>Temp Link</h3>\n          <ul class=\"menu\">\n            <li class=\"menu-item\"><a href=\"\">Admin</a></li>\n          </ul>\n        </div>\n        <div class=\"col-md-9\">\n          <h2>{{thisProd.productname}}</h2>\n          <div class=\"row\">\n            <div class=\"col-md-4\">\n              <img class=\"prod-img\" src=\"assets/guitar/{{thisProd.cid}}.jpg\" alt=\"\">\n            </div>\n            <div class=\"col-md-8\">\n              <p><span>List Price</span> : {{thisProd.price}}</p>\n              <p><span>Discount</span> : 30%</p>\n              <p><span>Quantity: </span> <input type=\"number\" value='1' [(ngModel)]=\"quantity\" class=\"quantity\" min=\"1\"/> <button type='button' (click)='addCart(thisProd.id,thisProd.productname,quantity)'>Addtocart</button></p>\n              <h4>Description</h4>\n              <p>{{thisProd.description}}</p>\n              <h4>New Feature</h4>\n              <ul class=\"feature-menu\">\n                <li class=\"fea-item\" *ngFor='let fea of thisProd.newfeature'>{{fea.text}}</li>\n              </ul>\n            </div>\n          </div>\n        </div>\n      </div>\n    </div>\n    <div class=\"card-footer text-right\">@ 2010 My Guitar Shop, Inc.</div>\n  </div>\n</div>\n"
+
+/***/ }),
+
+/***/ "./node_modules/raw-loader/index.js!./src/app/guitar-shop/guitar-shop.component.html":
+/*!**********************************************************************************!*\
+  !*** ./node_modules/raw-loader!./src/app/guitar-shop/guitar-shop.component.html ***!
+  \**********************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = "<div class=\"container\">\n  <div class=\"card\">\n    <div class=\"card-header\">My Guitar Shop</div>\n    <div class=\"card-body\">\n      <div class=\"row\">\n        <div class=\"col-md-3\">\n          <h3>Links</h3>\n          <ul class=\"menu\">\n            <li class=\"menu-item\"><a href=\"/guit-cart\">View Cart</a></li>\n            <li class=\"menu-item\"><a href=\"\">Login / Register</a></li>\n            <li class=\"menu-item\"><a href=\"/guitar/1\">Home</a></li>\n          </ul>\n          <h3>Categories</h3>\n          <ul class=\"menu\">\n            <li class=\"menu-item\" *ngFor='let cate of categories'><a href=\"/guitar/{{cate.id}}\">{{cate.catename}}</a></li>\n          </ul>\n          <h3>Temp Link</h3>\n          <ul class=\"menu\">\n              <li class=\"menu-item\"><a href=\"\">Admin</a></li>\n          </ul>\n        </div>\n        <div class=\"col-md-9\">\n          <p>\n            We have a great selection of musical instruments including guitars,basses, and drums. And we're constantly\n            adding more to give you the best\n          </p>\n          <h3>Featured Products</h3>\n          <div class=\"row\" *ngFor='let prod of listProd'>\n              <div class=\"col-md-3\">\n                <img class=\"product-img\" src=\"assets/guitar/{{cateId}}.jpg\" alt=\"1\">\n              </div>\n              <div class=\"col-md-9\">\n                <a routerLink=\"/guit-detail/{{prod.id}}\" class=\"product-title\">{{prod.productname}}</a>\n                <p><span>Price</span> : {{prod.price}}</p>\n                <p>{{prod.description}}</p>\n            </div>\n          </div>\n        </div>\n      </div>\n    </div>\n    <div class=\"card-footer text-right\">@ 2010 My Guitar Shop, Inc.</div>\n  </div>\n</div>\n"
+
+/***/ }),
+
 /***/ "./node_modules/raw-loader/index.js!./src/app/hinhchunhat/hinhchunhat.component.html":
 /*!**********************************************************************************!*\
   !*** ./node_modules/raw-loader!./src/app/hinhchunhat/hinhchunhat.component.html ***!
@@ -122,6 +188,17 @@ module.exports = "<div class=\"container\">\n  <div class=\"row\">\n    <div cla
 
 /***/ }),
 
+/***/ "./node_modules/raw-loader/index.js!./src/app/http/http.component.html":
+/*!********************************************************************!*\
+  !*** ./node_modules/raw-loader!./src/app/http/http.component.html ***!
+  \********************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = "<div class=\"container\">\n  <div class=\"row\">\n    <div class=\"col-md-4\" *ngFor='let film of listFilm'>\n      <div class=\"card\">\n        <img class=\"card-img-top avatar\" src=\"assets/avatar.png\" alt=\"Card image\">\n        <div class=\"card-body\">\n          <h4 class=\"card-title\"><a [routerLink]=\"['/film-detail', film.url]\">{{film.title}}</a></h4>\n          <p class=\"card-text\">Director : {{film.director}}</p>\n          <p class=\"card-text\">Producer : {{film.producer}}</p>\n        </div>\n      </div>\n    </div>\n    \n  </div>\n</div>\n"
+
+/***/ }),
+
 /***/ "./node_modules/raw-loader/index.js!./src/app/kiemloi/kiemloi.component.html":
 /*!**************************************************************************!*\
   !*** ./node_modules/raw-loader!./src/app/kiemloi/kiemloi.component.html ***!
@@ -140,7 +217,7 @@ module.exports = "<div class=\"container\">\n    <div class=\"row\">\n      <div
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<div class=\"col-md-12 col-sm-12 col-lg-12\">\n  <nav class=\"navbar navbar-expand-sm bg-dark navbar-dark\">\n    <ul class=\"navbar-nav\">\n      <li class=\"nav-item\">\n        <a class=\"nav-link\" routerLink=\"/product-list\">Lab1</a>\n      </li>\n      <li class=\"nav-item\">\n        <a class=\"nav-link\" routerLink=\"/sinhvien\">Lab2</a>\n      </li>\n      <li class=\"nav-item\">\n        <a class=\"nav-link\" routerLink=\"/cong-nghe\">Lab3</a>\n      </li>\n      <li class=\"nav-item\">\n        <a class=\"nav-link\" routerLink=\"/pagination\">Lab4</a>\n      </li>\n      <li class=\"nav-item dropdown\">\n        <a class=\"nav-link dropdown-toggle\" id=\"navbardrop\" data-toggle=\"dropdown\" (click) = \"toggleMenu()\">Lab5</a>\n        <div class=\"dropdown-menu\" *ngIf=\"toggleTus\">\n          <a class=\"dropdown-item\" routerLink = \"/hinhchunhat\">Bài 1-1</a>\n          <a class=\"dropdown-item\" routerLink = \"/hocluc\">Bài 1-2</a>\n          <a class=\"dropdown-item\" routerLink = \"/thuong\">Bài 2</a>\n          <a class=\"dropdown-item\" routerLink = \"/banhang\">Bài 3</a>\n          <a class=\"dropdown-item\" routerLink = \"/kiemloi\">Bài 4</a>\n\n        </div>\n      </li>\n    </ul>\n  </nav>\n</div>\n"
+module.exports = "<div class=\"col-md-12 col-sm-12 col-lg-12\">\n  <nav class=\"navbar navbar-expand-sm bg-dark navbar-dark\">\n    <ul class=\"navbar-nav\">\n      <li class=\"nav-item\">\n        <a class=\"nav-link\" routerLink=\"/product-list\">Lab1</a>\n      </li>\n      <li class=\"nav-item\">\n        <a class=\"nav-link\" routerLink=\"/sinhvien\">Lab2</a>\n      </li>\n      <li class=\"nav-item\">\n        <a class=\"nav-link\" routerLink=\"/cong-nghe\">Lab3</a>\n      </li>\n      <li class=\"nav-item\">\n        <a class=\"nav-link\" routerLink=\"/pagination\">Lab4</a>\n      </li>\n      <li class=\"nav-item dropdown\">\n        <a class=\"nav-link dropdown-toggle\" id=\"navbardrop\" data-toggle=\"dropdown\" (click) = \"toggleMenu()\">Lab5</a>\n        <div class=\"dropdown-menu\" *ngIf=\"toggleTus\">\n          <a class=\"dropdown-item\" routerLink = \"/hinhchunhat\">Bài 1-1</a>\n          <a class=\"dropdown-item\" routerLink = \"/hocluc\">Bài 1-2</a>\n          <a class=\"dropdown-item\" routerLink = \"/thuong\">Bài 2</a>\n          <a class=\"dropdown-item\" routerLink = \"/banhang\">Bài 3</a>\n          <a class=\"dropdown-item\" routerLink = \"/kiemloi\">Bài 4</a>\n\n        </div>\n      </li>\n      <li class=\"nav-item\">\n        <a class=\"nav-link\" routerLink=\"/http\">Http Client</a>\n      </li>\n      <li class=\"nav-item\">\n        <a class=\"nav-link\" routerLink=\"/form-sv\">Form SV</a>\n      </li>\n      <li class=\"nav-item\">\n        <a class=\"nav-link\" routerLink=\"/guitar/1\">Guitar Shop</a>\n      </li>\n    </ul>\n  </nav>\n</div>\n"
 
 /***/ }),
 
@@ -289,30 +366,50 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _angular_platform_browser__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/platform-browser */ "./node_modules/@angular/platform-browser/fesm5/platform-browser.js");
 /* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
 /* harmony import */ var _angular_forms__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @angular/forms */ "./node_modules/@angular/forms/fesm5/forms.js");
-/* harmony import */ var _app_component__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./app.component */ "./src/app/app.component.ts");
-/* harmony import */ var _product_dt_product_dt_component__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./product-dt/product-dt.component */ "./src/app/product-dt/product-dt.component.ts");
-/* harmony import */ var _product_list_product_list_component__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./product-list/product-list.component */ "./src/app/product-list/product-list.component.ts");
-/* harmony import */ var _center_center_component__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./center/center.component */ "./src/app/center/center.component.ts");
-/* harmony import */ var _product_cart_product_cart_component__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ./product-cart/product-cart.component */ "./src/app/product-cart/product-cart.component.ts");
-/* harmony import */ var _sinhvien_sinhvien_component__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ./sinhvien/sinhvien.component */ "./src/app/sinhvien/sinhvien.component.ts");
-/* harmony import */ var _card_info_card_info_component__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ./card-info/card-info.component */ "./src/app/card-info/card-info.component.ts");
-/* harmony import */ var _angular_router__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! @angular/router */ "./node_modules/@angular/router/fesm5/router.js");
-/* harmony import */ var _menu_menu_component__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! ./menu/menu.component */ "./src/app/menu/menu.component.ts");
-/* harmony import */ var _main_menu_main_menu_component__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(/*! ./main-menu/main-menu.component */ "./src/app/main-menu/main-menu.component.ts");
-/* harmony import */ var _sv_detail_sv_detail_component__WEBPACK_IMPORTED_MODULE_14__ = __webpack_require__(/*! ./sv-detail/sv-detail.component */ "./src/app/sv-detail/sv-detail.component.ts");
-/* harmony import */ var _student_info_service__WEBPACK_IMPORTED_MODULE_15__ = __webpack_require__(/*! ./student-info.service */ "./src/app/student-info.service.ts");
-/* harmony import */ var _congnghe_congnghe_component__WEBPACK_IMPORTED_MODULE_16__ = __webpack_require__(/*! ./congnghe/congnghe.component */ "./src/app/congnghe/congnghe.component.ts");
-/* harmony import */ var _chungloai_chungloai_component__WEBPACK_IMPORTED_MODULE_17__ = __webpack_require__(/*! ./chungloai/chungloai.component */ "./src/app/chungloai/chungloai.component.ts");
-/* harmony import */ var _congnghe_detail_congnghe_detail_component__WEBPACK_IMPORTED_MODULE_18__ = __webpack_require__(/*! ./congnghe-detail/congnghe-detail.component */ "./src/app/congnghe-detail/congnghe-detail.component.ts");
-/* harmony import */ var _tech_service_service__WEBPACK_IMPORTED_MODULE_19__ = __webpack_require__(/*! ./tech-service.service */ "./src/app/tech-service.service.ts");
-/* harmony import */ var _pagination_pagination_component__WEBPACK_IMPORTED_MODULE_20__ = __webpack_require__(/*! ./pagination/pagination.component */ "./src/app/pagination/pagination.component.ts");
-/* harmony import */ var ngx_pagination__WEBPACK_IMPORTED_MODULE_21__ = __webpack_require__(/*! ngx-pagination */ "./node_modules/ngx-pagination/dist/ngx-pagination.js");
-/* harmony import */ var ngx_order_pipe__WEBPACK_IMPORTED_MODULE_22__ = __webpack_require__(/*! ngx-order-pipe */ "./node_modules/ngx-order-pipe/fesm5/ngx-order-pipe.js");
-/* harmony import */ var _hinhchunhat_hinhchunhat_component__WEBPACK_IMPORTED_MODULE_23__ = __webpack_require__(/*! ./hinhchunhat/hinhchunhat.component */ "./src/app/hinhchunhat/hinhchunhat.component.ts");
-/* harmony import */ var _hocluc_hocluc_component__WEBPACK_IMPORTED_MODULE_24__ = __webpack_require__(/*! ./hocluc/hocluc.component */ "./src/app/hocluc/hocluc.component.ts");
-/* harmony import */ var _thuong_thuong_component__WEBPACK_IMPORTED_MODULE_25__ = __webpack_require__(/*! ./thuong/thuong.component */ "./src/app/thuong/thuong.component.ts");
-/* harmony import */ var _banhang_banhang_component__WEBPACK_IMPORTED_MODULE_26__ = __webpack_require__(/*! ./banhang/banhang.component */ "./src/app/banhang/banhang.component.ts");
-/* harmony import */ var _kiemloi_kiemloi_component__WEBPACK_IMPORTED_MODULE_27__ = __webpack_require__(/*! ./kiemloi/kiemloi.component */ "./src/app/kiemloi/kiemloi.component.ts");
+/* harmony import */ var _angular_common_http__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! @angular/common/http */ "./node_modules/@angular/common/fesm5/http.js");
+/* harmony import */ var _http_service_service__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./http-service.service */ "./src/app/http-service.service.ts");
+/* harmony import */ var _shop_service_service__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./shop-service.service */ "./src/app/shop-service.service.ts");
+/* harmony import */ var _app_component__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./app.component */ "./src/app/app.component.ts");
+/* harmony import */ var _product_dt_product_dt_component__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ./product-dt/product-dt.component */ "./src/app/product-dt/product-dt.component.ts");
+/* harmony import */ var _product_list_product_list_component__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ./product-list/product-list.component */ "./src/app/product-list/product-list.component.ts");
+/* harmony import */ var _center_center_component__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ./center/center.component */ "./src/app/center/center.component.ts");
+/* harmony import */ var _product_cart_product_cart_component__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! ./product-cart/product-cart.component */ "./src/app/product-cart/product-cart.component.ts");
+/* harmony import */ var _sinhvien_sinhvien_component__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! ./sinhvien/sinhvien.component */ "./src/app/sinhvien/sinhvien.component.ts");
+/* harmony import */ var _card_info_card_info_component__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(/*! ./card-info/card-info.component */ "./src/app/card-info/card-info.component.ts");
+/* harmony import */ var _angular_router__WEBPACK_IMPORTED_MODULE_14__ = __webpack_require__(/*! @angular/router */ "./node_modules/@angular/router/fesm5/router.js");
+/* harmony import */ var _menu_menu_component__WEBPACK_IMPORTED_MODULE_15__ = __webpack_require__(/*! ./menu/menu.component */ "./src/app/menu/menu.component.ts");
+/* harmony import */ var _main_menu_main_menu_component__WEBPACK_IMPORTED_MODULE_16__ = __webpack_require__(/*! ./main-menu/main-menu.component */ "./src/app/main-menu/main-menu.component.ts");
+/* harmony import */ var _sv_detail_sv_detail_component__WEBPACK_IMPORTED_MODULE_17__ = __webpack_require__(/*! ./sv-detail/sv-detail.component */ "./src/app/sv-detail/sv-detail.component.ts");
+/* harmony import */ var _student_info_service__WEBPACK_IMPORTED_MODULE_18__ = __webpack_require__(/*! ./student-info.service */ "./src/app/student-info.service.ts");
+/* harmony import */ var _congnghe_congnghe_component__WEBPACK_IMPORTED_MODULE_19__ = __webpack_require__(/*! ./congnghe/congnghe.component */ "./src/app/congnghe/congnghe.component.ts");
+/* harmony import */ var _chungloai_chungloai_component__WEBPACK_IMPORTED_MODULE_20__ = __webpack_require__(/*! ./chungloai/chungloai.component */ "./src/app/chungloai/chungloai.component.ts");
+/* harmony import */ var _congnghe_detail_congnghe_detail_component__WEBPACK_IMPORTED_MODULE_21__ = __webpack_require__(/*! ./congnghe-detail/congnghe-detail.component */ "./src/app/congnghe-detail/congnghe-detail.component.ts");
+/* harmony import */ var _tech_service_service__WEBPACK_IMPORTED_MODULE_22__ = __webpack_require__(/*! ./tech-service.service */ "./src/app/tech-service.service.ts");
+/* harmony import */ var _pagination_pagination_component__WEBPACK_IMPORTED_MODULE_23__ = __webpack_require__(/*! ./pagination/pagination.component */ "./src/app/pagination/pagination.component.ts");
+/* harmony import */ var ngx_pagination__WEBPACK_IMPORTED_MODULE_24__ = __webpack_require__(/*! ngx-pagination */ "./node_modules/ngx-pagination/dist/ngx-pagination.js");
+/* harmony import */ var ngx_order_pipe__WEBPACK_IMPORTED_MODULE_25__ = __webpack_require__(/*! ngx-order-pipe */ "./node_modules/ngx-order-pipe/fesm5/ngx-order-pipe.js");
+/* harmony import */ var _hinhchunhat_hinhchunhat_component__WEBPACK_IMPORTED_MODULE_26__ = __webpack_require__(/*! ./hinhchunhat/hinhchunhat.component */ "./src/app/hinhchunhat/hinhchunhat.component.ts");
+/* harmony import */ var _hocluc_hocluc_component__WEBPACK_IMPORTED_MODULE_27__ = __webpack_require__(/*! ./hocluc/hocluc.component */ "./src/app/hocluc/hocluc.component.ts");
+/* harmony import */ var _thuong_thuong_component__WEBPACK_IMPORTED_MODULE_28__ = __webpack_require__(/*! ./thuong/thuong.component */ "./src/app/thuong/thuong.component.ts");
+/* harmony import */ var _banhang_banhang_component__WEBPACK_IMPORTED_MODULE_29__ = __webpack_require__(/*! ./banhang/banhang.component */ "./src/app/banhang/banhang.component.ts");
+/* harmony import */ var _kiemloi_kiemloi_component__WEBPACK_IMPORTED_MODULE_30__ = __webpack_require__(/*! ./kiemloi/kiemloi.component */ "./src/app/kiemloi/kiemloi.component.ts");
+/* harmony import */ var _http_http_component__WEBPACK_IMPORTED_MODULE_31__ = __webpack_require__(/*! ./http/http.component */ "./src/app/http/http.component.ts");
+/* harmony import */ var _film_detail_film_detail_component__WEBPACK_IMPORTED_MODULE_32__ = __webpack_require__(/*! ./film-detail/film-detail.component */ "./src/app/film-detail/film-detail.component.ts");
+/* harmony import */ var _form_sv_form_sv_component__WEBPACK_IMPORTED_MODULE_33__ = __webpack_require__(/*! ./form-sv/form-sv.component */ "./src/app/form-sv/form-sv.component.ts");
+/* harmony import */ var _guitar_shop_guitar_shop_component__WEBPACK_IMPORTED_MODULE_34__ = __webpack_require__(/*! ./guitar-shop/guitar-shop.component */ "./src/app/guitar-shop/guitar-shop.component.ts");
+/* harmony import */ var _guit_prod_detail_guit_prod_detail_component__WEBPACK_IMPORTED_MODULE_35__ = __webpack_require__(/*! ./guit-prod-detail/guit-prod-detail.component */ "./src/app/guit-prod-detail/guit-prod-detail.component.ts");
+/* harmony import */ var _guit_cart_guit_cart_component__WEBPACK_IMPORTED_MODULE_36__ = __webpack_require__(/*! ./guit-cart/guit-cart.component */ "./src/app/guit-cart/guit-cart.component.ts");
+/* harmony import */ var _guit_checkout_guit_checkout_component__WEBPACK_IMPORTED_MODULE_37__ = __webpack_require__(/*! ./guit-checkout/guit-checkout.component */ "./src/app/guit-checkout/guit-checkout.component.ts");
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -347,49 +444,63 @@ var AppModule = /** @class */ (function () {
     AppModule = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
         Object(_angular_core__WEBPACK_IMPORTED_MODULE_2__["NgModule"])({
             declarations: [
-                _app_component__WEBPACK_IMPORTED_MODULE_4__["AppComponent"],
-                _product_dt_product_dt_component__WEBPACK_IMPORTED_MODULE_5__["ProductDTComponent"],
-                _product_list_product_list_component__WEBPACK_IMPORTED_MODULE_6__["ProductListComponent"],
-                _center_center_component__WEBPACK_IMPORTED_MODULE_7__["CenterComponent"],
-                _product_cart_product_cart_component__WEBPACK_IMPORTED_MODULE_8__["ProductCartComponent"],
-                _sinhvien_sinhvien_component__WEBPACK_IMPORTED_MODULE_9__["SinhvienComponent"],
-                _card_info_card_info_component__WEBPACK_IMPORTED_MODULE_10__["CardInfoComponent"],
-                _menu_menu_component__WEBPACK_IMPORTED_MODULE_12__["MenuComponent"],
-                _main_menu_main_menu_component__WEBPACK_IMPORTED_MODULE_13__["MainMenuComponent"],
-                _sv_detail_sv_detail_component__WEBPACK_IMPORTED_MODULE_14__["SvDetailComponent"],
-                _congnghe_congnghe_component__WEBPACK_IMPORTED_MODULE_16__["CongngheComponent"],
-                _chungloai_chungloai_component__WEBPACK_IMPORTED_MODULE_17__["ChungloaiComponent"],
-                _congnghe_detail_congnghe_detail_component__WEBPACK_IMPORTED_MODULE_18__["CongngheDetailComponent"],
-                _pagination_pagination_component__WEBPACK_IMPORTED_MODULE_20__["PaginationComponent"],
-                _hinhchunhat_hinhchunhat_component__WEBPACK_IMPORTED_MODULE_23__["HinhchunhatComponent"],
-                _hocluc_hocluc_component__WEBPACK_IMPORTED_MODULE_24__["HoclucComponent"],
-                _thuong_thuong_component__WEBPACK_IMPORTED_MODULE_25__["ThuongComponent"],
-                _banhang_banhang_component__WEBPACK_IMPORTED_MODULE_26__["BanhangComponent"],
-                _kiemloi_kiemloi_component__WEBPACK_IMPORTED_MODULE_27__["KiemloiComponent"]
+                _app_component__WEBPACK_IMPORTED_MODULE_7__["AppComponent"],
+                _product_dt_product_dt_component__WEBPACK_IMPORTED_MODULE_8__["ProductDTComponent"],
+                _product_list_product_list_component__WEBPACK_IMPORTED_MODULE_9__["ProductListComponent"],
+                _center_center_component__WEBPACK_IMPORTED_MODULE_10__["CenterComponent"],
+                _product_cart_product_cart_component__WEBPACK_IMPORTED_MODULE_11__["ProductCartComponent"],
+                _sinhvien_sinhvien_component__WEBPACK_IMPORTED_MODULE_12__["SinhvienComponent"],
+                _card_info_card_info_component__WEBPACK_IMPORTED_MODULE_13__["CardInfoComponent"],
+                _menu_menu_component__WEBPACK_IMPORTED_MODULE_15__["MenuComponent"],
+                _main_menu_main_menu_component__WEBPACK_IMPORTED_MODULE_16__["MainMenuComponent"],
+                _sv_detail_sv_detail_component__WEBPACK_IMPORTED_MODULE_17__["SvDetailComponent"],
+                _congnghe_congnghe_component__WEBPACK_IMPORTED_MODULE_19__["CongngheComponent"],
+                _chungloai_chungloai_component__WEBPACK_IMPORTED_MODULE_20__["ChungloaiComponent"],
+                _congnghe_detail_congnghe_detail_component__WEBPACK_IMPORTED_MODULE_21__["CongngheDetailComponent"],
+                _pagination_pagination_component__WEBPACK_IMPORTED_MODULE_23__["PaginationComponent"],
+                _hinhchunhat_hinhchunhat_component__WEBPACK_IMPORTED_MODULE_26__["HinhchunhatComponent"],
+                _hocluc_hocluc_component__WEBPACK_IMPORTED_MODULE_27__["HoclucComponent"],
+                _thuong_thuong_component__WEBPACK_IMPORTED_MODULE_28__["ThuongComponent"],
+                _banhang_banhang_component__WEBPACK_IMPORTED_MODULE_29__["BanhangComponent"],
+                _kiemloi_kiemloi_component__WEBPACK_IMPORTED_MODULE_30__["KiemloiComponent"],
+                _http_http_component__WEBPACK_IMPORTED_MODULE_31__["HttpComponent"],
+                _film_detail_film_detail_component__WEBPACK_IMPORTED_MODULE_32__["FilmDetailComponent"],
+                _form_sv_form_sv_component__WEBPACK_IMPORTED_MODULE_33__["FormSvComponent"],
+                _guitar_shop_guitar_shop_component__WEBPACK_IMPORTED_MODULE_34__["GuitarShopComponent"],
+                _guit_prod_detail_guit_prod_detail_component__WEBPACK_IMPORTED_MODULE_35__["GuitProdDetailComponent"],
+                _guit_cart_guit_cart_component__WEBPACK_IMPORTED_MODULE_36__["GuitCartComponent"],
+                _guit_checkout_guit_checkout_component__WEBPACK_IMPORTED_MODULE_37__["GuitCheckoutComponent"],
             ],
             imports: [
-                _angular_platform_browser__WEBPACK_IMPORTED_MODULE_1__["BrowserModule"], ngx_pagination__WEBPACK_IMPORTED_MODULE_21__["NgxPaginationModule"], ngx_order_pipe__WEBPACK_IMPORTED_MODULE_22__["OrderModule"], _angular_forms__WEBPACK_IMPORTED_MODULE_3__["FormsModule"],
-                _angular_router__WEBPACK_IMPORTED_MODULE_11__["RouterModule"].forRoot([
-                    { path: '', component: _main_menu_main_menu_component__WEBPACK_IMPORTED_MODULE_13__["MainMenuComponent"] },
-                    { path: 'product-detail/:id', component: _product_dt_product_dt_component__WEBPACK_IMPORTED_MODULE_5__["ProductDTComponent"] },
-                    { path: 'product-list', component: _product_list_product_list_component__WEBPACK_IMPORTED_MODULE_6__["ProductListComponent"] },
-                    { path: 'product-cart', component: _product_cart_product_cart_component__WEBPACK_IMPORTED_MODULE_8__["ProductCartComponent"] },
-                    { path: 'sinhvien', component: _sinhvien_sinhvien_component__WEBPACK_IMPORTED_MODULE_9__["SinhvienComponent"] },
-                    { path: 'main-menu', component: _main_menu_main_menu_component__WEBPACK_IMPORTED_MODULE_13__["MainMenuComponent"] },
-                    { path: 'sv-detail/:svId', component: _sv_detail_sv_detail_component__WEBPACK_IMPORTED_MODULE_14__["SvDetailComponent"] },
-                    { path: 'cong-nghe', component: _congnghe_congnghe_component__WEBPACK_IMPORTED_MODULE_16__["CongngheComponent"] },
-                    { path: 'chung-loai/:clId', component: _chungloai_chungloai_component__WEBPACK_IMPORTED_MODULE_17__["ChungloaiComponent"] },
-                    { path: 'cong-nghe-detail', component: _congnghe_detail_congnghe_detail_component__WEBPACK_IMPORTED_MODULE_18__["CongngheDetailComponent"] },
-                    { path: 'pagination', component: _pagination_pagination_component__WEBPACK_IMPORTED_MODULE_20__["PaginationComponent"] },
-                    { path: 'hinhchunhat', component: _hinhchunhat_hinhchunhat_component__WEBPACK_IMPORTED_MODULE_23__["HinhchunhatComponent"] },
-                    { path: 'hocluc', component: _hocluc_hocluc_component__WEBPACK_IMPORTED_MODULE_24__["HoclucComponent"] },
-                    { path: 'thuong', component: _thuong_thuong_component__WEBPACK_IMPORTED_MODULE_25__["ThuongComponent"] },
-                    { path: 'banhang', component: _banhang_banhang_component__WEBPACK_IMPORTED_MODULE_26__["BanhangComponent"] },
-                    { path: 'kiemloi', component: _kiemloi_kiemloi_component__WEBPACK_IMPORTED_MODULE_27__["KiemloiComponent"] }
+                _angular_platform_browser__WEBPACK_IMPORTED_MODULE_1__["BrowserModule"], ngx_pagination__WEBPACK_IMPORTED_MODULE_24__["NgxPaginationModule"], ngx_order_pipe__WEBPACK_IMPORTED_MODULE_25__["OrderModule"], _angular_forms__WEBPACK_IMPORTED_MODULE_3__["FormsModule"], _angular_common_http__WEBPACK_IMPORTED_MODULE_4__["HttpClientModule"],
+                _angular_router__WEBPACK_IMPORTED_MODULE_14__["RouterModule"].forRoot([
+                    { path: '', component: _main_menu_main_menu_component__WEBPACK_IMPORTED_MODULE_16__["MainMenuComponent"] },
+                    { path: 'product-detail/:id', component: _product_dt_product_dt_component__WEBPACK_IMPORTED_MODULE_8__["ProductDTComponent"] },
+                    { path: 'product-list', component: _product_list_product_list_component__WEBPACK_IMPORTED_MODULE_9__["ProductListComponent"] },
+                    { path: 'product-cart', component: _product_cart_product_cart_component__WEBPACK_IMPORTED_MODULE_11__["ProductCartComponent"] },
+                    { path: 'sinhvien', component: _sinhvien_sinhvien_component__WEBPACK_IMPORTED_MODULE_12__["SinhvienComponent"] },
+                    { path: 'main-menu', component: _main_menu_main_menu_component__WEBPACK_IMPORTED_MODULE_16__["MainMenuComponent"] },
+                    { path: 'sv-detail/:svId', component: _sv_detail_sv_detail_component__WEBPACK_IMPORTED_MODULE_17__["SvDetailComponent"] },
+                    { path: 'cong-nghe', component: _congnghe_congnghe_component__WEBPACK_IMPORTED_MODULE_19__["CongngheComponent"] },
+                    { path: 'chung-loai/:clId', component: _chungloai_chungloai_component__WEBPACK_IMPORTED_MODULE_20__["ChungloaiComponent"] },
+                    { path: 'cong-nghe-detail', component: _congnghe_detail_congnghe_detail_component__WEBPACK_IMPORTED_MODULE_21__["CongngheDetailComponent"] },
+                    { path: 'pagination', component: _pagination_pagination_component__WEBPACK_IMPORTED_MODULE_23__["PaginationComponent"] },
+                    { path: 'hinhchunhat', component: _hinhchunhat_hinhchunhat_component__WEBPACK_IMPORTED_MODULE_26__["HinhchunhatComponent"] },
+                    { path: 'hocluc', component: _hocluc_hocluc_component__WEBPACK_IMPORTED_MODULE_27__["HoclucComponent"] },
+                    { path: 'thuong', component: _thuong_thuong_component__WEBPACK_IMPORTED_MODULE_28__["ThuongComponent"] },
+                    { path: 'banhang', component: _banhang_banhang_component__WEBPACK_IMPORTED_MODULE_29__["BanhangComponent"] },
+                    { path: 'kiemloi', component: _kiemloi_kiemloi_component__WEBPACK_IMPORTED_MODULE_30__["KiemloiComponent"] },
+                    { path: 'http', component: _http_http_component__WEBPACK_IMPORTED_MODULE_31__["HttpComponent"] },
+                    { path: 'film-detail/:url', component: _film_detail_film_detail_component__WEBPACK_IMPORTED_MODULE_32__["FilmDetailComponent"] },
+                    { path: 'form-sv', component: _form_sv_form_sv_component__WEBPACK_IMPORTED_MODULE_33__["FormSvComponent"] },
+                    { path: 'guitar/:id', component: _guitar_shop_guitar_shop_component__WEBPACK_IMPORTED_MODULE_34__["GuitarShopComponent"] },
+                    { path: 'guit-detail/:prodId', component: _guit_prod_detail_guit_prod_detail_component__WEBPACK_IMPORTED_MODULE_35__["GuitProdDetailComponent"] },
+                    { path: 'guit-cart', component: _guit_cart_guit_cart_component__WEBPACK_IMPORTED_MODULE_36__["GuitCartComponent"] },
+                    { path: 'guit-checkout', component: _guit_checkout_guit_checkout_component__WEBPACK_IMPORTED_MODULE_37__["GuitCheckoutComponent"] },
                 ])
             ],
-            providers: [_student_info_service__WEBPACK_IMPORTED_MODULE_15__["StudentInfoService"], _tech_service_service__WEBPACK_IMPORTED_MODULE_19__["TechServiceService"]],
-            bootstrap: [_app_component__WEBPACK_IMPORTED_MODULE_4__["AppComponent"]]
+            providers: [_student_info_service__WEBPACK_IMPORTED_MODULE_18__["StudentInfoService"], _tech_service_service__WEBPACK_IMPORTED_MODULE_22__["TechServiceService"], _http_service_service__WEBPACK_IMPORTED_MODULE_5__["HttpServiceService"], _shop_service_service__WEBPACK_IMPORTED_MODULE_6__["ShopServiceService"]],
+            bootstrap: [_app_component__WEBPACK_IMPORTED_MODULE_7__["AppComponent"]]
         })
     ], AppModule);
     return AppModule;
@@ -732,6 +843,481 @@ var CongngheComponent = /** @class */ (function () {
 
 /***/ }),
 
+/***/ "./src/app/film-detail/film-detail.component.css":
+/*!*******************************************************!*\
+  !*** ./src/app/film-detail/film-detail.component.css ***!
+  \*******************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = ".detail-img {\r\n    width: 100%;\r\n    height:200px;\r\n}\r\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbImFwcC9maWxtLWRldGFpbC9maWxtLWRldGFpbC5jb21wb25lbnQuY3NzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQUFBO0lBQ0ksV0FBVztJQUNYLFlBQVk7QUFDaEIiLCJmaWxlIjoiYXBwL2ZpbG0tZGV0YWlsL2ZpbG0tZGV0YWlsLmNvbXBvbmVudC5jc3MiLCJzb3VyY2VzQ29udGVudCI6WyIuZGV0YWlsLWltZyB7XHJcbiAgICB3aWR0aDogMTAwJTtcclxuICAgIGhlaWdodDoyMDBweDtcclxufSJdfQ== */"
+
+/***/ }),
+
+/***/ "./src/app/film-detail/film-detail.component.ts":
+/*!******************************************************!*\
+  !*** ./src/app/film-detail/film-detail.component.ts ***!
+  \******************************************************/
+/*! exports provided: FilmDetailComponent */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "FilmDetailComponent", function() { return FilmDetailComponent; });
+/* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! tslib */ "./node_modules/tslib/tslib.es6.js");
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
+/* harmony import */ var _angular_router__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @angular/router */ "./node_modules/@angular/router/fesm5/router.js");
+/* harmony import */ var _angular_common_http__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @angular/common/http */ "./node_modules/@angular/common/fesm5/http.js");
+
+
+
+
+var FilmDetailComponent = /** @class */ (function () {
+    function FilmDetailComponent(route, http) {
+        this.route = route;
+        this.http = http;
+    }
+    FilmDetailComponent.prototype.ngOnInit = function () {
+        var _this = this;
+        var url = this.route.snapshot.paramMap.get('url');
+        this.getFilmById(url).subscribe(function (data) {
+            _this.film = data;
+        });
+    };
+    FilmDetailComponent.prototype.getFilmById = function (url) {
+        return this.http.get(url);
+    };
+    FilmDetailComponent.ctorParameters = function () { return [
+        { type: _angular_router__WEBPACK_IMPORTED_MODULE_2__["ActivatedRoute"] },
+        { type: _angular_common_http__WEBPACK_IMPORTED_MODULE_3__["HttpClient"] }
+    ]; };
+    FilmDetailComponent = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
+        Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Component"])({
+            selector: 'app-film-detail',
+            template: __webpack_require__(/*! raw-loader!./film-detail.component.html */ "./node_modules/raw-loader/index.js!./src/app/film-detail/film-detail.component.html"),
+            styles: [__webpack_require__(/*! ./film-detail.component.css */ "./src/app/film-detail/film-detail.component.css")]
+        })
+    ], FilmDetailComponent);
+    return FilmDetailComponent;
+}());
+
+
+
+/***/ }),
+
+/***/ "./src/app/form-sv/form-sv.component.css":
+/*!***********************************************!*\
+  !*** ./src/app/form-sv/form-sv.component.css ***!
+  \***********************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = "label {\r\n    margin-right:20px;\r\n    width:100px;\r\n}\r\n.text-field-form {\r\n    width:50%;\r\n}\r\nbutton {\r\n    width:49.0%;\r\n    margin-bottom : 20px;\r\n}\r\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbImFwcC9mb3JtLXN2L2Zvcm0tc3YuY29tcG9uZW50LmNzcyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUFBQTtJQUNJLGlCQUFpQjtJQUNqQixXQUFXO0FBQ2Y7QUFDQTtJQUNJLFNBQVM7QUFDYjtBQUNBO0lBQ0ksV0FBVztJQUNYLG9CQUFvQjtBQUN4QiIsImZpbGUiOiJhcHAvZm9ybS1zdi9mb3JtLXN2LmNvbXBvbmVudC5jc3MiLCJzb3VyY2VzQ29udGVudCI6WyJsYWJlbCB7XHJcbiAgICBtYXJnaW4tcmlnaHQ6MjBweDtcclxuICAgIHdpZHRoOjEwMHB4O1xyXG59XHJcbi50ZXh0LWZpZWxkLWZvcm0ge1xyXG4gICAgd2lkdGg6NTAlO1xyXG59XHJcbmJ1dHRvbiB7XHJcbiAgICB3aWR0aDo0OS4wJTtcclxuICAgIG1hcmdpbi1ib3R0b20gOiAyMHB4O1xyXG59Il19 */"
+
+/***/ }),
+
+/***/ "./src/app/form-sv/form-sv.component.ts":
+/*!**********************************************!*\
+  !*** ./src/app/form-sv/form-sv.component.ts ***!
+  \**********************************************/
+/*! exports provided: FormSvComponent */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "FormSvComponent", function() { return FormSvComponent; });
+/* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! tslib */ "./node_modules/tslib/tslib.es6.js");
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
+
+
+var FormSvComponent = /** @class */ (function () {
+    function FormSvComponent() {
+        this.check = true;
+        this.stuInfo = {
+            id: 0,
+            name: '',
+            birth: new Date().toISOString().substring(0, 10),
+            rate: 0
+        };
+        this.student = [
+            {
+                id: 1,
+                name: 'Nguyễn văn tèo',
+                birth: new Date(2019, 6, 30).toLocaleDateString().substring(0, 10),
+                rate: 8
+            },
+            {
+                id: 2,
+                name: 'Phan thị nở',
+                birth: new Date(2018, 2, 29).toLocaleDateString().substring(0, 10),
+                rate: 0
+            },
+        ];
+        this.showFormEdit = false;
+    }
+    FormSvComponent.prototype.edit = function (stu) {
+        this.showFormEdit = true;
+        this.stuInfo.id = stu.id;
+        this.stuInfo.name = stu.name;
+        this.stuInfo.birth = stu.birth;
+        this.stuInfo.rate = stu.rate;
+    };
+    FormSvComponent.prototype.save = function (stu) {
+        var _this = this;
+        this.showFormEdit = false;
+        this.student.forEach(function (ele) {
+            if (ele.id == _this.stuInfo.id) {
+                ele.name = _this.stuInfo.name;
+                ele.birth = _this.stuInfo.birth;
+                ele.rate = _this.stuInfo.rate;
+                _this.check = true;
+                return;
+            }
+            else {
+                _this.check = false;
+            }
+        });
+        if (this.check == false) {
+            this.student.push(this.stuInfo);
+        }
+    };
+    FormSvComponent.prototype.ngOnInit = function () { };
+    FormSvComponent = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
+        Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Component"])({
+            selector: 'app-form-sv',
+            template: __webpack_require__(/*! raw-loader!./form-sv.component.html */ "./node_modules/raw-loader/index.js!./src/app/form-sv/form-sv.component.html"),
+            styles: [__webpack_require__(/*! ./form-sv.component.css */ "./src/app/form-sv/form-sv.component.css")]
+        })
+    ], FormSvComponent);
+    return FormSvComponent;
+}());
+
+
+
+/***/ }),
+
+/***/ "./src/app/guit-cart/guit-cart.component.css":
+/*!***************************************************!*\
+  !*** ./src/app/guit-cart/guit-cart.component.css ***!
+  \***************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = "h3,h4 {\r\n    color:goldenrod;\r\n}\r\n.menu {\r\n    list-style-type: none;\r\n}\r\n.menu-item {\r\n    text-decoration: underline;\r\n    font-size:20px;\r\n    font-weight: bold;\r\n}\r\n.product-img {\r\n    width:100%;\r\n    height:200px;\r\n}\r\n.product-title {\r\n    text-decoration: underline;\r\n    font-size:20px;\r\n    font-weight: 500;\r\n}\r\n.cart-quantity {\r\n    width:50px;\r\n    text-align: center;\r\n}\r\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbImFwcC9ndWl0LWNhcnQvZ3VpdC1jYXJ0LmNvbXBvbmVudC5jc3MiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBQUE7SUFDSSxlQUFlO0FBQ25CO0FBQ0E7SUFDSSxxQkFBcUI7QUFDekI7QUFDQTtJQUNJLDBCQUEwQjtJQUMxQixjQUFjO0lBQ2QsaUJBQWlCO0FBQ3JCO0FBQ0E7SUFDSSxVQUFVO0lBQ1YsWUFBWTtBQUNoQjtBQUNBO0lBQ0ksMEJBQTBCO0lBQzFCLGNBQWM7SUFDZCxnQkFBZ0I7QUFDcEI7QUFDQTtJQUNJLFVBQVU7SUFDVixrQkFBa0I7QUFDdEIiLCJmaWxlIjoiYXBwL2d1aXQtY2FydC9ndWl0LWNhcnQuY29tcG9uZW50LmNzcyIsInNvdXJjZXNDb250ZW50IjpbImgzLGg0IHtcclxuICAgIGNvbG9yOmdvbGRlbnJvZDtcclxufVxyXG4ubWVudSB7XHJcbiAgICBsaXN0LXN0eWxlLXR5cGU6IG5vbmU7XHJcbn1cclxuLm1lbnUtaXRlbSB7XHJcbiAgICB0ZXh0LWRlY29yYXRpb246IHVuZGVybGluZTtcclxuICAgIGZvbnQtc2l6ZToyMHB4O1xyXG4gICAgZm9udC13ZWlnaHQ6IGJvbGQ7XHJcbn1cclxuLnByb2R1Y3QtaW1nIHtcclxuICAgIHdpZHRoOjEwMCU7XHJcbiAgICBoZWlnaHQ6MjAwcHg7XHJcbn1cclxuLnByb2R1Y3QtdGl0bGUge1xyXG4gICAgdGV4dC1kZWNvcmF0aW9uOiB1bmRlcmxpbmU7XHJcbiAgICBmb250LXNpemU6MjBweDtcclxuICAgIGZvbnQtd2VpZ2h0OiA1MDA7XHJcbn1cclxuLmNhcnQtcXVhbnRpdHkge1xyXG4gICAgd2lkdGg6NTBweDtcclxuICAgIHRleHQtYWxpZ246IGNlbnRlcjtcclxufSJdfQ== */"
+
+/***/ }),
+
+/***/ "./src/app/guit-cart/guit-cart.component.ts":
+/*!**************************************************!*\
+  !*** ./src/app/guit-cart/guit-cart.component.ts ***!
+  \**************************************************/
+/*! exports provided: GuitCartComponent */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "GuitCartComponent", function() { return GuitCartComponent; });
+/* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! tslib */ "./node_modules/tslib/tslib.es6.js");
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
+/* harmony import */ var _shop_service_service__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../shop-service.service */ "./src/app/shop-service.service.ts");
+
+
+
+var GuitCartComponent = /** @class */ (function () {
+    function GuitCartComponent(shopSer) {
+        this.shopSer = shopSer;
+        this.cartItems = [];
+        this.product = [];
+    }
+    GuitCartComponent.prototype.ngOnInit = function () {
+        this.cartItems = JSON.parse(sessionStorage.getItem('cartItems'));
+        this.product = this.shopSer.product;
+    };
+    GuitCartComponent.prototype.total = function (price, quantity) {
+        return price * quantity;
+    };
+    GuitCartComponent.prototype.getPrice = function (id) {
+        var price = 0;
+        this.product.forEach(function (ele) {
+            if (ele.id == id) {
+                price = ele.price;
+            }
+        });
+        return price;
+    };
+    GuitCartComponent.prototype.subTotal = function () {
+        var subTo = 0;
+        var subToItems = document.querySelectorAll('.total');
+        subToItems.forEach(function (sub) {
+            subTo += parseFloat(sub.innerHTML);
+        });
+        return subTo;
+    };
+    GuitCartComponent.prototype.updateCart = function () {
+        var _this = this;
+        this.cartItems.forEach(function (cart, index) {
+            if (cart.quantity == 0) {
+                _this.cartItems.splice(index, 1);
+            }
+        });
+        sessionStorage.setItem('cartItems', JSON.stringify(this.cartItems));
+    };
+    GuitCartComponent.ctorParameters = function () { return [
+        { type: _shop_service_service__WEBPACK_IMPORTED_MODULE_2__["ShopServiceService"] }
+    ]; };
+    GuitCartComponent = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
+        Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Component"])({
+            selector: 'app-guit-cart',
+            template: __webpack_require__(/*! raw-loader!./guit-cart.component.html */ "./node_modules/raw-loader/index.js!./src/app/guit-cart/guit-cart.component.html"),
+            styles: [__webpack_require__(/*! ./guit-cart.component.css */ "./src/app/guit-cart/guit-cart.component.css")]
+        })
+    ], GuitCartComponent);
+    return GuitCartComponent;
+}());
+
+
+
+/***/ }),
+
+/***/ "./src/app/guit-checkout/guit-checkout.component.css":
+/*!***********************************************************!*\
+  !*** ./src/app/guit-checkout/guit-checkout.component.css ***!
+  \***********************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = "h3,h4,h5 {\r\n    color:goldenrod;\r\n}\r\n.menu {\r\n    list-style-type: none;\r\n}\r\n.menu-item {\r\n    text-decoration: underline;\r\n    font-size:20px;\r\n    font-weight: bold;\r\n}\r\n.product-img {\r\n    width:100%;\r\n    height:200px;\r\n}\r\n.product-title {\r\n    text-decoration: underline;\r\n    font-size:20px;\r\n    font-weight: 500;\r\n}\r\n\r\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbImFwcC9ndWl0LWNoZWNrb3V0L2d1aXQtY2hlY2tvdXQuY29tcG9uZW50LmNzcyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUFBQTtJQUNJLGVBQWU7QUFDbkI7QUFDQTtJQUNJLHFCQUFxQjtBQUN6QjtBQUNBO0lBQ0ksMEJBQTBCO0lBQzFCLGNBQWM7SUFDZCxpQkFBaUI7QUFDckI7QUFDQTtJQUNJLFVBQVU7SUFDVixZQUFZO0FBQ2hCO0FBQ0E7SUFDSSwwQkFBMEI7SUFDMUIsY0FBYztJQUNkLGdCQUFnQjtBQUNwQiIsImZpbGUiOiJhcHAvZ3VpdC1jaGVja291dC9ndWl0LWNoZWNrb3V0LmNvbXBvbmVudC5jc3MiLCJzb3VyY2VzQ29udGVudCI6WyJoMyxoNCxoNSB7XHJcbiAgICBjb2xvcjpnb2xkZW5yb2Q7XHJcbn1cclxuLm1lbnUge1xyXG4gICAgbGlzdC1zdHlsZS10eXBlOiBub25lO1xyXG59XHJcbi5tZW51LWl0ZW0ge1xyXG4gICAgdGV4dC1kZWNvcmF0aW9uOiB1bmRlcmxpbmU7XHJcbiAgICBmb250LXNpemU6MjBweDtcclxuICAgIGZvbnQtd2VpZ2h0OiBib2xkO1xyXG59XHJcbi5wcm9kdWN0LWltZyB7XHJcbiAgICB3aWR0aDoxMDAlO1xyXG4gICAgaGVpZ2h0OjIwMHB4O1xyXG59XHJcbi5wcm9kdWN0LXRpdGxlIHtcclxuICAgIHRleHQtZGVjb3JhdGlvbjogdW5kZXJsaW5lO1xyXG4gICAgZm9udC1zaXplOjIwcHg7XHJcbiAgICBmb250LXdlaWdodDogNTAwO1xyXG59XHJcbiJdfQ== */"
+
+/***/ }),
+
+/***/ "./src/app/guit-checkout/guit-checkout.component.ts":
+/*!**********************************************************!*\
+  !*** ./src/app/guit-checkout/guit-checkout.component.ts ***!
+  \**********************************************************/
+/*! exports provided: GuitCheckoutComponent */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "GuitCheckoutComponent", function() { return GuitCheckoutComponent; });
+/* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! tslib */ "./node_modules/tslib/tslib.es6.js");
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
+/* harmony import */ var _shop_service_service__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../shop-service.service */ "./src/app/shop-service.service.ts");
+
+
+
+var GuitCheckoutComponent = /** @class */ (function () {
+    function GuitCheckoutComponent(shopSer) {
+        this.shopSer = shopSer;
+        this.cartItems = [];
+        this.product = [];
+    }
+    GuitCheckoutComponent.prototype.ngOnInit = function () {
+        this.cartItems = JSON.parse(sessionStorage.getItem('cartItems'));
+        this.product = this.shopSer.product;
+        this.categories = this.shopSer.categories;
+    };
+    GuitCheckoutComponent.prototype.total = function (price, quantity) {
+        return price * quantity;
+    };
+    GuitCheckoutComponent.prototype.getPrice = function (id) {
+        var price = 0;
+        this.product.forEach(function (ele) {
+            if (ele.id == id) {
+                price = ele.price;
+            }
+        });
+        return price;
+    };
+    GuitCheckoutComponent.prototype.subTotal = function () {
+        var subTo = 0;
+        var subToItems = document.querySelectorAll('.total');
+        subToItems.forEach(function (sub) {
+            subTo += parseFloat(sub.innerHTML);
+        });
+        return subTo;
+    };
+    GuitCheckoutComponent.ctorParameters = function () { return [
+        { type: _shop_service_service__WEBPACK_IMPORTED_MODULE_2__["ShopServiceService"] }
+    ]; };
+    GuitCheckoutComponent = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
+        Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Component"])({
+            selector: 'app-guit-checkout',
+            template: __webpack_require__(/*! raw-loader!./guit-checkout.component.html */ "./node_modules/raw-loader/index.js!./src/app/guit-checkout/guit-checkout.component.html"),
+            styles: [__webpack_require__(/*! ./guit-checkout.component.css */ "./src/app/guit-checkout/guit-checkout.component.css")]
+        })
+    ], GuitCheckoutComponent);
+    return GuitCheckoutComponent;
+}());
+
+
+
+/***/ }),
+
+/***/ "./src/app/guit-prod-detail/guit-prod-detail.component.css":
+/*!*****************************************************************!*\
+  !*** ./src/app/guit-prod-detail/guit-prod-detail.component.css ***!
+  \*****************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = "h3,h4,h2 {\r\n    color:goldenrod;\r\n}\r\n.menu {\r\n    list-style-type: none;\r\n}\r\n.menu-item {\r\n    text-decoration: underline;\r\n    font-size:20px;\r\n    font-weight: bold;\r\n}\r\n.prod-img {\r\n    width:100%;\r\n    height:400px;\r\n}\r\n.quantity {\r\n    width:50px;\r\n    margin-right:20px;\r\n    text-align: center;\r\n}\r\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbImFwcC9ndWl0LXByb2QtZGV0YWlsL2d1aXQtcHJvZC1kZXRhaWwuY29tcG9uZW50LmNzcyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUFBQTtJQUNJLGVBQWU7QUFDbkI7QUFDQTtJQUNJLHFCQUFxQjtBQUN6QjtBQUNBO0lBQ0ksMEJBQTBCO0lBQzFCLGNBQWM7SUFDZCxpQkFBaUI7QUFDckI7QUFDQTtJQUNJLFVBQVU7SUFDVixZQUFZO0FBQ2hCO0FBQ0E7SUFDSSxVQUFVO0lBQ1YsaUJBQWlCO0lBQ2pCLGtCQUFrQjtBQUN0QiIsImZpbGUiOiJhcHAvZ3VpdC1wcm9kLWRldGFpbC9ndWl0LXByb2QtZGV0YWlsLmNvbXBvbmVudC5jc3MiLCJzb3VyY2VzQ29udGVudCI6WyJoMyxoNCxoMiB7XHJcbiAgICBjb2xvcjpnb2xkZW5yb2Q7XHJcbn1cclxuLm1lbnUge1xyXG4gICAgbGlzdC1zdHlsZS10eXBlOiBub25lO1xyXG59XHJcbi5tZW51LWl0ZW0ge1xyXG4gICAgdGV4dC1kZWNvcmF0aW9uOiB1bmRlcmxpbmU7XHJcbiAgICBmb250LXNpemU6MjBweDtcclxuICAgIGZvbnQtd2VpZ2h0OiBib2xkO1xyXG59XHJcbi5wcm9kLWltZyB7XHJcbiAgICB3aWR0aDoxMDAlO1xyXG4gICAgaGVpZ2h0OjQwMHB4O1xyXG59XHJcbi5xdWFudGl0eSB7XHJcbiAgICB3aWR0aDo1MHB4O1xyXG4gICAgbWFyZ2luLXJpZ2h0OjIwcHg7XHJcbiAgICB0ZXh0LWFsaWduOiBjZW50ZXI7XHJcbn0iXX0= */"
+
+/***/ }),
+
+/***/ "./src/app/guit-prod-detail/guit-prod-detail.component.ts":
+/*!****************************************************************!*\
+  !*** ./src/app/guit-prod-detail/guit-prod-detail.component.ts ***!
+  \****************************************************************/
+/*! exports provided: GuitProdDetailComponent */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "GuitProdDetailComponent", function() { return GuitProdDetailComponent; });
+/* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! tslib */ "./node_modules/tslib/tslib.es6.js");
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
+/* harmony import */ var _shop_service_service__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../shop-service.service */ "./src/app/shop-service.service.ts");
+/* harmony import */ var _angular_router__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @angular/router */ "./node_modules/@angular/router/fesm5/router.js");
+
+
+
+
+var GuitProdDetailComponent = /** @class */ (function () {
+    function GuitProdDetailComponent(shopSer, route) {
+        this.shopSer = shopSer;
+        this.route = route;
+    }
+    GuitProdDetailComponent.prototype.ngOnInit = function () {
+        var _this = this;
+        this.categories = this.shopSer.categories;
+        this.product = this.shopSer.product;
+        this.quantity = 1;
+        this.route.paramMap.subscribe(function (param) {
+            _this.prodId = +param.get("prodId");
+        });
+        this.product.forEach(function (element) {
+            if (_this.prodId == element.id) {
+                _this.thisProd = element;
+                return;
+            }
+        });
+    };
+    GuitProdDetailComponent.prototype.addCart = function (id, name, quantity) {
+        var cart = JSON.parse(sessionStorage.getItem('cartItems'));
+        var isHave = false;
+        if (cart.length == 0) {
+            cart.push({
+                prodId: id,
+                name: name,
+                quantity: quantity
+            });
+        }
+        else {
+            cart.forEach(function (ele) {
+                if (ele.prodId == id) {
+                    ele.quantity += quantity;
+                    isHave = true;
+                    return;
+                }
+            });
+            if (isHave == false) {
+                cart.push({
+                    prodId: id,
+                    name: name,
+                    quantity: quantity
+                });
+            }
+        }
+        sessionStorage.setItem('cartItems', JSON.stringify(cart));
+    };
+    GuitProdDetailComponent.ctorParameters = function () { return [
+        { type: _shop_service_service__WEBPACK_IMPORTED_MODULE_2__["ShopServiceService"] },
+        { type: _angular_router__WEBPACK_IMPORTED_MODULE_3__["ActivatedRoute"] }
+    ]; };
+    GuitProdDetailComponent = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
+        Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Component"])({
+            selector: 'app-guit-prod-detail',
+            template: __webpack_require__(/*! raw-loader!./guit-prod-detail.component.html */ "./node_modules/raw-loader/index.js!./src/app/guit-prod-detail/guit-prod-detail.component.html"),
+            styles: [__webpack_require__(/*! ./guit-prod-detail.component.css */ "./src/app/guit-prod-detail/guit-prod-detail.component.css")]
+        })
+    ], GuitProdDetailComponent);
+    return GuitProdDetailComponent;
+}());
+
+
+
+/***/ }),
+
+/***/ "./src/app/guitar-shop/guitar-shop.component.css":
+/*!*******************************************************!*\
+  !*** ./src/app/guitar-shop/guitar-shop.component.css ***!
+  \*******************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = "h3,h4 {\r\n    color:goldenrod;\r\n}\r\n.menu {\r\n    list-style-type: none;\r\n}\r\n.menu-item {\r\n    text-decoration: underline;\r\n    font-size:20px;\r\n    font-weight: bold;\r\n}\r\n.product-img {\r\n    width:100%;\r\n    height:200px;\r\n}\r\n.product-title {\r\n    text-decoration: underline;\r\n    font-size:20px;\r\n    font-weight: 500;\r\n}\r\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbImFwcC9ndWl0YXItc2hvcC9ndWl0YXItc2hvcC5jb21wb25lbnQuY3NzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQUFBO0lBQ0ksZUFBZTtBQUNuQjtBQUNBO0lBQ0kscUJBQXFCO0FBQ3pCO0FBQ0E7SUFDSSwwQkFBMEI7SUFDMUIsY0FBYztJQUNkLGlCQUFpQjtBQUNyQjtBQUNBO0lBQ0ksVUFBVTtJQUNWLFlBQVk7QUFDaEI7QUFDQTtJQUNJLDBCQUEwQjtJQUMxQixjQUFjO0lBQ2QsZ0JBQWdCO0FBQ3BCIiwiZmlsZSI6ImFwcC9ndWl0YXItc2hvcC9ndWl0YXItc2hvcC5jb21wb25lbnQuY3NzIiwic291cmNlc0NvbnRlbnQiOlsiaDMsaDQge1xyXG4gICAgY29sb3I6Z29sZGVucm9kO1xyXG59XHJcbi5tZW51IHtcclxuICAgIGxpc3Qtc3R5bGUtdHlwZTogbm9uZTtcclxufVxyXG4ubWVudS1pdGVtIHtcclxuICAgIHRleHQtZGVjb3JhdGlvbjogdW5kZXJsaW5lO1xyXG4gICAgZm9udC1zaXplOjIwcHg7XHJcbiAgICBmb250LXdlaWdodDogYm9sZDtcclxufVxyXG4ucHJvZHVjdC1pbWcge1xyXG4gICAgd2lkdGg6MTAwJTtcclxuICAgIGhlaWdodDoyMDBweDtcclxufVxyXG4ucHJvZHVjdC10aXRsZSB7XHJcbiAgICB0ZXh0LWRlY29yYXRpb246IHVuZGVybGluZTtcclxuICAgIGZvbnQtc2l6ZToyMHB4O1xyXG4gICAgZm9udC13ZWlnaHQ6IDUwMDtcclxufSJdfQ== */"
+
+/***/ }),
+
+/***/ "./src/app/guitar-shop/guitar-shop.component.ts":
+/*!******************************************************!*\
+  !*** ./src/app/guitar-shop/guitar-shop.component.ts ***!
+  \******************************************************/
+/*! exports provided: GuitarShopComponent */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "GuitarShopComponent", function() { return GuitarShopComponent; });
+/* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! tslib */ "./node_modules/tslib/tslib.es6.js");
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
+/* harmony import */ var _shop_service_service__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../shop-service.service */ "./src/app/shop-service.service.ts");
+/* harmony import */ var _angular_router__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @angular/router */ "./node_modules/@angular/router/fesm5/router.js");
+
+
+
+
+var GuitarShopComponent = /** @class */ (function () {
+    function GuitarShopComponent(shopSer, route) {
+        this.shopSer = shopSer;
+        this.route = route;
+        this.listProd = [];
+    }
+    GuitarShopComponent.prototype.ngOnInit = function () {
+        var _this = this;
+        this.categories = this.shopSer.categories;
+        this.product = this.shopSer.product;
+        this.route.paramMap.subscribe(function (param) {
+            _this.cateId = +param.get("id");
+        });
+        this.product.forEach(function (prod) {
+            if (prod.cid == _this.cateId) {
+                _this.listProd.push(prod);
+            }
+        });
+        if (sessionStorage.getItem('cartItems') == '' || sessionStorage.length == 0) {
+            sessionStorage.setItem('cartItems', JSON.stringify([]));
+        }
+    };
+    GuitarShopComponent.ctorParameters = function () { return [
+        { type: _shop_service_service__WEBPACK_IMPORTED_MODULE_2__["ShopServiceService"] },
+        { type: _angular_router__WEBPACK_IMPORTED_MODULE_3__["ActivatedRoute"] }
+    ]; };
+    GuitarShopComponent = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
+        Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Component"])({
+            selector: 'app-guitar-shop',
+            template: __webpack_require__(/*! raw-loader!./guitar-shop.component.html */ "./node_modules/raw-loader/index.js!./src/app/guitar-shop/guitar-shop.component.html"),
+            styles: [__webpack_require__(/*! ./guitar-shop.component.css */ "./src/app/guitar-shop/guitar-shop.component.css")]
+        })
+    ], GuitarShopComponent);
+    return GuitarShopComponent;
+}());
+
+
+
+/***/ }),
+
 /***/ "./src/app/hinhchunhat/hinhchunhat.component.css":
 /*!*******************************************************!*\
   !*** ./src/app/hinhchunhat/hinhchunhat.component.css ***!
@@ -839,6 +1425,102 @@ var HoclucComponent = /** @class */ (function () {
         })
     ], HoclucComponent);
     return HoclucComponent;
+}());
+
+
+
+/***/ }),
+
+/***/ "./src/app/http-service.service.ts":
+/*!*****************************************!*\
+  !*** ./src/app/http-service.service.ts ***!
+  \*****************************************/
+/*! exports provided: HttpServiceService */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "HttpServiceService", function() { return HttpServiceService; });
+/* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! tslib */ "./node_modules/tslib/tslib.es6.js");
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
+/* harmony import */ var _angular_common_http__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @angular/common/http */ "./node_modules/@angular/common/fesm5/http.js");
+
+
+
+var HttpServiceService = /** @class */ (function () {
+    function HttpServiceService(http) {
+        var _this = this;
+        this.http = http;
+        this.url = 'https://swapi.co/api/films/';
+        this.getAllFilm().subscribe(function (data) {
+            _this.infoFilm = data;
+            _this.listFilm = _this.infoFilm.results;
+        });
+    }
+    HttpServiceService.prototype.getAllFilm = function () {
+        return this.http.get(this.url);
+    };
+    HttpServiceService.ctorParameters = function () { return [
+        { type: _angular_common_http__WEBPACK_IMPORTED_MODULE_2__["HttpClient"] }
+    ]; };
+    HttpServiceService = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
+        Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Injectable"])({
+            providedIn: 'root'
+        })
+    ], HttpServiceService);
+    return HttpServiceService;
+}());
+
+
+
+/***/ }),
+
+/***/ "./src/app/http/http.component.css":
+/*!*****************************************!*\
+  !*** ./src/app/http/http.component.css ***!
+  \*****************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = ".avatar {\r\n    width:100%;\r\n    height: 200px;\r\n}\r\n.card {\r\n    width:100%;\r\n    border-radius: 10px;\r\n    margin : 10px auto;\r\n}\r\n.card-title {\r\n    color : lightcoral;\r\n    font-size: 20px;\r\n}\r\n.card-text {\r\n    text-transform: uppercase;\r\n    color:  deepskyblue;\r\n    font-size: 14px; \r\n}\r\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbImFwcC9odHRwL2h0dHAuY29tcG9uZW50LmNzcyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUFBQTtJQUNJLFVBQVU7SUFDVixhQUFhO0FBQ2pCO0FBQ0E7SUFDSSxVQUFVO0lBQ1YsbUJBQW1CO0lBQ25CLGtCQUFrQjtBQUN0QjtBQUNBO0lBQ0ksa0JBQWtCO0lBQ2xCLGVBQWU7QUFDbkI7QUFDQTtJQUNJLHlCQUF5QjtJQUN6QixtQkFBbUI7SUFDbkIsZUFBZTtBQUNuQiIsImZpbGUiOiJhcHAvaHR0cC9odHRwLmNvbXBvbmVudC5jc3MiLCJzb3VyY2VzQ29udGVudCI6WyIuYXZhdGFyIHtcclxuICAgIHdpZHRoOjEwMCU7XHJcbiAgICBoZWlnaHQ6IDIwMHB4O1xyXG59XHJcbi5jYXJkIHtcclxuICAgIHdpZHRoOjEwMCU7XHJcbiAgICBib3JkZXItcmFkaXVzOiAxMHB4O1xyXG4gICAgbWFyZ2luIDogMTBweCBhdXRvO1xyXG59XHJcbi5jYXJkLXRpdGxlIHtcclxuICAgIGNvbG9yIDogbGlnaHRjb3JhbDtcclxuICAgIGZvbnQtc2l6ZTogMjBweDtcclxufVxyXG4uY2FyZC10ZXh0IHtcclxuICAgIHRleHQtdHJhbnNmb3JtOiB1cHBlcmNhc2U7XHJcbiAgICBjb2xvcjogIGRlZXBza3libHVlO1xyXG4gICAgZm9udC1zaXplOiAxNHB4OyBcclxufSJdfQ== */"
+
+/***/ }),
+
+/***/ "./src/app/http/http.component.ts":
+/*!****************************************!*\
+  !*** ./src/app/http/http.component.ts ***!
+  \****************************************/
+/*! exports provided: HttpComponent */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "HttpComponent", function() { return HttpComponent; });
+/* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! tslib */ "./node_modules/tslib/tslib.es6.js");
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
+/* harmony import */ var _http_service_service__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../http-service.service */ "./src/app/http-service.service.ts");
+
+
+
+var HttpComponent = /** @class */ (function () {
+    function HttpComponent(httpSer) {
+        this.httpSer = httpSer;
+    }
+    HttpComponent.prototype.ngOnInit = function () {
+        this.listFilm = this.httpSer.listFilm;
+        this.infoFilm = this.httpSer.infoFilm;
+    };
+    HttpComponent.ctorParameters = function () { return [
+        { type: _http_service_service__WEBPACK_IMPORTED_MODULE_2__["HttpServiceService"] }
+    ]; };
+    HttpComponent = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
+        Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Component"])({
+            selector: 'app-http',
+            template: __webpack_require__(/*! raw-loader!./http.component.html */ "./node_modules/raw-loader/index.js!./src/app/http/http.component.html"),
+            styles: [__webpack_require__(/*! ./http.component.css */ "./src/app/http/http.component.css")]
+        })
+    ], HttpComponent);
+    return HttpComponent;
 }());
 
 
@@ -1791,6 +2473,120 @@ var ProductListComponent = /** @class */ (function () {
         })
     ], ProductListComponent);
     return ProductListComponent;
+}());
+
+
+
+/***/ }),
+
+/***/ "./src/app/shop-service.service.ts":
+/*!*****************************************!*\
+  !*** ./src/app/shop-service.service.ts ***!
+  \*****************************************/
+/*! exports provided: ShopServiceService */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "ShopServiceService", function() { return ShopServiceService; });
+/* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! tslib */ "./node_modules/tslib/tslib.es6.js");
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
+
+
+var ShopServiceService = /** @class */ (function () {
+    function ShopServiceService() {
+        this.categories = [{
+                "id": 1,
+                "catename": 'Guitars',
+            },
+            {
+                "id": 2,
+                "catename": 'Pianos',
+            },
+            {
+                "id": 3,
+                "catename": 'Drums',
+            }
+        ];
+        this.product = [{
+                "id": 1,
+                "productname": "Caravan HS-4140",
+                "price": 116000,
+                "description": "Guitar Caravan HS-4140 là dòng sản phẩm guitar acoustic được thiết kế tinh tế cùng với âm thanh đanh, rõ nét rất thích hợp để chơi đệm hát và dòng nhạc trẻ trung.",
+                "newfeature": [{
+                        "text": "Giao hàng trong phạm vi 6 km trị giá 60,000 VNĐ",
+                    },
+                    {
+                        "text": "Tặng 2 phím đàn trị giá 20,000 VNĐ.",
+                    },
+                    {
+                        "text": "Tặng ty chỉnh cần trị giá 10,000 VNĐ."
+                    }
+                ],
+                "cid": 1
+            },
+            {
+                "id": 2,
+                "productname": "Đàn guitar Takamine P1D",
+                "price": 116000,
+                "description": "Đàn guitar Takamine P1D Tiếng đàn ngọt ngào, các chi tiết được tối ưu hóa nhờ công nghệ hiện đại, là sự trải nghiệm hoàn toàn xứng đáng cho bất cứ ai. Âm thanh cực kỳ ấm áp, độ cân bằng giữa các dải âm vang lên nhờ thân đàn Sapele với mặt gỗ tuyết tùng vùng Bắc Cực.",
+                "newfeature": [{
+                        "text": "Giao hàng trong phạm vi 6 km trị giá 60,000 VNĐ"
+                    },
+                    {
+                        "text": "Tặng 2 phím đàn trị giá 20,000 VNĐ."
+                    },
+                    {
+                        "text": "Tặng ty chỉnh cần trị giá 10,000 VNĐ."
+                    }
+                ],
+                "cid": 1
+            },
+            {
+                "id": 3,
+                "productname": "Boston GP-156 PE",
+                "price": 735000000,
+                "description": "Đàn Piano Boston GP-156 PE âm thanh tao nhã dành cho những con người tinh te",
+                "newfeature": [{
+                        "text": "Giao hàng trong phạm vi 6 km trị giá 60,000 VNĐ"
+                    },
+                    {
+                        "text": "Tặng 2 phím đàn trị giá 20,000 VNĐ."
+                    },
+                    {
+                        "text": "Tặng ty chỉnh cần trị giá 10,000 VNĐ."
+                    }
+                ],
+                "cid": 2
+            },
+            {
+                "id": 4,
+                "productname": "Cymbal Meinl BCS141620",
+                "price": 735000000,
+                "description": "Roland V-Drum nổi tiếng khắp thế giới do âm thanh khác biệt và giàu cảm xúc. Và bây giờ, gia đình V-Drum bổ sung một sự thú vị mới với bộ trống HD-3 thế hệ mới, mở rộng khái niệm chơi trống. Bộ trống nhỏ gọn với công cụ đủ mạnh mẽ và truyền cảm mang lại sự thích thú và đủ thân thiện cho người mới chơi, các tay chơi trống và những người đam mê giải trí tại gia. Bạn không cần phải là một tay trống vẫn có thể thưởng thức trọn vẹn thiết bị thú vị, cực chất cho mọi nhà này.",
+                "newfeature": [{
+                        "text": "Thiết bị V-Drum nhỏ gọn, thú vị cho tất cả các cấp độ của tay trống, và những người đam mê giải trí tại gia."
+                    },
+                    {
+                        "text": "Cloth-head toms giúp cảm thụ chơi nhạc tốt hơn và tăng thiết kế."
+                    },
+                    {
+                        "text": "Dual-trigger pads cho snare và crash/ ride để tăng khả năng chơi nhạc."
+                    },
+                    {
+                        "text": "Metronome với những âm thanh có thể lựa chọn và tempo có thể điều chỉnh."
+                    }
+                ],
+                "cid": 3
+            }
+        ];
+    }
+    ShopServiceService = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
+        Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Injectable"])({
+            providedIn: 'root'
+        })
+    ], ShopServiceService);
+    return ShopServiceService;
 }());
 
 

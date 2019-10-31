@@ -1,0 +1,57 @@
+<div class="container">
+  <div class="row">
+    <div class="col-md-12 text-center">
+      <h1 *ngIf='!showFormEdit'>Thêm sinh viên</h1>
+      <h1 *ngIf='showFormEdit'>Sửa thông tin sinh viên</h1>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-md-12">
+      <form action="">
+        <div class="form-group">
+          <label for="">Họ và Tên</label>
+          <input type="text" class="text-field-form" [(ngModel)]="stuInfo.name" [ngModelOptions]="{standalone: true}">
+        </div>
+        <div class="form-group">
+          <label for="">Ngay sinh</label>
+          <input type="datetime" class="text-field-form" [(ngModel)]="stuInfo.birth" [ngModelOptions]="{standalone: true}">
+        </div>
+        <div class="form-group">
+          <label for="">Diem</label>
+          <input type="number" class="text-field-form" [(ngModel)]="stuInfo.rate" [ngModelOptions]="{standalone: true}">
+        </div>
+        <button type="button" class="btn btn-danger" *ngIf='!showFormEdit' (click) = "save()">Thêm</button>
+        <button type="button" class="btn btn-success" *ngIf="showFormEdit" (click)="save()">Lưu</button>
+        <button type="button" class="btn btn-default bg-light">Huy</button>
+      </form>
+
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-md-12">
+      <table class="table">
+        <thead>
+          <tr>
+            <th>Id</th>
+            <th>Name</th>
+            <th>Birth</th>
+            <th>Xếp loại</th>
+            <th></th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor='let stu of student'>
+            <td>{{stu.id}}</td>
+            <td>{{stu.name}}</td>
+            <td>{{stu.birth}}</td>
+            <td>{{stu.rate}}</td>
+            <td>
+              <button type='button' class="btn btn-primary" (click)="edit(stu)">Sửa</button>
+              <button type='button' class="btn btn-info">Xoa</button>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</div>

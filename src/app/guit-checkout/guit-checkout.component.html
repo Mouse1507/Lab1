@@ -1,0 +1,65 @@
+<div class="container">
+  <div class="card">
+    <div class="card-header">My Guitar Shop</div>
+    <div class="card-body">
+      <div class="row">
+        <div class="col-md-3">
+          <h3>Links</h3>
+          <ul class="menu">
+            <li class="menu-item"><a href="/guit-cart">View Cart</a></li>
+            <li class="menu-item"><a href="">Login / Register</a></li>
+            <li class="menu-item"><a href="/guitar/1">Home</a></li>
+          </ul>
+          <h3>Categories</h3>
+          <ul class="menu">
+            <li class="menu-item" *ngFor='let cate of categories'><a href="/guitar/{{cate.id}}">{{cate.catename}}</a></li>
+          </ul>
+          <h3>Temp Link</h3>
+          <ul class="menu">
+            <li class="menu-item"><a href="">Admin</a></li>
+          </ul>
+        </div>
+        <div class="col-md-9">
+          <h3>Your Order</h3>
+          <p>Order Number : 4</p>
+          <p>Order Date : Oct 9, 2019</p>
+          <h5>Shipping</h5>
+          <p>Ship Date: Not shipped yet</p>
+          <p>Address : 123213 TCT, Q8, HCM</p>
+          <p>Sdt : 123213213</p>
+          <h5>Billing</h5>
+          <p>Card Number : 44444</p>
+          <p>Address : 123213 TCT, Q8, HCM</p>
+          <h5>Order Items</h5>
+          <table class="table">
+            <thead>
+              <tr>
+                <th>Item</th>
+                <th>Price</th>
+                <th>Quantity</th>
+                <th>Total</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr *ngFor='let item of cartItems'>
+                  <td>{{item.name}}</td>
+                  <td>{{getPrice(item.prodId)}}</td>
+                  <td>{{item.quantity}}</td>
+                  <td class="total">{{total(getPrice(item.prodId), item.quantity)}}</td>
+              </tr>
+            </tbody>
+            <tfoot>
+              <tr>
+                <th></th>
+                <th></th>
+                <th>Subtotal</th>
+                <th>{{subTotal()}}</th>
+              </tr>
+              </tfoot>
+          </table>
+        </div>
+      </div>
+    </div>
+    <div class="card-footer text-right">@ 2010 My Guitar Shop, Inc.</div>
+  </div>
+</div>

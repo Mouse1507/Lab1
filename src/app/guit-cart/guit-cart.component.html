@@ -1,0 +1,50 @@
+<div class="container">
+  <div class="card">
+    <div class="card-header">My Guitar Shop</div>
+    <div class="card-body">
+      <div class="row">
+        <div class="col-md-12">
+          <h3>Your Cart</h3>
+          <p>To remove an item from cart, change it quantity to 0</p>
+          <table class="table">
+            <thead>
+              <tr>
+                <th>Item</th>
+                <th>Price</th>
+                <th>Quantity</th>
+                <th>Total</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr *ngFor='let item of cartItems'>
+                  <td>{{item.name}}</td>
+                  <td>{{getPrice(item.prodId)}}</td>
+                  <td><input type="number" [(ngModel)]="item.quantity" class="cart-quantity" min="0"></td>
+                  <td class="total">{{total(getPrice(item.prodId), item.quantity)}}</td>
+              </tr>
+            </tbody>
+            <tfoot>
+                <tr>
+                    <th></th>
+                    <th></th>
+                    <th>Subtotal</th>
+                    <th>{{subTotal()}}</th>
+                </tr>
+            </tfoot>
+          </table>
+        </div>
+      </div>
+      <div class="row">
+          <div class="col-md-12 text-right">
+            <button type='button' (click)="updateCart()">Update Cart</button>
+          </div>
+      </div>
+      
+      <p>Return to : <a href='/guitar/1'>Home</a></p>
+      <p>Return to : <a href='/guitar/1'>Guitar</a></p>
+      <p>Proceed to : <a href='/guit-checkout'>Checkout</a></p>
+
+    </div>
+    <div class="card-footer text-right">@ 2010 My Guitar Shop, Inc.</div>
+  </div>
+</div>
